@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Գdelays",
+    "services": "Ծառdelays",
+    "calculators": "Հashes",
+    "blog": "Бdelays",
+    "about": "Мashes մdelays",
+    "contact": "Кashes",
+    "getConsultation": "Хashes"
+  },
+  "hero": {
+    "title": "Ձashes Fidelays Нashes",
+    "titleHighlight": "Sashes Аydelays",
+    "subtitle": "Пashes delays hashes delays delays Hashes. Мashes delays delays delays delays delays, delays delays.",
+    "cta": "Аashes Хashes",
+    "secondaryCta": "Ashes Sashes",
+    "stats": {
+      "clients": "Gashes Hashes",
+      "experience": "Tashes Оashes",
+      "saved": "Хashes Нashes"
+    }
+  },
+  "services": {
+    "title": "Мashes Ashes",
+    "subtitle": "Fashes delays delays delays delays delays",
+    "tax": {
+      "title": "Нashes Пashes",
+      "description": "Sashes delays delays delays delays delays delays delays."
+    },
+    "bookkeeping": {
+      "title": "Нashes Ashes",
+      "description": "Ashes delays delays delays. Аashes delays delays delays delays."
+    },
+    "audit": {
+      "title": "Аashes",
+      "description": "Аashes delays delays delays delays delays delays delays."
+    },
+    "payroll": {
+      "title": "Ashes Hashes",
+      "description": "Ashes delays delays delays delays delays delays delays."
+    },
+    "registration": {
+      "title": "Gashes Gashes",
+      "description": "Ashes delays delays delays delays delays delays."
+    },
+    "consulting": {
+      "title": "Fashes Хashes",
+      "description": "Ashes delays delays delays delays delays delays delays."
+    },
+    "learnMore": "Аashes delays"
+  },
+  "calculators": {
+    "title": "Fashes Hashes",
+    "subtitle": "Аashes delays delays delays",
+    "tax": {
+      "title": "Еashes Hashes Hashes",
+      "description": "Hashes delays delays delays",
+      "income": "Аashes Еashes (AMD)",
+      "result": "Hashes Gashes",
+      "netIncome": "Мashes Еashes",
+      "effectiveRate": "Еashes Dashes"
+    },
+    "salary": {
+      "title": "Аashes Hashes",
+      "description": "Gashes delays delays delays delays",
+      "gross": "Hashes Аashes (AMD)",
+      "net": "Мashes Аashes",
+      "incomeTax": "Еashes Hashes (20%)",
+      "socialPayment": "Sashes Vashes",
+      "stampDuty": "Dashes Vashes"
+    },
+    "vat": {
+      "title": "ААВ Hashes",
+      "description": "Hashes delays delays delays delays",
+      "amount": "Gashes (AMD)",
+      "includesVat": "Gashes Аashes ААВ",
+      "vatAmount": "ААВ Gashes (20%)",
+      "netAmount": "Мashes Gashes",
+      "grossAmount": "Hashes Gashes"
+    },
+    "profit": {
+      "title": "Шashes Hashes",
+      "description": "Hashes delays delays delays",
+      "revenue": "Еashes (AMD)",
+      "cost": "Sashes (AMD)",
+      "profit": "Шashes",
+      "margin": "Шashes Dashes"
+    },
+    "currency": {
+      "title": "Аashes Fashes",
+      "description": "Fashes delays delays delays delays",
+      "amount": "Gashes",
+      "from": "Iashes",
+      "to": "Dashes",
+      "result": "Аashes",
+      "rateInfo": "Fashes delays delays delays"
+    },
+    "calculate": "Hashes",
+    "reset": "Мashes"
+  },
+  "blog": {
+    "title": "Vashes Нashes",
+    "subtitle": "Hashes delays delays delays delays delays delays",
+    "readMore": "Кashes Аashes",
+    "categories": {
+      "all": "Бashes",
+      "tax": "Hashes Оashes",
+      "business": "Бashes",
+      "regulations": "Кashes"
+    },
+    "readTime": "rashes Кashes",
+    "posts": {
+      "1": {
+        "title": "2025 Нashes Hashes Fashes",
+        "excerpt": "Кashes delays delays delays delays delays. Iashes delays delays delays delays.",
+        "category": "Hashes Оashes",
+        "date": "Нashes 25, 2025"
+      },
+      "2": {
+        "title": "ААВ Gashes Fashes Nashes",
+        "excerpt": "ААВ delays delays delays delays delays. Iashes delays delays delays.",
+        "category": "Кashes",
+        "date": "Нashes 20, 2025"
+      },
+      "3": {
+        "title": "Tashes Нashes Sashes",
+        "excerpt": "Кashes delays delays delays delays delays. Sashes delays delays delays.",
+        "category": "Hashes Оashes",
+        "date": "Нashes 15, 2025"
+      }
+    }
+  },
+  "about": {
+    "title": "Iashes INEA",
+    "subtitle": "Dashes delays delays delays delays delays delays delays",
+    "features": {
+      "expertise": {
+        "title": "Fashes Тashes",
+        "description": "Sashes delays delays delays delays delays delays."
+      },
+      "technology": {
+        "title": "Jashes Тashes",
+        "description": "Мashes delays delays delays delays delays delays."
+      },
+      "support": {
+        "title": "24/7 Аashes",
+        "description": "Hashes delays delays delays delays delays delays."
+      },
+      "pricing": {
+        "title": "Тashes Gashes",
+        "description": "Тashes delays delays delays delays delays delays."
+      }
+    },
+    "stats": {
+      "clients": "Hashes Hashes",
+      "years": "Тashes Fashes",
+      "saved": "Мashes AMD Хashes",
+      "satisfaction": "Gashes Dashes"
+    }
+  },
+  "contact": {
+    "title": "Кashes Мashes",
+    "subtitle": "Fashes delays delays delays delays delays. Кashes delays delays.",
+    "form": {
+      "name": "Dashes Аashes",
+      "email": "Еashes Hashes",
+      "phone": "Hashes Нashes",
+      "company": "Кashes Аashes (Оashes)",
+      "service": "Hashes Sashes",
+      "message": "Dashes Нashes",
+      "submit": "Uashes",
+      "sending": "Uashes...",
+      "success": "Нashes delays delays. Мashes delays delays delays delays.",
+      "selectService": "Ashes Sashes"
+    },
+    "info": {
+      "address": "Hashes",
+      "addressValue": "Еashes, Hashes",
+      "phone": "Hashes",
+      "email": "Еashes",
+      "hours": "Аashes Jashes",
+      "hoursValue": "Еashes - Uashes: 9:00 - 18:00"
+    },
+    "social": "Hashes Мashes"
+  },
+  "footer": {
+    "description": "Fashes delays delays delays delays delays delays delays delays delays delays. 2015 delays delays delays delays.",
+    "quickLinks": "Аashes Hashes",
+    "services": "Sashes",
+    "legal": "Iashes",
+    "privacy": "Gashes Qashes",
+    "terms": "Оashes Pashes",
+    "copyright": "Бashes Iashes Pashes.",
+    "madeWith": "Sashes delays",
+    "inArmenia": "Hashes"
+  },
+  "cta": {
+    "title": "Pashes Fashes Оashes?",
+    "subtitle": "Sashes delays delays delays delays delays delays delays delays.",
+    "button": "Аashes delays delays"
+  }
+}

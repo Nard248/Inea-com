@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "calculators": "Calculators",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "getConsultation": "Get Consultation"
+  },
+  "hero": {
+    "title": "Your Financial Success",
+    "titleHighlight": "Starts Here",
+    "subtitle": "Professional accounting and tax services in Armenia. We help businesses grow with expert financial guidance, compliance, and strategic planning.",
+    "cta": "Start Free Consultation",
+    "secondaryCta": "Explore Services",
+    "stats": {
+      "clients": "Happy Clients",
+      "experience": "Years Experience",
+      "saved": "Tax Saved"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive financial solutions tailored to your business needs",
+    "tax": {
+      "title": "Tax Planning & Compliance",
+      "description": "Strategic tax planning and full compliance with Armenian tax regulations. Minimize liabilities while staying fully compliant."
+    },
+    "bookkeeping": {
+      "title": "Bookkeeping & Accounting",
+      "description": "Accurate financial record-keeping and reporting. From daily transactions to annual statements, we handle it all."
+    },
+    "audit": {
+      "title": "Audit & Assurance",
+      "description": "Independent audit services that provide confidence to stakeholders. Thorough, transparent, and professional."
+    },
+    "payroll": {
+      "title": "Payroll Services",
+      "description": "Complete payroll management including salary calculations, tax withholdings, and social contributions."
+    },
+    "registration": {
+      "title": "Business Registration",
+      "description": "Full support for company registration in Armenia. From LLC formation to licensing and permits."
+    },
+    "consulting": {
+      "title": "Financial Consulting",
+      "description": "Strategic financial advice to help your business grow. Cash flow optimization, budgeting, and forecasting."
+    },
+    "learnMore": "Learn More"
+  },
+  "calculators": {
+    "title": "Financial Calculators",
+    "subtitle": "Quick and accurate calculations for your financial planning",
+    "tax": {
+      "title": "Income Tax Calculator",
+      "description": "Calculate your personal income tax in Armenia",
+      "income": "Monthly Income (AMD)",
+      "result": "Tax Amount",
+      "netIncome": "Net Income",
+      "effectiveRate": "Effective Rate"
+    },
+    "salary": {
+      "title": "Salary Calculator",
+      "description": "Convert between gross and net salary",
+      "gross": "Gross Salary (AMD)",
+      "net": "Net Salary",
+      "incomeTax": "Income Tax (20%)",
+      "socialPayment": "Social Payment",
+      "stampDuty": "Stamp Duty"
+    },
+    "vat": {
+      "title": "VAT Calculator",
+      "description": "Calculate VAT for your transactions",
+      "amount": "Amount (AMD)",
+      "includesVat": "Amount includes VAT",
+      "vatAmount": "VAT Amount (20%)",
+      "netAmount": "Net Amount",
+      "grossAmount": "Gross Amount"
+    },
+    "profit": {
+      "title": "Profit Margin Calculator",
+      "description": "Calculate your profit margins",
+      "revenue": "Revenue (AMD)",
+      "cost": "Cost (AMD)",
+      "profit": "Profit",
+      "margin": "Profit Margin"
+    },
+    "currency": {
+      "title": "Currency Converter",
+      "description": "Convert between major currencies",
+      "amount": "Amount",
+      "from": "From",
+      "to": "To",
+      "result": "Result",
+      "rateInfo": "Exchange rates are approximate"
+    },
+    "calculate": "Calculate",
+    "reset": "Reset"
+  },
+  "blog": {
+    "title": "Latest Updates",
+    "subtitle": "Stay informed about tax laws, regulations, and financial news",
+    "readMore": "Read More",
+    "categories": {
+      "all": "All",
+      "tax": "Tax Laws",
+      "business": "Business",
+      "regulations": "Regulations"
+    },
+    "readTime": "min read",
+    "posts": {
+      "1": {
+        "title": "New Tax Amendments for 2025",
+        "excerpt": "Important changes to Armenian tax code that affect businesses and individuals. Learn what's new and how to prepare.",
+        "category": "Tax Laws",
+        "date": "November 25, 2025"
+      },
+      "2": {
+        "title": "VAT Registration Requirements Updated",
+        "excerpt": "The threshold for mandatory VAT registration has been revised. Find out if your business needs to register.",
+        "category": "Regulations",
+        "date": "November 20, 2025"
+      },
+      "3": {
+        "title": "Year-End Tax Planning Strategies",
+        "excerpt": "Essential strategies to optimize your tax position before the year ends. Tips for businesses and individuals.",
+        "category": "Tax Laws",
+        "date": "November 15, 2025"
+      }
+    }
+  },
+  "about": {
+    "title": "Why Choose INEA",
+    "subtitle": "Your trusted partner for all financial matters in Armenia",
+    "features": {
+      "expertise": {
+        "title": "Expert Team",
+        "description": "Certified accountants with deep knowledge of Armenian tax law and international standards."
+      },
+      "technology": {
+        "title": "Modern Technology",
+        "description": "We use the latest accounting software and secure cloud solutions for efficiency."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Questions don't wait for business hours. Reach us anytime you need assistance."
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "No hidden fees. Clear, upfront pricing so you always know what to expect."
+      }
+    },
+    "stats": {
+      "clients": "Clients Served",
+      "years": "Years Experience",
+      "saved": "Million AMD Saved",
+      "satisfaction": "Satisfaction Rate"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to take control of your finances? Let's talk.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name (Optional)",
+      "service": "Service Interested In",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "selectService": "Select a service"
+    },
+    "info": {
+      "address": "Address",
+      "addressValue": "Yerevan, Armenia",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Mon - Fri: 9:00 - 18:00"
+    },
+    "social": "Follow Us"
+  },
+  "footer": {
+    "description": "Professional accounting and tax services in Armenia. Helping businesses achieve financial success since 2015.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "inArmenia": "in Armenia"
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Finances?",
+    "subtitle": "Get a free consultation and discover how we can help your business grow.",
+    "button": "Schedule Free Consultation"
+  }
+}
