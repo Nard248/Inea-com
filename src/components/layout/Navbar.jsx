@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <motion.img
-              src="/Logo.jpg"
+              src={`${import.meta.env.BASE_URL}Logo.jpg`}
               alt="INEA"
               className="w-auto h-12"
               whileHover={{ scale: 1.05 }}

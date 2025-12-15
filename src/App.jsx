@@ -19,7 +19,7 @@ const PageLoader = () => (
     <div className="relative">
       <div className="w-16 h-16 border-4 rounded-full border-primary-200 animate-spin border-t-primary-600" />
       <img
-        src="/Logo.jpg"
+        src={`${import.meta.env.BASE_URL}Logo.jpg`}
         alt="INEA"
         className="absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
       />
@@ -116,7 +116,7 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Inea-com">
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <AnimatedRoutes />

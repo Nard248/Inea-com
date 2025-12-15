@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Company info */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <img src="/Logo.jpg" alt="INEA" className="w-auto h-12 brightness-0 invert" />
+              <img src={`${import.meta.env.BASE_URL}Logo.jpg`} alt="INEA" className="w-auto h-12 brightness-0 invert" />
             </Link>
             <p className="mb-6 text-gray-400 leading-relaxed">
               {t('footer.description')}
