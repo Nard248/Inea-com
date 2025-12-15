@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rollup/rollup-darwin-arm64": "^4.53.3",
     "framer-motion": "^11.15.0",
     "i18next": "^23.16.0",
     "i18next-browser-languagedetector": "^8.0.2",
