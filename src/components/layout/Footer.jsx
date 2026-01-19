@@ -30,12 +30,12 @@ const Footer = () => {
   ];
 
   const services = [
+    t('services.accounting.title'),
     t('services.tax.title'),
-    t('services.bookkeeping.title'),
-    t('services.audit.title'),
+    t('services.hr.title'),
     t('services.payroll.title'),
-    t('services.registration.title'),
-    t('services.consulting.title'),
+    t('services.financial.title'),
+    t('services.audit.title'),
   ];
 
   const socialLinks = [

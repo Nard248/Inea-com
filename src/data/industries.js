@@ -80,7 +80,7 @@ export const industries = [
     color: 'from-purple-500 to-violet-600',
     bgColor: 'bg-purple-50',
     iconColor: 'text-purple-600',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop&q=80',
     order: 7,
   },
   {
