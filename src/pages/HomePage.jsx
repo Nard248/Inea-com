@@ -1,5 +1,6 @@
 import Hero from '../components/sections/Hero';
 import FeaturedServices from '../components/sections/FeaturedServices';
+import Industries from '../components/sections/Industries';
 import Calculators from '../components/sections/Calculators';
 import About from '../components/sections/About';
 import Blog from '../components/sections/Blog';
@@ -10,6 +11,7 @@ const HomePage = () => {
     <>
       <Hero />
       <FeaturedServices />
+      <Industries />
       {/*<Calculators />*/}
       <About />
       <Blog />

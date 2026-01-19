@@ -41,6 +41,7 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/services', label: t('nav.services') },
+    { to: '/industries', label: t('nav.industries') },
     { type: 'dropdown', id: 'tools', label: t('nav.tools'), items: toolsDropdown },
     { to: '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },

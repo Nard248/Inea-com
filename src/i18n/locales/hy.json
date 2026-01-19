@@ -2,6 +2,7 @@
   "nav": {
     "home": "[HY] Home",
     "services": "[HY] Services",
+    "industries": "[HY] Industries",
     "tools": "[HY] Tools",
     "calculators": "[HY] Calculators",
     "pricing": "[HY] Pricing",
@@ -461,6 +462,62 @@
       "satisfaction": "[HY] Satisfaction Rate"
     }
   },
+  "aboutPage": {
+    "badge": "Mer Masin",
+    "heroTitle": "Dzer Vstahelի",
+    "heroTitleHighlight": "Finansakan Gortsyntser",
+    "heroSubtitle": "INEA SPY-n hashvapahakan tsarayutyunner matsutsox ynkerutyun e, vor himnadvats e kazmakerputyunnerin yev anhat dzernarkateternerin bardzrakorak masnagitakan ajaktsutyan transdraelu npatakov.",
+    "getStarted": "Sksel",
+    "exploreServices": "Tsarayutyunner",
+    "companyTitle": "Mer Masin",
+    "companyDescription": "Mer gortsunyutyan himqum ynkats e ayn hamozmuny, vor chisht yev hamakarkvats hashvapahakan hashvarkumy handisanum e voch miyn partadir gortsntak, ayl biznesin kayun zargatsumi, finansakan verahskoghutyani yev ardyunaver karavarmi karev gortsiqu.",
+    "companyBelief": "Menq hamagortsakum enq gortsunerutyun tarber volortnery ashkhatox ynkerutyunneri het, arajarkelov anhatak motetsum yev lutumner yurakanchyur hatchoghati biznesi arandnahahukukyunnerinhamapataskhan.",
+    "missionBadge": "Mer Npataky",
+    "missionTitle": "Mer Araqelutyun",
+    "missionDescription": "Mer araqelutyunn e ajaksel biznesnerin, stextselu vstahelի, tapantsik yev verahskeli hashvapahakan hamakarg, vor knpasti finansakan kayunutyanun, harkain riskerinվazetsmann yev karavarmi chisht voroshumneri kayatsmany.",
+    "missionPartnership": "Menq dztum enq liner mer hachaxordneri vstahelի gortsentser, apahovelov sharунakakan masnagitakan ajaktsutyan yev yerkarajhamket hamagortsaktsutyun.",
+    "clientsServed": "Spasarkats Hachaxordner",
+    "valuesBadge": "Mer Skzbunqner",
+    "valuesTitle": "Mer Arjeqner",
+    "valuesSubtitle": "Skzbunqner, voronq ghekavare mezer gortsunerutyuny",
+    "values": {
+      "professionalism": {
+        "title": "Profesionalizm",
+        "description": "Menq gordum enq bardzr masnagitakan chapanisherov, himnvelov giteliqi, pordzi yev pataskhanatvutyun vra."
+      },
+      "accuracy": {
+        "title": "Chshrtutyun yev Tapantsikutyun",
+        "description": "Yurakanchyur hashvarkum irakanastvum e manrakrkit yev verahskeli, batsarelov anorosutyunnery yev riskery."
+      },
+      "responsibility": {
+        "title": "Pataskhanatvutyun",
+        "description": "Menq liarzhek pataskhanatvutyun enq krum mer katarvats ashkhatanqi hamar, papahelով zhamketner yev paymanavorvatsнутунner."
+      },
+      "reliability": {
+        "title": "Vstahelu",
+        "description": "Mer ashkhantanqy karutsvats e pokhdardzavetutyan yev etikakan skzbunqneri vra."
+      }
+    },
+    "approachBadge": "Inchpes Enq Ashkatum",
+    "approachTitle": "Mer Motetsumy",
+    "approachDescription": "INEA SPY-n yurakanchyur hachakhordի het ashkhatum e anhatak motetumov, usumnasirelov gortsunerutyun volorty, tsavalerny yev arandnahahukukyunnery. Menq dzevavorumenq hashvapahakan qaghaqakanutyun yev hashvarqman hamakarg, vor lavaгуйns hamapataskханum e tvyal biznesin kariqnerinե.",
+    "approachModern": "Mer masnagetnery mshtapes hetevumenq orensdrati popokhutнуnnerin yev kirareв en zhamanakakits hashvapahakan motetumner, apahovelով ardiakan yev vstaheli hashvarkum.",
+    "whyChooseBadge": "Inchu Menq",
+    "whyChooseTitle": "Inchu Yntrel INEA SPY-n",
+    "whyChoose": {
+      "r1": "Bazmolorti pordz yev khorqayin masnagitakan giteliqner",
+      "r2": "Anhatak motetsum yurakanchyur hachaxordի",
+      "r3": "Hashvapahakan amboghchakan spasarkum mek hartakum",
+      "r4": "Orensdakan popokhutнуnnerinե mshtapes hetevoghthim",
+      "r5": "Nvazestsvats harkain yev hashvapahakan risker",
+      "r6": "Hstak, tapantsik yev verahskelі hashvarqman hamakarg"
+    },
+    "goalBadge": "Mer Tesumy",
+    "goalTitle": "Mer Npatakon yev Ardyunq",
+    "goalDescription": "Mer npatakn e stextel aynpisi hashvapahakan mijavir, vortegh biznesy gordum e vstah, kankhateseli yev verahskeli finansakan paymanneyerum.",
+    "resultTitle": "Ardyunq",
+    "resultDescription": "Kayun hashvapahakan hamakarg, kankhateseli harkain ber, finansakan kargapahutyun yev ardyunaver karavarман voroshumer."
+  },
   "contact": {
     "title": "[HY] Get in Touch",
     "subtitle": "[HY] Ready to take control of your finances? Let's talk.",
@@ -501,6 +558,147 @@
     "title": "[HY] Ready to Optimize Your Finances?",
     "subtitle": "[HY] Get a free consultation and discover how we can help your business grow.",
     "button": "[HY] Schedule Free Consultation"
+  },
+  "industries": {
+    "badge": "Gorthuneutyun",
+    "title": "Gorthuneutyun",
+    "titleHighlight": "Volorti",
+    "subtitle": "Masnagitatsvats hashvapahakan yev finansakan tsarayutyunner",
+    "sectionTitle": "Gorthuneutyun Volorti",
+    "sectionSubtitle": "Menq matsutsumenq masnagitatsvats hashvapahakan tsarayutyunner",
+    "showServices": "Tsuyts tal tsarayutyunnery",
+    "hideServices": "Taqtsnel tsarayutyunnery",
+    "ourServices": "Mer tsarayutyunnery ays volorti hamar:",
+    "result": "Ardyunq:",
+    "getConsultation": "Khorhrdatvutyun",
+    "learnMore": "Imanal avelin",
+    "viewAll": "Boloer Volortner",
+    "manufacturing": {
+      "title": "Artadrutyun",
+      "description": "Menq ognum enq artadratakan dzernarkutyunnerin varum artadratakan tsakhseri hashvark.",
+      "features": [
+        "Artadratakan tsakhseri hashvark",
+        "Pasharneri yev pahateri hashvark",
+        "Himnatakan mijotsneri hashvark",
+        "Harkain planavorom",
+        "Finansakan hashvetvutyun"
+      ],
+      "result": "Tapantsik finansakan karavaru yev optimizatsvats tsakhser."
+    },
+    "trade": {
+      "title": "Arrevtur",
+      "description": "Hamapataskhaner hashvapahakan lutsumner medsatsakh yev manratsakh arrevturi hamar.",
+      "features": [
+        "Apranqneri hashvark",
+        "Vacharqi yev yekamuteri hshtak",
+        "AAH yev maqdayin phastatghteri",
+        "Masnadjyugheri finansakan hamateghum",
+        "Matakarordi karavaru"
+      ],
+      "result": "Optimizatsvats gortsnelakerpner yev chisht shahuyti hshtak."
+    },
+    "it": {
+      "title": "IT yev Tekhnologianer",
+      "description": "Masnagitatsvats finansakan tsarayutyunner tekhnologiakan ynkerutyunneri hamar.",
+      "features": [
+        "HETU tsakhseri hashvark",
+        "Tsragri litsenzavorum",
+        "Mijazgayin gortsnoghtsutyunner",
+        "Optsianneri hashvark",
+        "Startap finansakan planavorom"
+      ],
+      "result": "Hamapataskhan finansakan karavaru arag ashkhatavanqi hamar."
+    },
+    "construction": {
+      "title": "Shinararutyun",
+      "description": "Nakhadzi hashvark shinaratatakan ynkerutyunneri hamar.",
+      "features": [
+        "Nakhadzi hashvark",
+        "Paymanagri karavaru",
+        "Sarqavorumneri hshtak",
+        "Entakapalaneri vcharumner",
+        "Shinarararakan harkain hamapataskhannutyun"
+      ],
+      "result": "Hstakexs nakhadzi shahutaberutyun."
+    },
+    "logistics": {
+      "title": "Logistika",
+      "description": "Finansakan karavaru logistik ynkerutyunneri hamar.",
+      "features": [
+        "Avtopaki hashvark",
+        "Vararaqi tsakhseri hshtak",
+        "Maqdayin phastatghter",
+        "Varordneri ashkhatavaradz",
+        "Ugheghii shahutabanutyun"
+      ],
+      "result": "Optimizatsvats gortsuneakan tsakhser."
+    },
+    "tourism": {
+      "title": "Turizm",
+      "description": "Hashvapahakan tsarayutyunner hyuranocneri yev restoanneri hamar.",
+      "features": [
+        "Yekamuti karavaru",
+        "Yeghanakayin dramic hosqeri planavorom",
+        "Bazmatarm gortsnoghtsutyunner",
+        "Turistakan harkain hamapataskhan",
+        "Ashkhatakizner hyurynkalutyan hamar"
+      ],
+      "result": "Tarin voghji finansakan kayunutyun."
+    },
+    "education": {
+      "title": "Krtrutyun",
+      "description": "Finansakan tsarayutyunner krtatakan hastatutainner hamar.",
+      "features": [
+        "Usumavarti karavaru",
+        "Dradmashner yev krtatadriner",
+        "Vochu shahaharmar hamapataskhan",
+        "Dasakhozneri ashkhatavaradz",
+        "Tsragri tsakhsi verlutsutyun"
+      ],
+      "result": "Tapantsik mijotsneri karavaru."
+    },
+    "healthcare": {
+      "title": "Arroghjapahutyun",
+      "description": "Masnagitatsvats hashvark klinikanneri yev hivandanocneri hamar.",
+      "features": [
+        "Bjshkakan billing",
+        "Arroghjapahatakan nrormatvakan hamapataskhan",
+        "Bjshkakan sarqavorumi hashvark",
+        "Apahagravakan vcharumner",
+        "Ashkhatakizneri hashvark"
+      ],
+      "result": "Hamapataskhan gortsuneutyun arroghjapahutyunum."
+    },
+    "whyChoose": {
+      "title": "Inchu INEA Dzer Volorti Hamar",
+      "subtitle": "Menq hamadrumenq khorery volorti imatsutyan yev hashvapahatakan pordzi",
+      "reasons": {
+        "r1": {
+          "title": "Volorti Pordz",
+          "description": "Mer masnagetner unen gortsnakan pordz dzer volorti mej."
+        },
+        "r2": {
+          "title": "Nkormatvakan Hamapataskhan",
+          "description": "Menq hetevum enq volorti nkormanerin."
+        },
+        "r3": {
+          "title": "Anhatak Lutsumner",
+          "description": "Yurakachiur lutsumner dzer biznesin hamar."
+        },
+        "r4": {
+          "title": "Aktiv Khorhrdatvutyun",
+          "description": "Menq haytnabererum enq hnaravor riskery."
+        },
+        "r5": {
+          "title": "Tekhnologiakan Integraciya",
+          "description": "Zhamanakakits gortsiqner dzer gortsyntheratsneri hamar."
+        },
+        "r6": {
+          "title": "Neviryats Ajaktsуtyun",
+          "description": "Tims vor hasganum e dzer biznesy."
+        }
+      }
+    }
   },
   "pricing": {
     "badge": "[HY] Pricing Plans",

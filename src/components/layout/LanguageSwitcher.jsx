@@ -5,8 +5,8 @@ import { HiChevronDown, HiCheck } from 'react-icons/hi';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'hy', name: 'Հայերdelays', flag: '🇦🇲' },
-  { code: 'ru', name: 'Русdelays', flag: '🇷🇺' },
+  { code: 'hy', name: 'Armenian', flag: '🇦🇲' },
+  { code: 'ru', name: 'Russian', flag: '🇷🇺' },
 ];
 
 const LanguageSwitcher = ({ isMobile = false }) => {
