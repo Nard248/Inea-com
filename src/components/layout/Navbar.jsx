@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
+import { HiMenu, HiX, HiChevronDown, HiCalculator, HiCurrencyDollar } from 'react-icons/hi';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
@@ -10,6 +10,8 @@ const Navbar = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,16 +21,38 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Tools dropdown items
+  const toolsDropdown = [
+    { to: '/calculators', label: t('nav.calculators'), icon: HiCalculator },
+    { to: '/pricing', label: t('nav.pricing'), icon: HiCurrencyDollar },
+  ];
+
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/services', label: t('nav.services') },
-    // { to: '/calculators', label: t('nav.calculators') },
+    { type: 'dropdown', id: 'tools', label: t('nav.tools'), items: toolsDropdown },
     { to: '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },
     { to: '/contact', label: t('nav.contact') },
   ];
 
   const isActive = (path) => location.pathname === path;
+  const isDropdownActive = (items) => items.some(item => location.pathname === item.to);
+
+  const toggleDropdown = (id) => {
+    setOpenDropdown(openDropdown === id ? null : id);
+  };
 
   return (
     <motion.nav
@@ -54,30 +78,97 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="items-center hidden space-x-1 md:flex">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg ${
-                  isActive(link.to)
-                    ? 'text-primary-700'
-                    : isScrolled
-                    ? 'text-gray-700 hover:text-primary-600'
-                    : 'text-gray-700 hover:text-primary-600'
-                }`}
-              >
-                {link.label}
-                {isActive(link.to) && (
-                  <motion.div
-                    layoutId="navbar-indicator"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full"
-                    initial={false}
-                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                  />
-                )}
-              </Link>
-            ))}
+          <div className="items-center hidden space-x-1 md:flex" ref={dropdownRef}>
+            {navLinks.map((link) => {
+              if (link.type === 'dropdown') {
+                return (
+                  <div key={link.id} className="relative">
+                    <button
+                      onClick={() => toggleDropdown(link.id)}
+                      className={`relative flex items-center px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg ${
+                        isDropdownActive(link.items)
+                          ? 'text-primary-700'
+                          : isScrolled
+                          ? 'text-gray-700 hover:text-primary-600'
+                          : 'text-gray-700 hover:text-primary-600'
+                      }`}
+                    >
+                      {link.label}
+                      <HiChevronDown
+                        className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+                          openDropdown === link.id ? 'rotate-180' : ''
+                        }`}
+                      />
+                      {isDropdownActive(link.items) && (
+                        <motion.div
+                          layoutId="navbar-indicator"
+                          className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full"
+                          initial={false}
+                          transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                        />
+                      )}
+                    </button>
+
+                    <AnimatePresence>
+                      {openDropdown === link.id && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute left-0 z-50 w-56 mt-2 overflow-hidden bg-white border border-gray-100 shadow-xl rounded-xl"
+                        >
+                          <div className="py-2">
+                            {link.items.map((item) => {
+                              const Icon = item.icon;
+                              return (
+                                <Link
+                                  key={item.to}
+                                  to={item.to}
+                                  onClick={() => setOpenDropdown(null)}
+                                  className={`flex items-center px-4 py-3 text-sm transition-colors ${
+                                    isActive(item.to)
+                                      ? 'bg-primary-50 text-primary-700'
+                                      : 'text-gray-700 hover:bg-gray-50 hover:text-primary-600'
+                                  }`}
+                                >
+                                  <Icon className="w-5 h-5 mr-3 text-primary-500" />
+                                  {item.label}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg ${
+                    isActive(link.to)
+                      ? 'text-primary-700'
+                      : isScrolled
+                      ? 'text-gray-700 hover:text-primary-600'
+                      : 'text-gray-700 hover:text-primary-600'
+                  }`}
+                >
+                  {link.label}
+                  {isActive(link.to) && (
+                    <motion.div
+                      layoutId="navbar-indicator"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full"
+                      initial={false}
+                      transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Right side - Language & CTA */}
@@ -95,6 +186,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2 rounded-lg md:hidden hover:bg-gray-100"
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
               <HiX className="w-6 h-6 text-gray-700" />
@@ -115,20 +207,76 @@ const Navbar = () => {
             className="overflow-hidden bg-white border-t border-gray-100 shadow-lg md:hidden"
           >
             <div className="px-4 py-4 space-y-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
-                    isActive(link.to)
-                      ? 'bg-primary-50 text-primary-700'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                if (link.type === 'dropdown') {
+                  return (
+                    <div key={link.id}>
+                      <button
+                        onClick={() => toggleDropdown(link.id)}
+                        className={`flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                          isDropdownActive(link.items)
+                            ? 'bg-primary-50 text-primary-700'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        {link.label}
+                        <HiChevronDown
+                          className={`w-5 h-5 transition-transform duration-200 ${
+                            openDropdown === link.id ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+                      <AnimatePresence>
+                        {openDropdown === link.id && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="pl-4 mt-1 space-y-1 overflow-hidden"
+                          >
+                            {link.items.map((item) => {
+                              const Icon = item.icon;
+                              return (
+                                <Link
+                                  key={item.to}
+                                  to={item.to}
+                                  onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setOpenDropdown(null);
+                                  }}
+                                  className={`flex items-center px-4 py-2 text-sm rounded-lg transition-colors ${
+                                    isActive(item.to)
+                                      ? 'bg-primary-100 text-primary-700'
+                                      : 'text-gray-600 hover:bg-gray-50'
+                                  }`}
+                                >
+                                  <Icon className="w-4 h-4 mr-2 text-primary-500" />
+                                  {item.label}
+                                </Link>
+                              );
+                            })}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                      isActive(link.to)
+                        ? 'bg-primary-50 text-primary-700'
+                        : 'text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
               <div className="pt-4 border-t border-gray-100">
                 <LanguageSwitcher isMobile />
               </div>

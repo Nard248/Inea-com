@@ -8,7 +8,9 @@ import Layout from './components/layout/Layout';
 // Pages (lazy loaded for better performance)
 const HomePage = lazy(() => import('./pages/HomePage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
 const CalculatorsPage = lazy(() => import('./pages/CalculatorsPage'));
+const PricingPage = lazy(() => import('./pages/PricingPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
@@ -77,10 +79,26 @@ const AnimatedRoutes = () => {
             }
           />
           <Route
+            path="services/:serviceId"
+            element={
+              <PageWrapper>
+                <ServiceDetailPage />
+              </PageWrapper>
+            }
+          />
+          <Route
             path="calculators"
             element={
               <PageWrapper>
                 <CalculatorsPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="pricing"
+            element={
+              <PageWrapper>
+                <PricingPage />
               </PageWrapper>
             }
           />
