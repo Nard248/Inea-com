@@ -1,791 +1,791 @@
 {
   "nav": {
-    "home": "[HY] Home",
-    "services": "[HY] Services",
-    "industries": "[HY] Industries",
-    "tools": "[HY] Tools",
-    "calculators": "[HY] Calculators",
-    "pricing": "[HY] Pricing",
-    "blog": "[HY] Blog",
-    "about": "[HY] About",
-    "contact": "[HY] Contact",
-    "getConsultation": "[HY] Get Consultation"
+    "home": "Գլխավոր",
+    "services": "Ծառայություններ",
+    "industries": "Ոլորտներ",
+    "tools": "Գործիքներ",
+    "calculators": "Հաշվիչներ",
+    "pricing": "Գներ",
+    "blog": "Բլոգ",
+    "about": "Մեր Մասին",
+    "contact": "Կապ",
+    "getConsultation": "Խորհրդատվություն Ստանալ"
   },
   "hero": {
-    "title": "[HY] Your Financial Success",
-    "titleHighlight": "[HY] Starts Here",
-    "subtitle": "[HY] Professional accounting and tax services in Armenia. We help businesses grow with expert financial guidance, compliance, and strategic planning.",
-    "cta": "[HY] Start Free Consultation",
-    "secondaryCta": "[HY] Explore Services",
+    "title": "Ձեր Ֆինանսական Հաջողությունը",
+    "titleHighlight": "Սկսվում է Այստեղ",
+    "subtitle": "Մասնագիտական հաշվապահական և հարկային ծառայություններ Հայաստանում։ Մենք օգնում ենք բիզնեսներին աճել՝ փորձագետների ֆինանսական ուղղորդման, համապատասխանության և ռազմավարական պլանավորման միջոցով։",
+    "cta": "Անվճար Խորհրդատվություն",
+    "secondaryCta": "Ծառայություններ",
     "stats": {
-      "clients": "[HY] Happy Clients",
-      "experience": "[HY] Years Experience",
-      "saved": "[HY] Tax Saved"
+      "clients": "Գոհ Հաճախորդներ",
+      "experience": "Տարվա Փորձ",
+      "saved": "Խնայված Հարկ"
     }
   },
   "services": {
-    "title": "[HY] Our Services",
-    "subtitle": "[HY] Comprehensive financial solutions tailored to your business needs",
-    "viewAll": "[HY] View All Services",
-    "learnMore": "[HY] Learn More",
-    "backToServices": "[HY] Back to Services",
-    "relatedServices": "[HY] Related Services",
-    "whatWeOffer": "[HY] What We Offer",
-    "whyImportant": "[HY] Why It's Important",
-    "whoIsItFor": "[HY] Who Is It For",
-    "ourAdvantages": "[HY] Our Advantages",
-    "featuresInclude": "[HY] Our Services Include",
-    "getStarted": "[HY] Get Started",
-    "freeConsultation": "[HY] Free Consultation",
+    "title": "Մեր Ծառայությունները",
+    "subtitle": "Համապարփակ ֆինանսական լուծումներ՝ հարմարեցված ձեր բիզնեսի կարիքներին",
+    "viewAll": "Բոլոր Ծառայությունները",
+    "learnMore": "Իմանալ Ավելին",
+    "backToServices": "Վերադառնալ Ծառայություններ",
+    "relatedServices": "Առնչվող Ծառայություններ",
+    "whatWeOffer": "Ինչ Ենք Առաջարկում",
+    "whyImportant": "Ինչու Է Կարևոր",
+    "whoIsItFor": "Ո՞ւմ Համար Է",
+    "ourAdvantages": "Մեր Առավելությունները",
+    "featuresInclude": "Մեր Ծառայությունները Ներառում Են",
+    "getStarted": "Սկսել",
+    "freeConsultation": "Անվճար Խորհրդատվություն",
     "accounting": {
-      "title": "[HY] Accounting Services",
-      "shortDescription": "[HY] Comprehensive accounting services ensuring accuracy, transparency, and full compliance with Armenian legislation.",
-      "description": "[HY] We provide comprehensive accounting services, ensuring accuracy, transparency, and full compliance of your business's financial records with the legislation of the Republic of Armenia.",
+      "title": "Հաշվապահական Ծառայություններ",
+      "shortDescription": "Ամբողջական հաշվապահական ծառայություններ՝ ապահովելով ճշգրտություն, թափանցիկություն և ՀՀ օրենսդրությանը լիարժեք համապատասխանություն։",
+      "description": "Մենք տրամադրում ենք ամբողջական հաշվապահական ծառայություններ՝ ապահովելով ձեր բիզնեսի ֆինանսական հաշվառման ճշգրտությունը, թափանցիկությունը և համապատասխանությունը ՀՀ օրենսդրությանը։",
       "features": [
-        "[HY] Ongoing bookkeeping and accounting maintenance",
-        "[HY] Tax calculations and preparation of tax reports",
-        "[HY] Preparation and submission of statistical reports",
-        "[HY] Payroll calculation and HR documentation management",
-        "[HY] Preparation and analysis of financial statements",
-        "[HY] Identification and prevention of accounting risks"
+        "Ընթացիկ հաշվապահության վարում",
+        "Հարկային հաշվարկներ և հաշվետվությունների կազմում",
+        "Վիճակագրական հաշվետվությունների ներկայացում",
+        "Աշխատավարձի հաշվարկ և կադրային փաստաթղթերի ձևավորում",
+        "Ֆինանսական հաշվետվությունների կազմում և վերլուծություն",
+        "Հաշվապահական ռիսկերի բացահայտում և կանխարգելում"
       ],
       "whyImportant": [
-        "[HY] Prevent tax penalties and fines",
-        "[HY] Ensure accuracy of financial reports",
-        "[HY] Improve financial control",
-        "[HY] Be prepared for tax and external audits",
-        "[HY] Maintain accounting discipline"
+        "Կանխել հարկային տույժերն ու տուգանքները",
+        "Ապահովել հաշվետվությունների ճշգրտություն",
+        "Բարելավել ֆինանսական վերահսկողությունը",
+        "Պատրաստ լինել հարկային և արտաքին ստուգումներին",
+        "Վերականգնել հաշվապահական կարգապահությունը"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Large organizations",
-        "[HY] Start-up companies",
-        "[HY] Organizations seeking to outsource accounting"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ կազմակերպություններ",
+        "Նորաստեղծ ընկերություններ",
+        "Կազմակերպություններ, որոնք ցանկանում են աութսորս անել հաշվապահությունը"
       ],
       "advantages": [
-        "[HY] Experienced accounting professionals",
-        "[HY] Individual approach to each client",
-        "[HY] Full compliance with Armenian legislation",
-        "[HY] Accurate and systematic work",
-        "[HY] Data confidentiality guaranteed"
+        "Փորձառու հաշվապահներ",
+        "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
+        "Համապատասխանություն ՀՀ օրենսդրությանը",
+        "Ճշգրիտ և համակարգված աշխատանք",
+        "Տվյալների գաղտնիության ապահովում"
       ]
     },
     "tax": {
-      "title": "[HY] Tax Advisory",
-      "shortDescription": "[HY] Comprehensive tax advisory services for accurate planning and lawful optimization of your tax burden.",
-      "description": "[HY] We provide comprehensive tax advisory services aimed at the accurate planning of your business's tax obligations and the lawful optimization of the tax burden.",
+      "title": "Հարկային Խորհրդատվություն",
+      "shortDescription": "Համապարփակ հարկային խորհրդատվական ծառայություններ՝ ճշգրիտ պլանավորման և հարկային բեռի օրինական օպտիմալացման համար։",
+      "description": "Մենք տրամադրում ենք համապարփակ հարկային խորհրդատվական ծառայություններ՝ ուղղված ձեր բիզնեսի հարկային պարտավորությունների ճիշտ պլանավորմանը և հարկային բեռի օրինական օպտիմալացմանը։",
       "features": [
-        "[HY] Analysis and planning of tax obligations",
-        "[HY] Selection of the appropriate tax regime",
-        "[HY] Assessment and prevention of tax risks",
-        "[HY] Preparation for and support during tax audits",
-        "[HY] Review and advisory support on tax reporting",
-        "[HY] Professional assistance in tax disputes"
+        "Հարկային պարտավորությունների վերլուծություն և պլանավորում",
+        "Հարկային ռեժիմի ճիշտ ընտրություն",
+        "Հարկային ռիսկերի գնահատում և կանխարգելում",
+        "Հարկային ստուգումների նախապատրաստում և ուղեկցում",
+        "Հարկային հաշվետվությունների վերահսկում և խորհրդատվություն",
+        "Հարկային վեճերի ժամանակ մասնագիտական աջակցություն"
       ],
       "whyImportant": [
-        "[HY] Avoid unexpected tax liabilities",
-        "[HY] Optimize tax burden legally",
-        "[HY] Stay compliant with changing regulations",
-        "[HY] Prepare for tax audits confidently",
-        "[HY] Make informed business decisions"
+        "Խուսափել անսպասելի հարկային պարտավորություններից",
+        "Օրինական օպտիմալացնել հարկային բեռը",
+        "Համապատասխանել փոփոխվող կանոնակարգերին",
+        "Վստահ պատրաստվել հարկային ստուգումներին",
+        "Կայացնել հիմնավոր բիզնես որոշումներ"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Large corporations",
-        "[HY] Start-up companies",
-        "[HY] Organizations facing tax audits"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ կորպորացիաներ",
+        "Նորաստեղծ ընկերություններ",
+        "Կազմակերպություններ, որոնք պատրաստվում են հարկային ստուգման"
       ],
       "advantages": [
-        "[HY] Deep knowledge of Armenian tax law",
-        "[HY] Proactive approach to tax planning",
-        "[HY] Clear and actionable recommendations",
-        "[HY] Continuous support and guidance",
-        "[HY] Confidential handling of all information"
+        "Խորը իմացություն ՀՀ հարկային օրենսդրության",
+        "Կանխատեսող մոտեցում հարկային պլանավորմանը",
+        "Հստակ և գործնական առաջարկություններ",
+        "Շարունակական աջակցություն և ուղեկցում",
+        "Տվյալների լիարժեք գաղտնիություն"
       ]
     },
     "hr": {
-      "title": "[HY] HR Administration and Documentation",
-      "shortDescription": "[HY] Complete HR administration services ensuring proper employment relations and labor law compliance.",
-      "description": "[HY] We provide comprehensive HR administration and documentation services, ensuring proper management of employment relations and full compliance with the labor legislation of the Republic of Armenia.",
+      "title": "Կադրային Հաշվառում և Փաստաթղթավորում",
+      "shortDescription": "Ամբողջական կադրային հաշվառման ծառայություններ՝ ապահովելով աշխատանքային հարաբերությունների ճիշտ կառավարում և աշխատանքային օրենսդրությանը համապատասխանություն։",
+      "description": "Մենք տրամադրում ենք կադրային հաշվառման և փաստաթղթավորման ամբողջական ծառայություններ՝ ապահովելով աշխատանքային հարաբերությունների ճիշտ ձևակերպումը և համապատասխանությունը ՀՀ աշխատանքային օրենսդրությանը։",
       "features": [
-        "[HY] Drafting and execution of employment contracts",
-        "[HY] Documentation of employee hiring, transfers, and termination",
-        "[HY] Tracking of working hours and leave records",
-        "[HY] Preparation of HR documentation related to payroll",
-        "[HY] Maintenance and archiving of personnel records",
-        "[HY] Advisory services on labor law matters"
+        "Աշխատանքային պայմանագրերի կազմում և ձևավորում",
+        "Աշխատակիցների ընդունման, տեղափոխման և ազատման փաստաթղթավորում",
+        "Աշխատաժամանակի և արձակուրդների հաշվառում",
+        "Աշխատավարձի հետ կապված կադրային փաստաթղթերի ձևավորում",
+        "Անձնակազմի տվյալների վարում և արխիվացում",
+        "Աշխատանքային իրավունքի հարցերով խորհրդատվություն"
       ],
       "whyImportant": [
-        "[HY] Ensure labor law compliance",
-        "[HY] Minimize legal and administrative risks",
-        "[HY] Maintain proper employment documentation",
-        "[HY] Protect both employer and employee rights",
-        "[HY] Be prepared for labor inspections"
+        "Ապահովել աշխատանքային օրենսդրությանը համապատասխանությունը",
+        "Նվազեցնել իրավական և վարչական ռիսկերը",
+        "Պահպանել աշխատանքային փաստաթղթավորման ճիշտությունը",
+        "Պաշտպանել ինչպես գործատուի, այնպես էլ աշխատողի իրավունքները",
+        "Պատրաստ լինել աշխատանքային տեսչությունների ստուգումներին"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Large organizations with extensive workforce",
-        "[HY] Start-up companies building their teams",
-        "[HY] Organizations seeking HR outsourcing"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ աշխատակազմ ունեցող կազմակերպություններ",
+        "Նորաստեղծ ընկերություններ, որոնք կազմավորում են թիմ",
+        "Կազմակերպություններ, որոնք փնտրում են կադրային աութսորսինգ"
       ],
       "advantages": [
-        "[HY] Expert knowledge of Armenian labor law",
-        "[HY] Systematic documentation approach",
-        "[HY] Risk-focused methodology",
-        "[HY] Confidential data handling",
-        "[HY] Timely and accurate service"
+        "Փորձագիտական իմացություն ՀՀ աշխատանքային օրենսդրության",
+        "Համակարգված փաստաթղթավորման մոտեցում",
+        "Ռիսկ-կենտրոն մեթոդոլոգիա",
+        "Տվյալների գաղտնիության ապահովում",
+        "Ժամանակին և ճշգրիտ սպասարկում"
       ]
     },
     "payroll": {
-      "title": "[HY] Payroll Management",
-      "shortDescription": "[HY] Complete payroll accounting services ensuring precise calculations, legal compliance, and full reporting.",
-      "description": "[HY] Accurate and timely payroll management is one of the most critical responsibilities of any organization.",
+      "title": "Աշխատավարձի Կառավարում",
+      "shortDescription": "Ամբողջական աշխատավարձի հաշվապահական ծառայություններ՝ ապահովելով ճշգրիտ հաշվարկներ, օրենսդրական համապատասխանություն և լիարժեք հաշվետվություն։",
+      "description": "Աշխատավարձի ճիշտ և ժամանակին կառավարումը յուրաքանչյուր կազմակերպության ամենակարևոր պարտականություններից մեկն է։",
       "features": [
-        "[HY] Payroll calculation based on employment contracts",
-        "[HY] Calculation and accounting of personal income tax",
-        "[HY] Calculation of social contributions and mandatory deductions",
-        "[HY] Calculation of vacation pay and sick leave benefits",
-        "[HY] Accounting for allowances, bonuses, and compensations",
-        "[HY] Preparation of payroll statements",
-        "[HY] Preparation of payroll-related reports",
-        "[HY] Advisory services on payroll calculation matters"
+        "Աշխատավարձի հաշվարկ՝ ըստ աշխատանքային պայմանագրերի",
+        "Եկամտային հարկի հաշվարկ և հաշվառում",
+        "Սոցիալական վճարների և պարտադիր պահումների հաշվարկ",
+        "Արձակուրդայինների և հիվանդապահիկների հաշվարկ",
+        "Հավելավճարների, պարգևավճարների և փոխհատուցումների հաշվառում",
+        "Աշխատավարձի վճարման ցուցակների կազմում",
+        "Աշխատավարձին առնչվող հաշվետվությունների պատրաստում",
+        "Խորհրդատվություն աշխատավարձի հաշվարկի հարցերով"
       ],
       "whyImportant": [
-        "[HY] Avoid tax penalties and fines",
-        "[HY] Prevent employee dissatisfaction",
-        "[HY] Eliminate accounting discrepancies",
-        "[HY] Ensure accurate and timely payments",
-        "[HY] Maintain trust with regulatory authorities"
+        "Կանխել հարկային տույժերը և տուգանքները",
+        "Կանխել աշխատակիցների դժգոհությունը",
+        "Բացառել հաշվապահական անհամապատասխանությունները",
+        "Ապահովել ճշգրիտ և ժամանակին վճարումները",
+        "Պահպանել վստահությունը վերահսկող մարմինների հետ"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Organizations with a large workforce",
-        "[HY] Start-up companies",
-        "[HY] Businesses seeking to outsource payroll processing"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ աշխատակազմ ունեցող կազմակերպություններ",
+        "Նորաստեղծ ընկերություններ",
+        "Բիզնեսներ, որոնք ցանկանում են աութսորս անել աշխատավարձի հաշվարկը"
       ],
       "advantages": [
-        "[HY] Experienced accounting professionals",
-        "[HY] Individual approach to each client",
-        "[HY] Full compliance with labor and tax legislation",
-        "[HY] Data confidentiality and security",
-        "[HY] Timely and accurate service"
+        "Փորձառու հաշվապահներ",
+        "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
+        "Համապատասխանություն ՀՀ աշխատանքային և հարկային օրենսդրությանը",
+        "Տվյալների գաղտնիություն և անվտանգություն",
+        "Ժամանակին և ճշգրիտ սպասարկում"
       ]
     },
     "financial": {
-      "title": "[HY] Financial Advisory",
-      "shortDescription": "[HY] Strategic financial advice to help your business reduce risks, optimize costs, and make well-grounded decisions.",
-      "description": "[HY] Financial advisory is the cornerstone of your business's stable and efficient development.",
+      "title": "Ֆինանսական Խորհրդատվություն",
+      "shortDescription": "Ռազմավարական ֆինանսական խորհուրդներ՝ օգնելու ձեր բիզնեսին նվազեցնել ռիսկերը, օպտիմալացնել ծախսերը և կայացնել հիմնավոր որոշումներ։",
+      "description": "Ֆինանսական խորհրդատվությունը ձեր բիզնեսի կայուն և արդյունավետ զարգացման հիմքն է։",
       "features": [
-        "[HY] Analysis of financial statements",
-        "[HY] Assessment of the company's financial condition",
-        "[HY] Revenue and expense planning",
-        "[HY] Budgeting and financial forecasting",
-        "[HY] Advisory on tax burden optimization",
-        "[HY] Effective cash flow management",
-        "[HY] Financial analysis of investment projects",
-        "[HY] Assessment and mitigation of financial risks"
+        "Ֆինանսական հաշվետվությունների վերլուծություն",
+        "Կազմակերպության ֆինանսական վիճակի գնահատում",
+        "Եկամուտների և ծախսերի պլանավորում",
+        "Բյուջետավորում և ֆինանսական կանխատեսում",
+        "Խորհրդատվություն հարկային բեռի օպտիմալացման վերաբերյալ",
+        "Դրամական հոսքերի արդյունավետ կառավարում",
+        "Ներդրումային ծրագրերի ֆինանսական վերլուծություն",
+        "Ֆինանսական ռիսկերի գնահատում և նվազեցում"
       ],
       "whyImportant": [
-        "[HY] Avoid inefficient financial decisions",
-        "[HY] Increase profitability",
-        "[HY] Control expenses effectively",
-        "[HY] Ensure financial transparency",
-        "[HY] Stay prepared for market and legislative changes"
+        "Խուսափել անարդյունավետ ֆինանսական որոշումներից",
+        "Բարձրացնել շահութաբերությունը",
+        "Վերահսկել ծախսերը",
+        "Ապահովել ֆինանսական թափանցիկություն",
+        "Պատրաստ լինել շուկայի և օրենսդրության փոփոխություններին"
       ],
       "targetAudience": [
-        "[HY] Start-up businesses",
-        "[HY] Small and medium-sized enterprises",
-        "[HY] Rapidly growing companies",
-        "[HY] Organizations seeking to improve financial management"
+        "Նորաստեղծ բիզնեսներ",
+        "Փոքր և միջին ձեռնարկություններ",
+        "Արագ զարգացող ընկերություններ",
+        "Կազմակերպություններ, որոնք ցանկանում են բարելավել ֆինանսական կառավարումը"
       ],
       "advantages": [
-        "[HY] Experienced accountants and financial professionals",
-        "[HY] Individual approach to each client",
-        "[HY] Advisory within Armenian legal framework",
-        "[HY] Practical and actionable recommendations",
-        "[HY] Continuous support and guidance"
+        "Փորձառու հաշվապահներ և ֆինանսական մասնագետներ",
+        "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
+        "Խորհրդատվություն՝ ՀՀ գործող օրենսդրության շրջանակում",
+        "Գործնական և կիրառելի առաջարկներ",
+        "Շարունակական աջակցություն և ուղեկցում"
       ]
     },
     "audit": {
-      "title": "[HY] Internal Audit",
-      "shortDescription": "[HY] Professional internal audit services providing objective assessments and practical recommendations.",
-      "description": "[HY] Internal audit is a key tool for controlling an organization's financial and operational processes.",
+      "title": "Ներքին Աուդիտ",
+      "shortDescription": "Մասնագիտական ներքին աուդիտի ծառայություններ՝ տրամադրելով օբյեկտիվ գնահատում և գործնական առաջարկություններ։",
+      "description": "Ներքին աուդիտը կազմակերպության ֆինանսական և գործառնական գործընթացների վերահսկման կարևոր գործիք է։",
       "features": [
-        "[HY] Review of the accounting system",
-        "[HY] Assessment of compliance of financial statements",
-        "[HY] Identification of tax risks",
-        "[HY] Analysis of internal control mechanisms",
-        "[HY] Review of document management processes",
-        "[HY] Verification of payroll calculations and payments",
-        "[HY] Assessment of financial and operational risks",
-        "[HY] Preparation of an audit report with recommendations"
+        "Հաշվապահական հաշվառման համակարգի ստուգում",
+        "Ֆինանսական հաշվետվությունների համապատասխանության գնահատում",
+        "Հարկային ռիսկերի բացահայտում",
+        "Ներքին վերահսկողության մեխանիզմների վերլուծություն",
+        "Փաստաթղթաշրջանառության ստուգում",
+        "Աշխատավարձի հաշվարկների և վճարումների ստուգում",
+        "Ֆինանսական և գործառնական ռիսկերի գնահատում",
+        "Աուդիտի հաշվետվության կազմում՝ առաջարկություններով"
       ],
       "whyImportant": [
-        "[HY] Detect accounting errors in a timely manner",
-        "[HY] Reduce tax and financial risks",
-        "[HY] Improve the financial management system",
-        "[HY] Enhance financial transparency",
-        "[HY] Be prepared for external inspections and audits"
+        "Ժամանակին հայտնաբերել հաշվապահական սխալները",
+        "Նվազեցնել հարկային և ֆինանսական ռիսկերը",
+        "Բարելավել ֆինանսական կառավարման համակարգը",
+        "Բարձրացնել ֆինանսական թափանցիկությունը",
+        "Պատրաստ լինել արտաքին ստուգումներին և աուդիտներին"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Large organizations",
-        "[HY] Start-up companies",
-        "[HY] Organizations preparing for tax audits or external audits"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ կազմակերպություններ",
+        "Նորաստեղծ ընկերություններ",
+        "Կազմակերպություններ, որոնք պատրաստվում են հարկային կամ արտաքին աուդիտի"
       ],
       "advantages": [
-        "[HY] Experienced auditors and accountants",
-        "[HY] Objective and independent approach",
-        "[HY] Full compliance with Armenian legislation",
-        "[HY] Practical and actionable recommendations",
-        "[HY] Complete confidentiality of data"
+        "Փորձառու աուդիտորներ և հաշվապահներ",
+        "Օբյեկտիվ և անկախ մոտեցում",
+        "Համապատասխանություն ՀՀ օրենսդրությանը",
+        "Գործնական և կիրառելի առաջարկներ",
+        "Տվյալների լիարժեք գաղտնիություն"
       ]
     },
     "review": {
-      "title": "[HY] Accounting Review and Correction",
-      "shortDescription": "[HY] Professional accounting review ensuring financial accuracy, legal compliance, and safe business development.",
-      "description": "[HY] Accounting review and correction is a crucial step in ensuring financial accuracy, legal compliance, and the safe development of a business.",
+      "title": "Հաշվապահության Ստուգում և Ուղղում",
+      "shortDescription": "Մասնագիտական հաշվապահության ստուգում՝ ապահովելով ֆինանսական ճշգրտություն, օրենսդրական համապատասխանություն և բիզնեսի անվտանգ զարգացում։",
+      "description": "Հաշվապահության ստուգումը և ուղղումը կարևոր քայլ է կազմակերպության ֆինանսական ճշգրտությունը, օրենսդրական համապատասխանությունը և բիզնեսի անվտանգ զարգացումը ապահովելու համար։",
       "features": [
-        "[HY] Review of accounting documentation",
-        "[HY] Assessment of the accuracy of accounting records",
-        "[HY] Review of tax reports and filings",
-        "[HY] Identification of errors and inconsistencies",
-        "[HY] Correction of accounting data",
-        "[HY] Recovery of missing or incomplete records",
-        "[HY] Assessment of tax risks",
-        "[HY] Advisory support for proper accounting going forward"
+        "Հաշվապահական հաշվառման փաստաթղթերի ստուգում",
+        "Հաշվապահական գրառումների ճշգրտության գնահատում",
+        "Հարկային հաշվետվությունների ստուգում",
+        "Սխալների և անհամապատասխանությունների բացահայտում",
+        "Հաշվապահական տվյալների ուղղում",
+        "Բացթողումների վերականգնում",
+        "Հարկային ռիսկերի գնահատում",
+        "Խորհրդատվություն հետագա ճիշտ հաշվառման համար"
       ],
       "whyImportant": [
-        "[HY] Prevent tax penalties and fines",
-        "[HY] Ensure accuracy of financial reports",
-        "[HY] Improve financial control",
-        "[HY] Be prepared for tax and external audits",
-        "[HY] Restore accounting discipline"
+        "Կանխել հարկային տույժերն ու տուգանքները",
+        "Ապահովել հաշվետվությունների ճշգրտություն",
+        "Բարելավել ֆինանսական վերահսկողությունը",
+        "Պատրաստ լինել հարկային և արտաքին ստուգումներին",
+        "Վերականգնել հաշվապահական կարգապահությունը"
       ],
       "targetAudience": [
-        "[HY] Organizations with accumulated accounting issues",
-        "[HY] Companies with newly appointed management",
-        "[HY] Businesses that have changed their accountant",
-        "[HY] Organizations preparing for a tax audit",
-        "[HY] Start-up companies requiring initial accounting setup"
+        "Կազմակերպություններ, որոնք ունեն կուտակված հաշվապահական խնդիրներ",
+        "Նոր ղեկավարություն ունեցող ընկերություններ",
+        "Բիզնեսներ, որոնք փոխել են հաշվապահին",
+        "Կազմակերպություններ, որոնք պատրաստվում են հարկային ստուգման",
+        "Նորաստեղծ ընկերություններ՝ նախնական կարգավորման համար"
       ],
       "advantages": [
-        "[HY] Experienced accountants and professionals",
-        "[HY] Individual approach to each client",
-        "[HY] Full compliance with tax and accounting legislation",
-        "[HY] Accurate and systematic work",
-        "[HY] Guaranteed data confidentiality"
+        "Փորձառու հաշվապահներ և մասնագետներ",
+        "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
+        "Համապատասխանություն ՀՀ հարկային և հաշվապահական օրենսդրությանը",
+        "Ճշգրիտ և համակարգված աշխատանք",
+        "Տվյալների գաղտնիության ապահովում"
       ]
     },
     "reporting": {
-      "title": "[HY] Financial Reporting Preparation",
-      "shortDescription": "[HY] Professional financial reporting services ensuring accuracy, transparency, and regulatory compliance.",
-      "description": "[HY] Accurate and timely preparation of financial statements is the foundation of transparency and reliability of an organization's financial position.",
+      "title": "Ֆինանսական Հաշվետվությունների Պատրաստում",
+      "shortDescription": "Մասնագիտական ֆինանսական հաշվետվությունների ծառայություններ՝ ապահովելով ճշգրտություն, թափանցիկություն և կարգավորողների պահանջներին համապատասխանություն։",
+      "description": "Ֆինանսական հաշվետվությունների ճիշտ և ժամանակին պատրաստումը կազմակերպության ֆինանսական վիճակի թափանցիկության և վստահելիության հիմքն է։",
       "features": [
-        "[HY] Structuring and summarizing accounting data",
-        "[HY] Preparation of the balance sheet",
-        "[HY] Preparation of profit and loss statements",
-        "[HY] Preparation of cash flow statements",
-        "[HY] Preparation of statements of changes in equity",
-        "[HY] Preparation of interim and annual financial statements",
-        "[HY] Verification of the accuracy of financial reports",
-        "[HY] Advisory support on the use and interpretation of financial reports"
+        "Հաշվապահական տվյալների համակարգում և ամփոփում",
+        "Հաշվեկշռի պատրաստում",
+        "Շահույթի և վնասների հաշվետվության կազմում",
+        "Դրամական հոսքերի հաշվետվության պատրաստում",
+        "Սեփական կապիտալի փոփոխությունների հաշվետվություն",
+        "Միջանկյալ և տարեկան ֆինանսական հաշվետվությունների պատրաստում",
+        "Հաշվետվությունների ճշգրտության ստուգում",
+        "Խորհրդատվություն հաշվետվությունների օգտագործման վերաբերյալ"
       ],
       "whyImportant": [
-        "[HY] Obtain a true picture of the organization's financial position",
-        "[HY] Ensure accuracy and reliability of financial statements",
-        "[HY] Perform effective financial analysis",
-        "[HY] Be prepared for tax, banking, and external audits",
-        "[HY] Enhance credibility with partners and investors"
+        "Ստանալ կազմակերպության իրական ֆինանսական պատկեր",
+        "Ապահովել հաշվետվությունների ճշգրտություն և վստահելիություն",
+        "Կատարել արդյունավետ ֆինանսական վերլուծություն",
+        "Պատրաստ լինել հարկային, բանկային և արտաքին ստուգումներին",
+        "Բարձրացնել հեղինակությունը գործընկերների և ներդրողների մոտ"
       ],
       "targetAudience": [
-        "[HY] Small and medium-sized businesses",
-        "[HY] Large organizations",
-        "[HY] Start-up companies",
-        "[HY] Organizations required to submit financial statements to banks or investors"
+        "Փոքր և միջին բիզնեսներ",
+        "Մեծ կազմակերպություններ",
+        "Նորաստեղծ ընկերություններ",
+        "Կազմակերպություններ, որոնք հաշվետվություններ են ներկայացնում բանկերին կամ ներդրողներին"
       ],
       "advantages": [
-        "[HY] Experienced accountants and financial professionals",
-        "[HY] Full compliance with accounting and tax legislation",
-        "[HY] Individual approach to each client",
-        "[HY] Timely and accurate service",
-        "[HY] Complete data confidentiality"
+        "Փորձառու հաշվապահներ և ֆինանսական մասնագետներ",
+        "Համապատասխանություն ՀՀ հաշվապահական և հարկային օրենսդրությանը",
+        "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
+        "Ժամանակին և ճշգրիտ սպասարկում",
+        "Տվյալների լիարժեք գաղտնիություն"
       ]
     }
   },
   "calculators": {
-    "badge": "[HY] Financial Tools",
-    "title": "[HY] Tax",
-    "titleHighlight": "[HY] Calculators",
-    "subtitle": "[HY] Quick and accurate calculations for your financial planning based on Armenian tax legislation",
-    "selectCalculator": "[HY] Select Calculator",
-    "soon": "[HY] Soon",
-    "comingSoon": "[HY] Coming Soon",
-    "comingSoonDesc": "[HY] This calculator is currently under development. Please check back later.",
-    "allCalculators": "[HY] All Calculators",
-    "allCalculatorsDesc": "[HY] Explore our full range of financial calculators",
-    "useNow": "[HY] Use Now",
-    "disclaimerTitle": "[HY] Important Notice",
-    "disclaimerText": "[HY] These calculators provide estimates based on current Armenian tax legislation. Results are for informational purposes only and should not be considered as professional tax advice.",
+    "badge": "Ֆինանսական Գործիքներ",
+    "title": "Հարկային",
+    "titleHighlight": "Հաշվիչներ",
+    "subtitle": "Արագ և ճշգրիտ հաշվարկներ ձեր ֆինանսական պլանավորման համար՝ հիմնված ՀՀ հարկային օրենսդրության վրա",
+    "selectCalculator": "Ընտրել Հաշվիչ",
+    "soon": "Շուտով",
+    "comingSoon": "Շուտով",
+    "comingSoonDesc": "Այս հաշվիչը ներկայումս մշակման փուլում է։ Խնդրում ենք կրկին ստուգել ավելի ուշ։",
+    "allCalculators": "Բոլոր Հաշվիչները",
+    "allCalculatorsDesc": "Ուսումնասիրեք մեր ֆինանսական հաշվիչների ամբողջ տեսականին",
+    "useNow": "Օգտագործել Հիմա",
+    "disclaimerTitle": "Կարևոր Ծանուցում",
+    "disclaimerText": "Այս հաշվիչները տրամադրում են գնահատականներ՝ հիմնված ՀՀ ընթացիկ հարկային օրենսդրության վրա։ Արդյունքները միայն տեղեկատվական նպատակների համար են և չպետք է դիտարկվեն որպես մասնագիտական հարկային խորհուրդ։",
     "types": {
-      "salary": "[HY] Salary Tax",
-      "salaryDesc": "[HY] Calculate net salary from gross with all Armenian tax deductions",
-      "vat": "[HY] VAT Calculator",
-      "vatDesc": "[HY] Calculate VAT for your business transactions",
-      "profit": "[HY] Profit Tax",
-      "profitDesc": "[HY] Calculate corporate profit tax obligations",
-      "dividend": "[HY] Dividend Tax",
-      "dividendDesc": "[HY] Calculate dividend distribution taxes",
-      "pension": "[HY] Pension Calculator",
-      "pensionDesc": "[HY] Calculate pension contributions and benefits"
+      "salary": "Աշխատավարձի Հարկ",
+      "salaryDesc": "Հաշվարկել զուտ աշխատավարձը համախառն աշխատավարձից՝ ՀՀ բոլոր հարկային պահումներով",
+      "vat": "ԱԱՀ Հաշվիչ",
+      "vatDesc": "Հաշվարկել ավելացված արժեքի հարկը ձեր բիզնես գործարքների համար",
+      "profit": "Շահույթի Հարկ",
+      "profitDesc": "Հաշվարկել կորպորատիվ շահույթի հարկային պարտավորությունները",
+      "dividend": "Շահաբաժնի Հարկ",
+      "dividendDesc": "Հաշվարկել շահաբաժինների բաշխման հարկերը",
+      "pension": "Կենսաթոշակի Հաշվիչ",
+      "pensionDesc": "Հաշվարկել կենսաթոշակային վճարներն ու նպաստները"
     },
     "salary": {
-      "title": "[HY] Salary Tax Calculator",
-      "subtitle": "[HY] Calculate your net salary based on Armenian tax law",
-      "grossSalary": "[HY] Gross Salary",
-      "birthYear": "[HY] Birth Year",
-      "enterAmount": "[HY] Enter gross salary amount",
-      "enterYear": "[HY] Enter your birth year",
-      "birthYearNote": "[HY] Birth year affects social payment and insurance calculations",
-      "totalDeductions": "[HY] Total Deductions",
-      "netSalary": "[HY] Net Salary",
-      "incomeTax": "[HY] Income Tax",
-      "incomeTaxDesc": "[HY] 20% flat rate on gross salary",
-      "socialPayment": "[HY] Social Payment",
-      "socialPaymentDesc": "[HY] Based on birth year and salary brackets",
-      "stampDuty": "[HY] Stamp Duty",
-      "stampDutyDesc": "[HY] Fixed amount based on salary brackets",
-      "insuranceFee": "[HY] Insurance Fee",
-      "insuranceFeeDesc": "[HY] Based on birth year and salary brackets",
-      "showBreakdown": "[HY] Show Detailed Breakdown",
-      "hideBreakdown": "[HY] Hide Breakdown",
-      "deductionBreakdown": "[HY] Deduction Breakdown",
-      "effectiveRate": "[HY] Effective Tax Rate",
-      "reset": "[HY] Reset Calculator",
-      "disclaimer": "[HY] Calculation Notice",
-      "disclaimerText": "[HY] This calculator uses current Armenian tax rates. Results are estimates."
+      "title": "Աշխատավարձի Հարկային Հաշվիչ",
+      "subtitle": "Հաշվարկել ձեր զուտ աշխատավարձը՝ հիմնված ՀՀ հարկային օրենսդրության վրա",
+      "grossSalary": "Համախառն Աշխատավարձ",
+      "birthYear": "Ծննդյան Տարի",
+      "enterAmount": "Մուտքագրեք համախառն աշխատավարձի չափը",
+      "enterYear": "Մուտքագրեք ձեր ծննդյան տարին",
+      "birthYearNote": "Ծննդյան տարին ազդում է սոցիալական վճարի և ապահովագրական վճարի հաշվարկի վրա",
+      "totalDeductions": "Ընդհանուր Պահումներ",
+      "netSalary": "Զուտ Աշխատավարձ",
+      "incomeTax": "Եկամտահարկ",
+      "incomeTaxDesc": "20% միասնական դրույքաչափ համախառն աշխատավարձից",
+      "socialPayment": "Սոցիալական Վճար",
+      "socialPaymentDesc": "Հաշվարկվում է ծննդյան տարվա և աշխատավարձի չափի հիման վրա",
+      "stampDuty": "Նոտարական Տուրք",
+      "stampDutyDesc": "Ֆիքսված չափ՝ կախված աշխատավարձի չափից",
+      "insuranceFee": "Ապահովագրական Վճար",
+      "insuranceFeeDesc": "Հաշվարկվում է ծննդյան տարվա և աշխատավարձի չափի հիման վրա",
+      "showBreakdown": "Ցույց Տալ Մանրամասն Բաշխումը",
+      "hideBreakdown": "Թաքցնել Բաշխումը",
+      "deductionBreakdown": "Պահումների Բաշխում",
+      "effectiveRate": "Արդյունավետ Հարկի Դրույքաչափ",
+      "reset": "Զրոյացնել Հաշվիչը",
+      "disclaimer": "Հաշվարկի Ծանուցում",
+      "disclaimerText": "Այս հաշվիչը օգտագործում է ՀՀ ընթացիկ հարկային դրույքաչափերը։ Արդյունքները գնահատական են։"
     },
     "tax": {
-      "title": "[HY] Income Tax Calculator",
-      "description": "[HY] Calculate your personal income tax in Armenia",
-      "income": "[HY] Monthly Income (AMD)",
-      "result": "[HY] Tax Amount",
-      "netIncome": "[HY] Net Income",
-      "effectiveRate": "[HY] Effective Rate"
+      "title": "Եկամտահարկի Հաշվիչ",
+      "description": "Հաշվարկել անհատական եկամտահարկը Հայաստանում",
+      "income": "Ամսական Եկամուտ (ՀՀ դրամ)",
+      "result": "Հարկի Չափ",
+      "netIncome": "Զուտ Եկամուտ",
+      "effectiveRate": "Արդյունավետ Դրույքաչափ"
     },
     "vat": {
-      "title": "[HY] VAT Calculator",
-      "description": "[HY] Calculate VAT for your transactions",
-      "amount": "[HY] Amount (AMD)",
-      "includesVat": "[HY] Amount includes VAT",
-      "vatAmount": "[HY] VAT Amount (20%)",
-      "netAmount": "[HY] Net Amount",
-      "grossAmount": "[HY] Gross Amount"
+      "title": "ԱԱՀ Հաշվիչ",
+      "description": "Հաշվարկել ավելացված արժեքի հարկը ձեր գործարքների համար",
+      "amount": "Գումար (ՀՀ դրամ)",
+      "includesVat": "Գումարը ներառում է ԱԱՀ",
+      "vatAmount": "ԱԱՀ Գումար (20%)",
+      "netAmount": "Զուտ Գումար",
+      "grossAmount": "Համախառն Գումար"
     },
     "profit": {
-      "title": "[HY] Profit Margin Calculator",
-      "description": "[HY] Calculate your profit margins",
-      "revenue": "[HY] Revenue (AMD)",
-      "cost": "[HY] Cost (AMD)",
-      "profit": "[HY] Profit",
-      "margin": "[HY] Profit Margin"
+      "title": "Շահույթի Մարժայի Հաշվիչ",
+      "description": "Հաշվարկել շահույթի մարժան",
+      "revenue": "Եկամուտ (ՀՀ դրամ)",
+      "cost": "Ծախս (ՀՀ դրամ)",
+      "profit": "Շահույթ",
+      "margin": "Շահույթի Մարժա"
     },
     "currency": {
-      "title": "[HY] Currency Converter",
-      "description": "[HY] Convert between major currencies",
-      "amount": "[HY] Amount",
-      "from": "[HY] From",
-      "to": "[HY] To",
-      "result": "[HY] Result",
-      "rateInfo": "[HY] Exchange rates are approximate"
+      "title": "Արժույթի Փոխարկիչ",
+      "description": "Փոխարկել հիմնական արժույթների միջև",
+      "amount": "Գումար",
+      "from": "Որտեղից",
+      "to": "Որտեղ",
+      "result": "Արդյունք",
+      "rateInfo": "Փոխարժեքները մոտավոր են"
     },
-    "calculate": "[HY] Calculate",
-    "reset": "[HY] Reset"
+    "calculate": "Հաշվարկել",
+    "reset": "Զրոյացնել"
   },
   "blog": {
-    "title": "[HY] Latest Updates",
-    "subtitle": "[HY] Stay informed about tax laws, regulations, and financial news",
-    "readMore": "[HY] Read More",
+    "title": "Վերջին Թարմացումները",
+    "subtitle": "Տեղեկացված մնացեք հարկային օրենքների, կանոնակարգերի և ֆինանսական նորությունների մասին",
+    "readMore": "Կարդալ Ավելին",
     "categories": {
-      "all": "[HY] All",
-      "tax": "[HY] Tax Laws",
-      "business": "[HY] Business",
-      "regulations": "[HY] Regulations"
+      "all": "Բոլորը",
+      "tax": "Հարկային Օրենքներ",
+      "business": "Բիզնես",
+      "regulations": "Կանոնակարգեր"
     },
-    "readTime": "[HY] min read",
+    "readTime": "րոպե կարդալ",
     "posts": {
       "1": {
-        "title": "[HY] New Tax Amendments for 2025",
-        "excerpt": "[HY] Important changes to Armenian tax code that affect businesses and individuals.",
-        "category": "[HY] Tax Laws",
-        "date": "[HY] November 25, 2025"
+        "title": "Նոր Հարկային Փոփոխություններ 2025-ի Համար",
+        "excerpt": "Կարևոր փոփոխություններ ՀՀ հարկային օրենսգրքում, որոնք ազդում են բիզնեսների և անհատների վրա։",
+        "category": "Հարկային Օրենքներ",
+        "date": "Նոյեմբեր 25, 2025"
       },
       "2": {
-        "title": "[HY] VAT Registration Requirements Updated",
-        "excerpt": "[HY] The threshold for mandatory VAT registration has been revised.",
-        "category": "[HY] Regulations",
-        "date": "[HY] November 20, 2025"
+        "title": "Թարմացված ԱԱՀ Գրանցման Պահանջներ",
+        "excerpt": "Պարտադիր ԱԱՀ գրանցման շեմը վերանայվել է։",
+        "category": "Կանոնակարգեր",
+        "date": "Նոյեմբեր 20, 2025"
       },
       "3": {
-        "title": "[HY] Year-End Tax Planning Strategies",
-        "excerpt": "[HY] Essential strategies to optimize your tax position before the year ends.",
-        "category": "[HY] Tax Laws",
-        "date": "[HY] November 15, 2025"
+        "title": "Տարեվերջյան Հարկային Պլանավորման Ռազմավարություններ",
+        "excerpt": "Կարևոր ռազմավարություններ՝ օպտիմալացնելու ձեր հարկային դիրքը տարեվերջին։",
+        "category": "Հարկային Օրենքներ",
+        "date": "Նոյեմբեր 15, 2025"
       }
     }
   },
   "about": {
-    "title": "[HY] Why Choose INEA",
-    "subtitle": "[HY] Your trusted partner for all financial matters in Armenia",
+    "title": "Ինչու Ընտրել INEA-ն",
+    "subtitle": "Ձեր վստահելի գործընկերը բոլոր ֆինանսական հարցերում Հայաստանում",
     "features": {
       "expertise": {
-        "title": "[HY] Expert Team",
-        "description": "[HY] Certified accountants with deep knowledge of Armenian tax law and international standards."
+        "title": "Փորձագետների Թիմ",
+        "description": "Վավերացված հաշվապահներ՝ խորը գիտելիքներով ՀՀ հարկային օրենսդրության և միջազգային ստանդարտների մեջ։"
       },
       "technology": {
-        "title": "[HY] Modern Technology",
-        "description": "[HY] We use the latest accounting software and secure cloud solutions for efficiency."
+        "title": "Ժամանակակից Տեխնոլոգիաներ",
+        "description": "Մենք օգտագործում ենք վերջին հաշվապահական ծրագրակազմերը և անվտանգ ամպային լուծումները արդյունավետության համար։"
       },
       "support": {
-        "title": "[HY] 24/7 Support",
-        "description": "[HY] Questions don't wait for business hours. Reach us anytime you need assistance."
+        "title": "24/7 Աջակցություն",
+        "description": "Հարցերը չեն սպասում աշխատանքային ժամերին։ Կապվեք մեզ հետ ցանկացած ժամանակ, երբ օգնության կարիք ունեք։"
       },
       "pricing": {
-        "title": "[HY] Transparent Pricing",
-        "description": "[HY] No hidden fees. Clear, upfront pricing so you always know what to expect."
+        "title": "Թափանցիկ Գնագոյացում",
+        "description": "Առանց թաքնված վճարների։ Հստակ և նախնական գներ, որպեսզի միշտ իմանաք ինչ սպասել։"
       }
     },
     "stats": {
-      "clients": "[HY] Clients Served",
-      "years": "[HY] Years Experience",
-      "saved": "[HY] Million AMD Saved",
-      "satisfaction": "[HY] Satisfaction Rate"
+      "clients": "Սպասարկված Հաճախորդներ",
+      "years": "Տարվա Փորձ",
+      "saved": "Միլիոն ՀՀ Դրամ Խնայված",
+      "satisfaction": "Բավարարվածության Մակարդակ"
     }
   },
   "aboutPage": {
-    "badge": "Mer Masin",
-    "heroTitle": "Dzer Vstahelի",
-    "heroTitleHighlight": "Finansakan Gortsyntser",
-    "heroSubtitle": "INEA SPY-n hashvapahakan tsarayutyunner matsutsox ynkerutyun e, vor himnadvats e kazmakerputyunnerin yev anhat dzernarkateternerin bardzrakorak masnagitakan ajaktsutyan transdraelu npatakov.",
-    "getStarted": "Sksel",
-    "exploreServices": "Tsarayutyunner",
-    "companyTitle": "Mer Masin",
-    "companyDescription": "Mer gortsunyutyan himqum ynkats e ayn hamozmuny, vor chisht yev hamakarkvats hashvapahakan hashvarkumy handisanum e voch miyn partadir gortsntak, ayl biznesin kayun zargatsumi, finansakan verahskoghutyani yev ardyunaver karavarmi karev gortsiqu.",
-    "companyBelief": "Menq hamagortsakum enq gortsunerutyun tarber volortnery ashkhatox ynkerutyunneri het, arajarkelov anhatak motetsum yev lutumner yurakanchyur hatchoghati biznesi arandnahahukukyunnerinhamapataskhan.",
-    "missionBadge": "Mer Npataky",
-    "missionTitle": "Mer Araqelutyun",
-    "missionDescription": "Mer araqelutyunn e ajaksel biznesnerin, stextselu vstahelի, tapantsik yev verahskeli hashvapahakan hamakarg, vor knpasti finansakan kayunutyanun, harkain riskerinվazetsmann yev karavarmi chisht voroshumneri kayatsmany.",
-    "missionPartnership": "Menq dztum enq liner mer hachaxordneri vstahelի gortsentser, apahovelov sharунakakan masnagitakan ajaktsutyan yev yerkarajhamket hamagortsaktsutyun.",
-    "clientsServed": "Spasarkats Hachaxordner",
-    "valuesBadge": "Mer Skzbunqner",
-    "valuesTitle": "Mer Arjeqner",
-    "valuesSubtitle": "Skzbunqner, voronq ghekavare mezer gortsunerutyuny",
+    "badge": "Մեր Մասին",
+    "heroTitle": "Ձեր Վստահելի",
+    "heroTitleHighlight": "Ֆինանսական Գործընկեր",
+    "heroSubtitle": "INEA ՍՊԸ-ն հաշվապահական ծառայություններ մատուցող ընկերություն է, որ հիմնադրված է կազմակերպություններին և անհատ ձեռնարկատերերին բարձրակարգ մասնագիտական աջակցություն տրամադրելու նպատակով։",
+    "getStarted": "Սկսել",
+    "exploreServices": "Ծառայություններ",
+    "companyTitle": "Մեր Մասին",
+    "companyDescription": "Մեր գործունեության հիմքում ընկած է այն համոզումը, որ ճիշտ և համակարգված հաշվապահական հաշվառումը հանդիսանում է ոչ միայն պարտադիր գործընթաց, այլ բիզնեսին կայուն զարգացումի, ֆինանսական վերահսկողության և արդյունավետ կառավարման կարևոր գործիք։",
+    "companyBelief": "Մենք համագործակցում ենք գործունեություն տարբեր ոլորտներում աշխատող ընկերությունների հետ՝ առաջարկելով անհատական մոտեցում և լուծումներ յուրաքանչյուր հաճախորդի բիզնեսի առանձնահատկություններին համապատասխան։",
+    "missionBadge": "Մեր Նպատակը",
+    "missionTitle": "Մեր Առաքելությունը",
+    "missionDescription": "Մեր առաքելությունն է աջակցել բիզնեսներին՝ ստեղծելու վստահելի, թափանցիկ և վերահսկելի հաշվապահական համակարգ, որ կնպաստի ֆինանսական կայունությանը, հարկային ռիսկերի նվազեցմանը և կառավարման ճիշտ որոշումների կայացմանը։",
+    "missionPartnership": "Մենք ձգտում ենք լինել մեր հաճախորդների վստահելի գործընկեր՝ ապահովելով շարունակական մասնագիտական աջակցություն և երկարաժամկետ համագործակցություն։",
+    "clientsServed": "Սպասարկած Հաճախորդներ",
+    "valuesBadge": "Մեր Սկզբունքները",
+    "valuesTitle": "Մեր Արժեքները",
+    "valuesSubtitle": "Սկզբունքները, որոնք ղեկավարում են մեր գործունեությունը",
     "values": {
       "professionalism": {
-        "title": "Profesionalizm",
-        "description": "Menq gordum enq bardzr masnagitakan chapanisherov, himnvelov giteliqi, pordzi yev pataskhanatvutyun vra."
+        "title": "Պրոֆեսիոնալիզմ",
+        "description": "Մենք գործում ենք բարձր մասնագիտական չափանիշներով՝ հիմնվելով գիտելիքի, փորձի և պատասխանատվության վրա։"
       },
       "accuracy": {
-        "title": "Chshrtutyun yev Tapantsikutyun",
-        "description": "Yurakanchyur hashvarkum irakanastvum e manrakrkit yev verahskeli, batsarelov anorosutyunnery yev riskery."
+        "title": "Ճշգրտություն և Թափանցիկություն",
+        "description": "Յուրաքանչյուր հաշվառում իրականացվում է մանրակրկիտ և վերահսկելի՝ բացառելով անօրինականությունները և ռիսկերը։"
       },
       "responsibility": {
-        "title": "Pataskhanatvutyun",
-        "description": "Menq liarzhek pataskhanatvutyun enq krum mer katarvats ashkhatanqi hamar, papahelով zhamketner yev paymanavorvatsнутунner."
+        "title": "Պատասխանատվություն",
+        "description": "Մենք լիարժեք պատասխանատվություն ենք կրում մեր կատարած աշխատանքի համար՝ պահպանելով ժամկետներ և պայմանավորվածությունները։"
       },
       "reliability": {
-        "title": "Vstahelu",
-        "description": "Mer ashkhantanqy karutsvats e pokhdardzavetutyan yev etikakan skzbunqneri vra."
+        "title": "Վստահելիություն",
+        "description": "Մեր աշխատանքը կառուցված է փոխադարձ վստահության և էթիկական սկզբունքների վրա։"
       }
     },
-    "approachBadge": "Inchpes Enq Ashkatum",
-    "approachTitle": "Mer Motetsumy",
-    "approachDescription": "INEA SPY-n yurakanchyur hachakhordի het ashkhatum e anhatak motetumov, usumnasirelov gortsunerutyun volorty, tsavalerny yev arandnahahukukyunnery. Menq dzevavorumenq hashvapahakan qaghaqakanutyun yev hashvarqman hamakarg, vor lavaгуйns hamapataskханum e tvyal biznesin kariqnerinե.",
-    "approachModern": "Mer masnagetnery mshtapes hetevumenq orensdrati popokhutнуnnerin yev kirareв en zhamanakakits hashvapahakan motetumner, apahovelով ardiakan yev vstaheli hashvarkum.",
-    "whyChooseBadge": "Inchu Menq",
-    "whyChooseTitle": "Inchu Yntrel INEA SPY-n",
+    "approachBadge": "Ինչպես Ենք Աշխատում",
+    "approachTitle": "Մեր Մոտեցումը",
+    "approachDescription": "INEA ՍՊԸ-ն յուրաքանչյուր հաճախորդի հետ աշխատում է անհատական մոտեցումով՝ ուսումնասիրելով գործունեության ոլորտը, ծավալները և առանձնահատկությունները։ Մենք ձևավորում ենք հաշվապահական քաղաքականություն և հաշվառքման համակարգ, որ լավագույնս համապատասխանում է տվյալ բիզնեսի կարիքներին։",
+    "approachModern": "Մեր մասնագետները մշտապես հետևում են օրենսդրության փոփոխություններին և կիրառում են ժամանակակից հաշվապահական մոտեցումներ՝ ապահովելով արդիական և վստահելի հաշվառում։",
+    "whyChooseBadge": "Ինչու Մենք",
+    "whyChooseTitle": "Ինչու Ընտրել INEA ՍՊԸ-ն",
     "whyChoose": {
-      "r1": "Bazmolorti pordz yev khorqayin masnagitakan giteliqner",
-      "r2": "Anhatak motetsum yurakanchyur hachaxordի",
-      "r3": "Hashvapahakan amboghchakan spasarkum mek hartakum",
-      "r4": "Orensdakan popokhutнуnnerinե mshtapes hetevoghthim",
-      "r5": "Nvazestsvats harkain yev hashvapahakan risker",
-      "r6": "Hstak, tapantsik yev verahskelі hashvarqman hamakarg"
+      "r1": "Բազմաոլորտ փորձ և խորքային մասնագիտական գիտելիքներ",
+      "r2": "Անհատական մոտեցում յուրաքանչյուր հաճախորդի",
+      "r3": "Հաշվապահական ամբողջական սպասարկում մեկ հարթակում",
+      "r4": "Օրենսդրական փոփոխություններին մշտապես հետևողություն",
+      "r5": "Նվազեցված հարկային և հաշվապահական ռիսկեր",
+      "r6": "Հստակ, թափանցիկ և վերահսկելի հաշվառքման համակարգ"
     },
-    "goalBadge": "Mer Tesumy",
-    "goalTitle": "Mer Npatakon yev Ardyunq",
-    "goalDescription": "Mer npatakn e stextel aynpisi hashvapahakan mijavir, vortegh biznesy gordum e vstah, kankhateseli yev verahskeli finansakan paymanneyerum.",
-    "resultTitle": "Ardyunq",
-    "resultDescription": "Kayun hashvapahakan hamakarg, kankhateseli harkain ber, finansakan kargapahutyun yev ardyunaver karavarман voroshumer."
+    "goalBadge": "Մեր Տեսլականը",
+    "goalTitle": "Մեր Նպատակը և Արդյունքը",
+    "goalDescription": "Մեր նպատակն է ստեղծել այնպիսի հաշվապահական միջավայր, որտեղ բիզնեսը գործում է վստահ, կանխատեսելի և վերահսկելի ֆինանսական պայմաններում։",
+    "resultTitle": "Արդյունք",
+    "resultDescription": "Կայուն հաշվապահական համակարգ, կանխատեսելի հարկային բեռ, ֆինանսական կարգապահություն և արդյունավետ կառավարման որոշումներ։"
   },
   "contact": {
-    "title": "[HY] Get in Touch",
-    "subtitle": "[HY] Ready to take control of your finances? Let's talk.",
+    "title": "Կապվեք Մեզ Հետ",
+    "subtitle": "Պատրա՞ստ եք վերահսկել ձեր ֆինանսները։ Եկեք խոսենք։",
     "form": {
-      "name": "[HY] Your Name",
-      "email": "[HY] Email Address",
-      "phone": "[HY] Phone Number",
-      "company": "[HY] Company Name (Optional)",
-      "service": "[HY] Service Interested In",
-      "message": "[HY] Your Message",
-      "submit": "[HY] Send Message",
-      "sending": "[HY] Sending...",
-      "success": "[HY] Message sent successfully! We'll get back to you soon.",
-      "selectService": "[HY] Select a service"
+      "name": "Ձեր Անունը",
+      "email": "Էլ․ Փոստի Հասցե",
+      "phone": "Հեռախոսահամար",
+      "company": "Ընկերության Անուն (Ընտրովի)",
+      "service": "Հետաքրքրող Ծառայություն",
+      "message": "Ձեր Հաղորդագրությունը",
+      "submit": "Ուղարկել Հաղորդագրությունը",
+      "sending": "Ուղարկվում է․․․",
+      "success": "Հաղորդագրությունը հաջողությամբ ուղարկվեց։ Շուտով կպատասխանենք ձեզ։",
+      "selectService": "Ընտրել ծառայություն"
     },
     "info": {
-      "address": "[HY] Address",
-      "addressValue": "[HY] Yerevan, Armenia",
-      "phone": "[HY] Phone",
-      "email": "[HY] Email",
-      "hours": "[HY] Business Hours",
-      "hoursValue": "[HY] Mon - Fri: 9:00 - 18:00"
+      "address": "Հասցե",
+      "addressValue": "Երևան, Հայաստան",
+      "phone": "Հեռախոս",
+      "email": "Էլ․ Փոստ",
+      "hours": "Աշխատանքային Ժամեր",
+      "hoursValue": "Երկուշաբթի - Ուրբաթ՝ 9:00 - 18:00"
     },
-    "social": "[HY] Follow Us"
+    "social": "Հետևեք Մեզ"
   },
   "footer": {
-    "description": "[HY] Professional accounting and tax services in Armenia. Helping businesses achieve financial success since 2015.",
-    "quickLinks": "[HY] Quick Links",
-    "services": "[HY] Services",
-    "legal": "[HY] Legal",
-    "privacy": "[HY] Privacy Policy",
-    "terms": "[HY] Terms of Service",
-    "copyright": "[HY] All rights reserved.",
-    "madeWith": "[HY] Made with",
-    "inArmenia": "[HY] in Armenia"
+    "description": "Մասնագիտական հաշվապահական և հարկային ծառայություններ Հայաստանում։ Օգնում ենք բիզնեսներին հասնել ֆինանսական հաջողության 2015 թվականից։",
+    "quickLinks": "Արագ Հղումներ",
+    "services": "Ծառայություններ",
+    "legal": "Իրավական",
+    "privacy": "Գաղտնիության Քաղաքականություն",
+    "terms": "Ծառայությունների Պայմաններ",
+    "copyright": "Բոլոր իրավունքները պաշտպանված են։",
+    "madeWith": "Ստեղծված է",
+    "inArmenia": "Հայաստանում"
   },
   "cta": {
-    "title": "[HY] Ready to Optimize Your Finances?",
-    "subtitle": "[HY] Get a free consultation and discover how we can help your business grow.",
-    "button": "[HY] Schedule Free Consultation"
+    "title": "Պատրա՞ստ Եք Օպտիմալացնել Ձեր Ֆինանսները",
+    "subtitle": "Ստացեք անվճար խորհրդատվություն և բացահայտեք, թե ինչպես կարող ենք օգնել ձեր բիզնեսի աճին։",
+    "button": "Նշանակել Անվճար Խորհրդատվություն"
   },
   "industries": {
-    "badge": "Gorthuneutyun",
-    "title": "Gorthuneutyun",
-    "titleHighlight": "Volorti",
-    "subtitle": "Masnagitatsvats hashvapahakan yev finansakan tsarayutyunner",
-    "sectionTitle": "Gorthuneutyun Volorti",
-    "sectionSubtitle": "Menq matsutsumenq masnagitatsvats hashvapahakan tsarayutyunner",
-    "showServices": "Tsuyts tal tsarayutyunnery",
-    "hideServices": "Taqtsnel tsarayutyunnery",
-    "ourServices": "Mer tsarayutyunnery ays volorti hamar:",
-    "result": "Ardyunq:",
-    "getConsultation": "Khorhrdatvutyun",
-    "learnMore": "Imanal avelin",
-    "viewAll": "Boloer Volortner",
+    "badge": "Գործունեություն",
+    "title": "Գործունեություն",
+    "titleHighlight": "Ոլորտների",
+    "subtitle": "Մասնագիտացված հաշվապահական և ֆինանսական ծառայություններ",
+    "sectionTitle": "Գործունեություն Ոլորտների",
+    "sectionSubtitle": "Մենք մատուցում ենք մասնագիտացված հաշվապահական ծառայություններ",
+    "showServices": "Ցույց տալ ծառայությունները",
+    "hideServices": "Թաքցնել ծառայությունները",
+    "ourServices": "Մեր ծառայությունները այս ոլորտի համար՝",
+    "result": "Արդյունք՝",
+    "getConsultation": "Խորհրդատվություն",
+    "learnMore": "Իմանալ ավելին",
+    "viewAll": "Բոլոր Ոլորտները",
     "manufacturing": {
-      "title": "Artadrutyun",
-      "description": "Menq ognum enq artadratakan dzernarkutyunnerin varum artadratakan tsakhseri hashvark.",
+      "title": "Արտադրություն",
+      "description": "Մենք օգնում ենք արտադրատական ձեռնարկությունների վարում արտադրատական ծախսերի հաշվառք։",
       "features": [
-        "Artadratakan tsakhseri hashvark",
-        "Pasharneri yev pahateri hashvark",
-        "Himnatakan mijotsneri hashvark",
-        "Harkain planavorom",
-        "Finansakan hashvetvutyun"
+        "Արտադրատական ծախսերի հաշվառք",
+        "Պաշարների և պահատեղերի հաշվառք",
+        "Հիմնատական միջոցների հաշվառք",
+        "Հարկային պլանավորում",
+        "Ֆինանսական հաշվետվություն"
       ],
-      "result": "Tapantsik finansakan karavaru yev optimizatsvats tsakhser."
+      "result": "Թափանցիկ ֆինանսական կառավարում և օպտիմալացված ծախսեր։"
     },
     "trade": {
-      "title": "Arrevtur",
-      "description": "Hamapataskhaner hashvapahakan lutsumner medsatsakh yev manratsakh arrevturi hamar.",
+      "title": "Առևտուր",
+      "description": "Համապատասխան հաշվապահական լուծումներ մեծածախ և մանրածախ առևտուրի համար։",
       "features": [
-        "Apranqneri hashvark",
-        "Vacharqi yev yekamuteri hshtak",
-        "AAH yev maqdayin phastatghteri",
-        "Masnadjyugheri finansakan hamateghum",
-        "Matakarordi karavaru"
+        "Ապրանքների հաշվառք",
+        "Վաճառքի և եկամտի հստակ",
+        "ԱԱՀ և մաքսային փաստաթղթերի",
+        "Մասնաճյուղերի ֆինանսական համատեղում",
+        "Մատակարարի կառավարում"
       ],
-      "result": "Optimizatsvats gortsnelakerpner yev chisht shahuyti hshtak."
+      "result": "Օպտիմալացված գործընթացներ և ճիշտ շահույթի հստակ։"
     },
     "it": {
-      "title": "IT yev Tekhnologianer",
-      "description": "Masnagitatsvats finansakan tsarayutyunner tekhnologiakan ynkerutyunneri hamar.",
+      "title": "IT և Տեխնոլոգիաներ",
+      "description": "Մասնագիտացված ֆինանսական ծառայություններ տեխնոլոգիական ընկերությունների համար։",
       "features": [
-        "HETU tsakhseri hashvark",
-        "Tsragri litsenzavorum",
-        "Mijazgayin gortsnoghtsutyunner",
-        "Optsianneri hashvark",
-        "Startap finansakan planavorom"
+        "ՀԷՏԿ ծախսերի հաշվառք",
+        "Ծրագրի լիցենզավորում",
+        "Միջազգային գործընկալություններ",
+        "Օպցիոնների հաշվառք",
+        "Սթարթափ ֆինանսական պլանավորում"
       ],
-      "result": "Hamapataskhan finansakan karavaru arag ashkhatavanqi hamar."
+      "result": "Համապատասխան ֆինանսական կառավարում արագ աճող ընկերությունների համար։"
     },
     "construction": {
-      "title": "Shinararutyun",
-      "description": "Nakhadzi hashvark shinaratatakan ynkerutyunneri hamar.",
+      "title": "Շինարարություն",
+      "description": "Նախագծի հաշվառք շինարարական ընկերությունների համար։",
       "features": [
-        "Nakhadzi hashvark",
-        "Paymanagri karavaru",
-        "Sarqavorumneri hshtak",
-        "Entakapalaneri vcharumner",
-        "Shinarararakan harkain hamapataskhannutyun"
+        "Նախագծի հաշվառք",
+        "Պայմանագրի կառավարում",
+        "Սարքավորումների հստակ",
+        "Ենթակապալների վճարումներ",
+        "Շինարարական հարկային համապատասխանություն"
       ],
-      "result": "Hstakexs nakhadzi shahutaberutyun."
+      "result": "Հստակ և ճշգրիտ նախագծի շահութաբերություն։"
     },
     "logistics": {
-      "title": "Logistika",
-      "description": "Finansakan karavaru logistik ynkerutyunneri hamar.",
+      "title": "Լոգիստիկա",
+      "description": "Ֆինանսական կառավարում լոգիստիկ ընկերությունների համար։",
       "features": [
-        "Avtopaki hashvark",
-        "Vararaqi tsakhseri hshtak",
-        "Maqdayin phastatghter",
-        "Varordneri ashkhatavaradz",
-        "Ugheghii shahutabanutyun"
+        "Ավտոպարկի հաշվառք",
+        "Վառելիքի ծախսերի հստակ",
+        "Մաքսային փաստաթղթեր",
+        "Վարորդների աշխատավարձ",
+        "Ուղեղցվի շահութաբանություն"
       ],
-      "result": "Optimizatsvats gortsuneakan tsakhser."
+      "result": "Օպտիմալացված գործունեական ծախսեր։"
     },
     "tourism": {
-      "title": "Turizm",
-      "description": "Hashvapahakan tsarayutyunner hyuranocneri yev restoanneri hamar.",
+      "title": "Տուրիզմ",
+      "description": "Հաշվապահական ծառայություններ հյուրանոցների և ռեստորանների համար։",
       "features": [
-        "Yekamuti karavaru",
-        "Yeghanakayin dramic hosqeri planavorom",
-        "Bazmatarm gortsnoghtsutyunner",
-        "Turistakan harkain hamapataskhan",
-        "Ashkhatakizner hyurynkalutyan hamar"
+        "Եկամտի կառավարում",
+        "Եղանակային դրամիկ հոսքերի պլանավորում",
+        "Բազմատարր գործընթացներ",
+        "Տուրիստական հարկային համապատասխան",
+        "Աշխատակիցներ հյուրընկալության համար"
       ],
-      "result": "Tarin voghji finansakan kayunutyun."
+      "result": "Տարին ողջ ֆինանսական կայունություն։"
     },
     "education": {
-      "title": "Krtrutyun",
-      "description": "Finansakan tsarayutyunner krtatakan hastatutainner hamar.",
+      "title": "Կրթություն",
+      "description": "Ֆինանսական ծառայություններ կրթական հաստատություններ համար։",
       "features": [
-        "Usumavarti karavaru",
-        "Dradmashner yev krtatadriner",
-        "Vochu shahaharmar hamapataskhan",
-        "Dasakhozneri ashkhatavaradz",
-        "Tsragri tsakhsi verlutsutyun"
+        "Ուսումավարձի կառավարում",
+        "Դրամաշնորհներ և կրթատեղեր",
+        "Ոչ ու շահահարմար համապատասխան",
+        "Դասախոսների աշխատավարձ",
+        "Ծրագրի ծախսի վերլուծություն"
       ],
-      "result": "Tapantsik mijotsneri karavaru."
+      "result": "Թափանցիկ միջոցների կառավարում։"
     },
     "healthcare": {
-      "title": "Arroghjapahutyun",
-      "description": "Masnagitatsvats hashvark klinikanneri yev hivandanocneri hamar.",
+      "title": "Առողջապահություն",
+      "description": "Մասնագիտացված հաշվառք կլինիկաների և հիվանդանոցների համար։",
       "features": [
-        "Bjshkakan billing",
-        "Arroghjapahatakan nrormatvakan hamapataskhan",
-        "Bjshkakan sarqavorumi hashvark",
-        "Apahagravakan vcharumner",
-        "Ashkhatakizneri hashvark"
+        "Բժշկական բիլլինգ",
+        "Առողջապահական նորմատիվական համապատասխան",
+        "Բժշկական սարքավորումի հաշվառք",
+        "Ապահովագրական վճարումներ",
+        "Աշխատակիցների հաշվառք"
       ],
-      "result": "Hamapataskhan gortsuneutyun arroghjapahutyunum."
+      "result": "Համապատասխան գործունեություն առողջապահությունում։"
     },
     "whyChoose": {
-      "title": "Inchu INEA Dzer Volorti Hamar",
-      "subtitle": "Menq hamadrumenq khorery volorti imatsutyan yev hashvapahatakan pordzi",
+      "title": "Ինչու INEA Ձեր Ոլորտի Համար",
+      "subtitle": "Մենք համադրում ենք խորը ոլորտի իմացություն և հաշվապահական փորձ",
       "reasons": {
         "r1": {
-          "title": "Volorti Pordz",
-          "description": "Mer masnagetner unen gortsnakan pordz dzer volorti mej."
+          "title": "Ոլորտի Փորձ",
+          "description": "Մեր մասնագետները ունեն գործնական փորձ ձեր ոլորտի մեջ։"
         },
         "r2": {
-          "title": "Nkormatvakan Hamapataskhan",
-          "description": "Menq hetevum enq volorti nkormanerin."
+          "title": "Նորմատիվական Համապատասխանություն",
+          "description": "Մենք հետևում ենք ոլորտի նորմաներին։"
         },
         "r3": {
-          "title": "Anhatak Lutsumner",
-          "description": "Yurakachiur lutsumner dzer biznesin hamar."
+          "title": "Անհատական Լուծումներ",
+          "description": "Յուրաքանչյուր լուծումներ ձեր բիզնեսին համար։"
         },
         "r4": {
-          "title": "Aktiv Khorhrdatvutyun",
-          "description": "Menq haytnabererum enq hnaravor riskery."
+          "title": "Ակտիվ Խորհրդատվություն",
+          "description": "Մենք հայտնաբերում ենք հնարավոր ռիսկերը։"
         },
         "r5": {
-          "title": "Tekhnologiakan Integraciya",
-          "description": "Zhamanakakits gortsiqner dzer gortsyntheratsneri hamar."
+          "title": "Տեխնոլոգիական Ինտեգրացիա",
+          "description": "Ժամանակակից գործիքներ ձեր գործընթացների համար։"
         },
         "r6": {
-          "title": "Neviryats Ajaktsуtyun",
-          "description": "Tims vor hasganum e dzer biznesy."
+          "title": "Նվիրված Աջակցություն",
+          "description": "Թիմ որ հասկանում է ձեր բիզնեսը։"
         }
       }
     }
   },
   "pricing": {
-    "badge": "[HY] Pricing Plans",
-    "title": "[HY] Transparent",
-    "titleHighlight": "[HY] Pricing",
-    "subtitle": "[HY] Choose the plan that best fits your business needs. All plans include dedicated support.",
-    "monthly": "[HY] Monthly",
-    "annually": "[HY] Annually",
-    "save": "[HY] Save 20%",
-    "popular": "[HY] Most Popular",
-    "getStarted": "[HY] Get Started",
-    "contactUs": "[HY] Contact Us",
-    "perMonth": "[HY] /month",
-    "perYear": "[HY] /year",
-    "customPrice": "[HY] Custom",
+    "badge": "Գնային Պլաններ",
+    "title": "Թափանցիկ",
+    "titleHighlight": "Գնագոյացում",
+    "subtitle": "Ընտրեք պլանը, որը լավագույնս համապատասխանում է ձեր բիզնեսի կարիքներին։ Բոլոր պլանները ներառում են նվիրված աջակցություն։",
+    "monthly": "Ամսական",
+    "annually": "Տարեկան",
+    "save": "Խնայել 20%",
+    "popular": "Ամենահայտնի",
+    "getStarted": "Սկսել",
+    "contactUs": "Կապվել Մեզ Հետ",
+    "perMonth": "/ամիս",
+    "perYear": "/տարի",
+    "customPrice": "Անհատական",
     "plans": {
       "starter": {
-        "name": "[HY] Starter",
-        "description": "[HY] Perfect for freelancers and sole proprietors",
+        "name": "Սկսնակ",
+        "description": "Իդեալական ֆրիլանսերների և անհատ ձեռնարկատերերի համար",
         "price": "50,000",
         "features": [
-          "[HY] Basic bookkeeping",
-          "[HY] Monthly tax calculations",
-          "[HY] Up to 20 transactions/month",
-          "[HY] Email support",
-          "[HY] Quarterly reports"
+          "Հիմնական հաշվապահություն",
+          "Ամսական հարկային հաշվարկներ",
+          "Մինչև 20 գործարք/ամիս",
+          "Էլ․ փոստով աջակցություն",
+          "Եռամսյակային հաշվետվություններ"
         ]
       },
       "professional": {
-        "name": "[HY] Professional",
-        "description": "[HY] Ideal for growing small businesses",
+        "name": "Պրոֆեսիոնալ",
+        "description": "Իդեալական աճող փոքր բիզնեսների համար",
         "price": "150,000",
         "features": [
-          "[HY] Full accounting services",
-          "[HY] Tax planning & advisory",
-          "[HY] Up to 100 transactions/month",
-          "[HY] Priority email & phone support",
-          "[HY] Monthly financial reports",
-          "[HY] Payroll for up to 5 employees"
+          "Ամբողջական հաշվապահական ծառայություններ",
+          "Հարկային պլանավորում և խորհրդատվություն",
+          "Մինչև 100 գործարք/ամիս",
+          "Առաջնահերթ էլ․ փոստ և հեռախոսային աջակցություն",
+          "Ամսական ֆինանսական հաշվետվություններ",
+          "Աշխատավարձ մինչև 5 աշխատակիցների համար"
         ]
       },
       "business": {
-        "name": "[HY] Business",
-        "description": "[HY] For established companies with complex needs",
+        "name": "Բիզնես",
+        "description": "Հաստատված ընկերությունների համար՝ բարդ կարիքներով",
         "price": "350,000",
         "features": [
-          "[HY] Comprehensive accounting",
-          "[HY] Advanced tax optimization",
-          "[HY] Unlimited transactions",
-          "[HY] Dedicated account manager",
-          "[HY] Weekly reports & analysis",
-          "[HY] Payroll for up to 25 employees",
-          "[HY] Internal audit support"
+          "Համապարփակ հաշվապահություն",
+          "Առաջադեմ հարկային օպտիմալացում",
+          "Անսահմանափակ գործարքներ",
+          "Նվիրված հաշվի կառավարիչ",
+          "Շաբաթական հաշվետվություններ և վերլուծություն",
+          "Աշխատավարձ մինչև 25 աշխատակիցների համար",
+          "Ներքին աուդիտի աջակցություն"
         ]
       },
       "enterprise": {
-        "name": "[HY] Enterprise",
-        "description": "[HY] Tailored solutions for large organizations",
+        "name": "Ձեռնարկություն",
+        "description": "Անհատական լուծումներ մեծ կազմակերպությունների համար",
         "features": [
-          "[HY] Custom accounting solutions",
-          "[HY] Full tax & legal advisory",
-          "[HY] Unlimited transactions",
-          "[HY] 24/7 dedicated support",
-          "[HY] Real-time reporting",
-          "[HY] Unlimited payroll processing",
-          "[HY] Complete audit services",
-          "[HY] CFO advisory services"
+          "Անհատական հաշվապահական լուծումներ",
+          "Ամբողջական հարկային և իրավական խորհրդատվություն",
+          "Անսահմանափակ գործարքներ",
+          "24/7 նվիրված աջակցություն",
+          "Իրական ժամանակի հաշվետվություն",
+          "Անսահմանափակ աշխատավարձի մշակում",
+          "Ամբողջական աուդիտի ծառայություններ",
+          "CFO խորհրդատվական ծառայություններ"
         ]
       }
     },
     "faq": {
-      "title": "[HY] Frequently Asked Questions",
+      "title": "Հաճախ Տրվող Հարցեր",
       "questions": {
-        "q1": "[HY] Can I switch plans later?",
-        "a1": "[HY] Yes, you can upgrade or downgrade your plan at any time.",
-        "q2": "[HY] What payment methods do you accept?",
-        "a2": "[HY] We accept bank transfers, credit cards, and cash payments.",
-        "q3": "[HY] Is there a setup fee?",
-        "a3": "[HY] No, there are no hidden fees.",
-        "q4": "[HY] What if I need more than what's included?",
-        "a4": "[HY] We offer flexible add-ons for additional services."
+        "q1": "Կարո՞ղ եմ ավելի ուշ փոխել պլանը։",
+        "a1": "Այո, դուք կարող եք ցանկացած ժամանակ բարձրացնել կամ իջեցնել ձեր պլանը։",
+        "q2": "Ինչպիսի՞ վճարման եղանակներ եք ընդունում։",
+        "a2": "Մենք ընդունում ենք բանկային փոխանցումներ, վարկային քարտեր և կանխիկ վճարումներ։",
+        "q3": "Կա՞ տեղակայման վճար։",
+        "a3": "Ոչ, թաքնված վճարներ չկան։",
+        "q4": "Ի՞նչ անել, եթե ինձ պետք է ավելին, քան ներառված է։",
+        "a4": "Մենք առաջարկում ենք ճկուն հավելումներ լրացուցիչ ծառայությունների համար։"
       }
     },
     "cta": {
-      "title": "[HY] Not sure which plan is right for you?",
-      "subtitle": "[HY] Our team will help you choose the best solution for your business.",
-      "button": "[HY] Schedule a Free Consultation"
+      "title": "Վստա՞հ չեք, թե որ պլանը ձեզ համար հարմար է։",
+      "subtitle": "Մեր թիմը կօգնի ձեզ ընտրել լավագույն լուծումը ձեր բիզնեսի համար։",
+      "button": "Նշանակել Անվճար Խորհրդատվություն"
     }
   }
 }
