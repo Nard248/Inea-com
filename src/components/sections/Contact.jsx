@@ -13,6 +13,7 @@ import {
   FaWhatsapp,
   FaViber,
 } from 'react-icons/fa';
+import { contactInfo } from '../../data/contact';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -27,13 +28,18 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  // Mirrors the service IDs defined in src/data/services.js so every option
+  // resolves to a real translated title (the previous list referenced removed
+  // services and rendered blank options).
   const services = [
+    { value: 'accounting', label: t('services.accounting.title') },
     { value: 'tax', label: t('services.tax.title') },
-    { value: 'bookkeeping', label: t('services.bookkeeping.title') },
-    { value: 'audit', label: t('services.audit.title') },
+    { value: 'hr', label: t('services.hr.title') },
     { value: 'payroll', label: t('services.payroll.title') },
-    { value: 'registration', label: t('services.registration.title') },
-    { value: 'consulting', label: t('services.consulting.title') },
+    { value: 'financial', label: t('services.financial.title') },
+    { value: 'audit', label: t('services.audit.title') },
+    { value: 'review', label: t('services.review.title') },
+    { value: 'reporting', label: t('services.reporting.title') },
   ];
 
   const handleChange = (e) => {
@@ -62,24 +68,23 @@ const Contact = () => {
     setTimeout(() => setSubmitStatus(null), 5000);
   };
 
-  const contactInfo = [
+  const contactDetails = [
     {
       icon: HiLocationMarker,
       label: t('contact.info.address'),
       value: t('contact.info.addressValue'),
-      href: 'https://maps.google.com/?q=Yerevan,Armenia',
+      href: `https://maps.google.com/?q=${encodeURIComponent(contactInfo.mapsQuery)}`,
     },
     {
       icon: HiPhone,
       label: t('contact.info.phone'),
-      value: '+374 10 123 456',
-      href: 'tel:+37410123456',
+      values: contactInfo.phones,
     },
     {
       icon: HiMail,
       label: t('contact.info.email'),
-      value: 'info@inea.am',
-      href: 'mailto:info@inea.am',
+      value: contactInfo.email,
+      href: contactInfo.emailHref,
     },
     {
       icon: HiClock,
@@ -89,9 +94,9 @@ const Contact = () => {
   ];
 
   const quickContacts = [
-    { icon: FaTelegram, href: 'https://t.me/inea_am', label: 'Telegram', color: 'hover:bg-blue-500' },
-    { icon: FaWhatsapp, href: 'https://wa.me/37410123456', label: 'WhatsApp', color: 'hover:bg-green-500' },
-    { icon: FaViber, href: 'viber://chat?number=+37410123456', label: 'Viber', color: 'hover:bg-purple-500' },
+    { icon: FaTelegram, href: contactInfo.social.telegram, label: 'Telegram', color: 'hover:bg-blue-500' },
+    { icon: FaWhatsapp, href: contactInfo.social.whatsapp, label: 'WhatsApp', color: 'hover:bg-green-500' },
+    { icon: FaViber, href: contactInfo.social.viber, label: 'Viber', color: 'hover:bg-purple-500' },
   ];
 
   return (
@@ -109,7 +114,7 @@ const Contact = () => {
           className="max-w-3xl mx-auto mb-16 text-center"
         >
           <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-            Contact Us
+            {t('contact.contactUs')}
           </span>
           <h2 className="section-title">{t('contact.title')}</h2>
           <p className="section-subtitle">{t('contact.subtitle')}</p>
@@ -291,17 +296,29 @@ const Contact = () => {
             {/* Contact Details */}
             <div className="p-6 bg-white shadow-lg rounded-2xl">
               <h3 className="mb-6 text-lg font-bold text-gray-900">
-                Contact Information
+                {t('contact.infoTitle')}
               </h3>
               <div className="space-y-5">
-                {contactInfo.map((item, index) => (
+                {contactDetails.map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg bg-primary-50">
                       <item.icon className="w-5 h-5 text-primary-600" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">{item.label}</p>
-                      {item.href ? (
+                      {item.values ? (
+                        <div className="flex flex-col">
+                          {item.values.map((phone) => (
+                            <a
+                              key={phone.href}
+                              href={phone.href}
+                              className="font-medium text-gray-900 transition-colors hover:text-primary-600 whitespace-nowrap"
+                            >
+                              {phone.display}
+                            </a>
+                          ))}
+                        </div>
+                      ) : item.href ? (
                         <a
                           href={item.href}
                           target="_blank"
@@ -322,10 +339,10 @@ const Contact = () => {
             {/* Quick Contact */}
             <div className="p-6 bg-white shadow-lg rounded-2xl">
               <h3 className="mb-4 text-lg font-bold text-gray-900">
-                Quick Contact
+                {t('contact.quickTitle')}
               </h3>
               <p className="mb-4 text-sm text-gray-600">
-                Prefer messaging? Reach us directly on:
+                {t('contact.quickDesc')}
               </p>
               <div className="flex gap-3">
                 {quickContacts.map((contact, index) => (

@@ -11,6 +11,7 @@ import {
   HiPhone,
 } from 'react-icons/hi';
 import { getServiceById, getRelatedServices } from '../data/services';
+import { primaryPhone } from '../data/contact';
 import CTA from '../components/sections/CTA';
 
 const ServiceDetailPage = () => {
@@ -113,7 +114,7 @@ const ServiceDetailPage = () => {
                   <HiArrowRight className="w-4 h-4 ml-2" />
                 </Link>
                 <a
-                  href="tel:+37400000000"
+                  href={primaryPhone.href}
                   className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white transition-all duration-300 border border-white/20 rounded-xl hover:bg-white/10"
                 >
                   <HiPhone className="w-4 h-4 mr-2" />

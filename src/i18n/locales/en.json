@@ -12,16 +12,30 @@
     "getConsultation": "Get Consultation"
   },
   "hero": {
-    "title": "Your Financial Success",
-    "titleHighlight": "Starts Here",
-    "subtitle": "Professional accounting and tax services in Armenia. We help businesses grow with expert financial guidance, compliance, and strategic planning.",
+    "badge": "Trusted by 500+ businesses in Armenia",
+    "title": "Your Trusted Partner",
+    "titleHighlight": "in Accounting & Tax",
+    "subtitle": "We provide reliable and professional accounting services, helping your business operate correctly, transparently, and in full compliance with tax legislation.",
     "cta": "Start Free Consultation",
     "secondaryCta": "Explore Services",
+    "scroll": "Scroll",
     "stats": {
       "clients": "Happy Clients",
       "experience": "Years Experience",
       "saved": "Tax Saved"
     }
+  },
+  "servicesPage": {
+    "badge": "Our Services",
+    "title": "Professional",
+    "titleHighlight": "Financial Services",
+    "subtitle": "Comprehensive accounting and tax solutions tailored to help your business thrive in Armenia's dynamic market."
+  },
+  "contactPage": {
+    "badge": "Get in Touch",
+    "title": "Let's",
+    "titleHighlight": "Talk Business",
+    "subtitle": "Ready to take control of your finances? Contact us today for a free consultation and discover how we can help your business grow."
   },
   "services": {
     "title": "Our Services",
@@ -337,7 +351,9 @@
       "dividend": "Dividend Tax",
       "dividendDesc": "Calculate dividend distribution taxes",
       "pension": "Pension Calculator",
-      "pensionDesc": "Calculate pension contributions and benefits"
+      "pensionDesc": "Calculate pension contributions and benefits",
+      "currency": "Currency Converter",
+      "currencyDesc": "Convert between currencies at live exchange rates"
     },
     "salary": {
       "title": "Salary Tax Calculator",
@@ -350,13 +366,26 @@
       "totalDeductions": "Total Deductions",
       "netSalary": "Net Salary",
       "incomeTax": "Income Tax",
-      "incomeTaxDesc": "20% flat rate on gross salary",
-      "socialPayment": "Social Payment",
-      "socialPaymentDesc": "Based on birth year and salary brackets",
+      "incomeTaxDesc": "20% flat rate (10% for the IT sector)",
+      "socialPayment": "Pension Payment",
+      "socialPaymentDesc": "Funded pension contribution based on salary",
       "stampDuty": "Stamp Duty",
-      "stampDutyDesc": "Fixed amount based on salary brackets",
-      "insuranceFee": "Insurance Fee",
-      "insuranceFeeDesc": "Based on birth year and salary brackets",
+      "stampDutyDesc": "Military support fund, fixed by salary bracket",
+      "insuranceFee": "Healthcare Insurance",
+      "insuranceFeeDesc": "Mandatory contribution for participants aged 18–65",
+      "mode": "Calculation Mode",
+      "fromGross": "From Gross",
+      "fromNet": "From Net",
+      "grossLabel": "Gross Salary",
+      "netLabel": "Net Salary",
+      "enterGross": "Enter gross salary",
+      "enterNet": "Enter net salary",
+      "pensionTitle": "Pension System Participation",
+      "pensionMandatory": "Mandatory (or joined before 07/2018)",
+      "pensionVoluntary": "Voluntary (joined after 07/2018)",
+      "pensionNone": "Not a participant",
+      "itSector": "IT sector tax benefit",
+      "itSectorNote": "10% income tax for certified IT companies",
       "showBreakdown": "Show Detailed Breakdown",
       "hideBreakdown": "Hide Breakdown",
       "deductionBreakdown": "Deduction Breakdown",
@@ -392,12 +421,18 @@
     },
     "currency": {
       "title": "Currency Converter",
+      "subtitle": "Convert between currencies at current exchange rates",
       "description": "Convert between major currencies",
       "amount": "Amount",
       "from": "From",
       "to": "To",
       "result": "Result",
-      "rateInfo": "Exchange rates are approximate"
+      "swap": "Swap currencies",
+      "rate": "Rate",
+      "updated": "Rates updated",
+      "loading": "Loading rates…",
+      "unavailable": "Live rates unavailable — showing approximate values",
+      "rateInfo": "Exchange rates are indicative and may differ from bank rates"
     },
     "calculate": "Calculate",
     "reset": "Reset"
@@ -435,8 +470,20 @@
     }
   },
   "about": {
+    "badge": "About Us",
     "title": "Why Choose INEA",
     "subtitle": "Your trusted partner for all financial matters in Armenia",
+    "imageTitle": "Your success is our priority",
+    "imageSubtitle": "Dedicated professionals working for you",
+    "whyTitle": "Why businesses choose us",
+    "reasons": [
+      "Licensed & certified professionals",
+      "Deep knowledge of Armenian tax law",
+      "Personalized service approach",
+      "Multilingual support (EN/HY/RU)",
+      "Competitive pricing",
+      "Secure data handling"
+    ],
     "features": {
       "expertise": {
         "title": "Expert Team",
@@ -521,6 +568,10 @@
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Ready to take control of your finances? Let's talk.",
+    "contactUs": "Contact Us",
+    "infoTitle": "Contact Information",
+    "quickTitle": "Quick Contact",
+    "quickDesc": "Prefer messaging? Reach us directly on:",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
@@ -535,7 +586,7 @@
     },
     "info": {
       "address": "Address",
-      "addressValue": "Yerevan, Armenia",
+      "addressValue": "2 Adonts Street, Yerevan, Armenia",
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
@@ -544,6 +595,7 @@
     "social": "Follow Us"
   },
   "footer": {
+    "brand": "INEA",
     "description": "Professional accounting and tax services in Armenia. Helping businesses achieve financial success since 2015.",
     "quickLinks": "Quick Links",
     "services": "Services",
@@ -557,7 +609,12 @@
   "cta": {
     "title": "Ready to Optimize Your Finances?",
     "subtitle": "Get a free consultation and discover how we can help your business grow.",
-    "button": "Schedule Free Consultation"
+    "button": "Schedule Free Consultation",
+    "trust": [
+      "Free Initial Consultation",
+      "No Hidden Fees",
+      "Response Within 24 Hours"
+    ]
   },
   "industries": {
     "badge": "Industries We Serve",

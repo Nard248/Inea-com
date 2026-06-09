@@ -2,9 +2,13 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HiArrowRight, HiPhone } from 'react-icons/hi';
+import { primaryPhone } from '../../data/contact';
 
 const CTA = () => {
   const { t } = useTranslation();
+
+  const trust = t('cta.trust', { returnObjects: true });
+  const trustItems = Array.isArray(trust) ? trust : [];
 
   return (
     <section className="relative py-20 overflow-hidden lg:py-24">
@@ -60,11 +64,11 @@ const CTA = () => {
               <HiArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
             </Link>
             <a
-              href="tel:+37410123456"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white transition-all duration-300 border-2 border-white/30 rounded-xl hover:bg-white/10 group"
+              href={primaryPhone.href}
+              className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white transition-all duration-300 border-2 border-white/30 rounded-xl hover:bg-white/10 group whitespace-nowrap"
             >
-              <HiPhone className="w-5 h-5 mr-2" />
-              +374 10 123 456
+              <HiPhone className="flex-shrink-0 w-5 h-5 mr-2" />
+              {primaryPhone.display}
             </a>
           </motion.div>
         </div>
@@ -77,24 +81,14 @@ const CTA = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-wrap items-center justify-center gap-6 pt-12 mt-12 border-t border-white/20 lg:justify-start"
         >
-          <div className="flex items-center text-sm text-primary-100">
-            <svg className="w-5 h-5 mr-2 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            Free Initial Consultation
-          </div>
-          <div className="flex items-center text-sm text-primary-100">
-            <svg className="w-5 h-5 mr-2 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            No Hidden Fees
-          </div>
-          <div className="flex items-center text-sm text-primary-100">
-            <svg className="w-5 h-5 mr-2 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            Response Within 24 Hours
-          </div>
+          {trustItems.map((item, index) => (
+            <div key={index} className="flex items-center text-sm text-primary-100">
+              <svg className="flex-shrink-0 w-5 h-5 mr-2 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              {item}
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>

@@ -19,15 +19,14 @@ const ContactPage = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-              Get in Touch
+              {t('contactPage.badge')}
             </span>
             <h1 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
-              Let's{' '}
-              <span className="gradient-text">Talk Business</span>
+              {t('contactPage.title')}{' '}
+              <span className="gradient-text">{t('contactPage.titleHighlight')}</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 md:text-xl">
-              Ready to take control of your finances? Contact us today for a
-              free consultation and discover how we can help your business grow.
+              {t('contactPage.subtitle')}
             </p>
           </motion.div>
         </div>

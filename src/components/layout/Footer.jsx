@@ -15,6 +15,7 @@ import {
   FaTelegram,
   FaWhatsapp,
 } from 'react-icons/fa';
+import { contactInfo } from '../../data/contact';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ const Footer = () => {
     { to: '/', label: t('nav.home') },
     { to: '/services', label: t('nav.services') },
     { to: '/calculators', label: t('nav.calculators') },
+    { to: '/pricing', label: t('nav.pricing') },
     { to: '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },
     { to: '/contact', label: t('nav.contact') },
@@ -39,11 +41,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaFacebookF, href: '#', label: 'Facebook' },
-    { icon: FaInstagram, href: '#', label: 'Instagram' },
-    { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
-    { icon: FaTelegram, href: '#', label: 'Telegram' },
-    { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
+    { icon: FaFacebookF, href: contactInfo.social.facebook, label: 'Facebook' },
+    { icon: FaInstagram, href: contactInfo.social.instagram, label: 'Instagram' },
+    { icon: FaLinkedinIn, href: contactInfo.social.linkedin, label: 'LinkedIn' },
+    { icon: FaTelegram, href: contactInfo.social.telegram, label: 'Telegram' },
+    { icon: FaWhatsapp, href: contactInfo.social.whatsapp, label: 'WhatsApp' },
   ];
 
   return (
@@ -56,21 +58,21 @@ const Footer = () => {
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Main footer content */}
-        <div className="grid gap-12 mb-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 mb-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company info */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <div className="p-2 bg-white rounded-lg inline-block">
+              <div className="inline-block p-2 bg-white rounded-lg">
                 <img src={`${import.meta.env.BASE_URL}Logo.jpg`} alt="INEA" className="w-auto h-10" />
               </div>
             </Link>
             <p className="mb-6 text-gray-400 leading-relaxed">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-3">
-              {socialLinks.map((social, index) => (
+            <div className="flex flex-wrap gap-3">
+              {socialLinks.map((social) => (
                 <motion.a
-                  key={index}
+                  key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -129,24 +131,32 @@ const Footer = () => {
               {t('contact.title')}
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <HiLocationMarker className="w-5 h-5 mt-0.5 text-primary-500" />
+              <li className="flex items-start gap-3">
+                <HiLocationMarker className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary-500" />
                 <span className="text-gray-400">{t('contact.info.addressValue')}</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <HiPhone className="w-5 h-5 text-primary-500" />
-                <a href="tel:+37410123456" className="text-gray-400 hover:text-primary-400">
-                  +374 10 123 456
+              <li className="flex items-start gap-3">
+                <HiPhone className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary-500" />
+                <span className="flex flex-col">
+                  {contactInfo.phones.map((phone) => (
+                    <a
+                      key={phone.href}
+                      href={phone.href}
+                      className="text-gray-400 transition-colors hover:text-primary-400 whitespace-nowrap"
+                    >
+                      {phone.display}
+                    </a>
+                  ))}
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <HiMail className="w-5 h-5 flex-shrink-0 text-primary-500" />
+                <a href={contactInfo.emailHref} className="text-gray-400 transition-colors hover:text-primary-400">
+                  {contactInfo.email}
                 </a>
               </li>
-              <li className="flex items-center space-x-3">
-                <HiMail className="w-5 h-5 text-primary-500" />
-                <a href="mailto:info@inea.am" className="text-gray-400 hover:text-primary-400">
-                  info@inea.am
-                </a>
-              </li>
-              <li className="flex items-center space-x-3">
-                <HiClock className="w-5 h-5 text-primary-500" />
+              <li className="flex items-start gap-3">
+                <HiClock className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary-500" />
                 <span className="text-gray-400">{t('contact.info.hoursValue')}</span>
               </li>
             </ul>
@@ -155,15 +165,15 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left">
             <p className="text-sm text-gray-500">
-              &copy; {currentYear} INEA. {t('footer.copyright')}
+              &copy; {currentYear} {t('footer.brand')}. {t('footer.copyright')}
             </p>
-            <div className="flex items-center space-x-6 text-sm text-gray-500">
-              <Link to="/privacy" className="hover:text-primary-400">
+            <div className="flex items-center gap-6 text-sm text-gray-500">
+              <Link to="/privacy" className="transition-colors hover:text-primary-400">
                 {t('footer.privacy')}
               </Link>
-              <Link to="/terms" className="hover:text-primary-400">
+              <Link to="/terms" className="transition-colors hover:text-primary-400">
                 {t('footer.terms')}
               </Link>
             </div>

@@ -8,8 +8,10 @@ import {
   HiTrendingUp,
   HiCash,
   HiChartPie,
+  HiSwitchHorizontal,
 } from 'react-icons/hi';
 import SalaryTaxCalculator from '../components/calculators/SalaryTaxCalculator';
+import CurrencyConverter from '../components/calculators/CurrencyConverter';
 
 const CalculatorsPage = () => {
   const { t } = useTranslation();
@@ -22,6 +24,14 @@ const CalculatorsPage = () => {
       description: t('calculators.types.salaryDesc'),
       icon: HiCurrencyDollar,
       color: 'from-green-500 to-emerald-600',
+      available: true,
+    },
+    {
+      id: 'currency',
+      name: t('calculators.types.currency'),
+      description: t('calculators.types.currencyDesc'),
+      icon: HiSwitchHorizontal,
+      color: 'from-blue-500 to-indigo-600',
       available: true,
     },
     {
@@ -62,6 +72,8 @@ const CalculatorsPage = () => {
     switch (activeCalculator) {
       case 'salary':
         return <SalaryTaxCalculator />;
+      case 'currency':
+        return <CurrencyConverter />;
       default:
         return (
           <div className="p-12 text-center bg-white shadow-xl rounded-2xl">

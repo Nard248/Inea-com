@@ -20,15 +20,14 @@ const ServicesPage = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-              Our Services
+              {t('servicesPage.badge')}
             </span>
             <h1 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
-              Professional{' '}
-              <span className="gradient-text">Financial Services</span>
+              {t('servicesPage.title')}{' '}
+              <span className="gradient-text">{t('servicesPage.titleHighlight')}</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 md:text-xl">
-              Comprehensive accounting and tax solutions tailored to help your business
-              thrive in Armenia's dynamic market.
+              {t('servicesPage.subtitle')}
             </p>
           </motion.div>
         </div>

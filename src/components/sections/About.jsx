@@ -46,14 +46,8 @@ const About = () => {
     { value: 98, suffix: '%', label: t('about.stats.satisfaction') },
   ];
 
-  const reasons = [
-    'Licensed & certified professionals',
-    'Deep knowledge of Armenian tax law',
-    'Personalized service approach',
-    'Multilingual support (EN/HY/RU)',
-    'Competitive pricing',
-    'Secure data handling',
-  ];
+  const reasons = t('about.reasons', { returnObjects: true });
+  const reasonsList = Array.isArray(reasons) ? reasons : [];
 
   return (
     <section className="relative py-20 overflow-hidden bg-white lg:py-32" id="about">
@@ -70,7 +64,7 @@ const About = () => {
           className="max-w-3xl mx-auto mb-16 text-center"
         >
           <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-            About Us
+            {t('about.badge')}
           </span>
           <h2 className="section-title">{t('about.title')}</h2>
           <p className="section-subtitle">{t('about.subtitle')}</p>
@@ -123,10 +117,10 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-lg font-semibold text-white">
-                    Your success is our priority
+                    {t('about.imageTitle')}
                   </p>
                   <p className="text-primary-100">
-                    Dedicated professionals working for you
+                    {t('about.imageSubtitle')}
                   </p>
                 </div>
               </div>
@@ -134,10 +128,10 @@ const About = () => {
               {/* Reasons List */}
               <div className="p-6 bg-gray-50 rounded-2xl">
                 <h4 className="mb-4 text-lg font-bold text-gray-900">
-                  Why businesses choose us
+                  {t('about.whyTitle')}
                 </h4>
                 <ul className="space-y-3">
-                  {reasons.map((reason, index) => (
+                  {reasonsList.map((reason, index) => (
                     <motion.li
                       key={index}
                       initial={{ opacity: 0, x: 20 }}

@@ -89,11 +89,13 @@ const Services = ({ showAll = false, limit = 6 }) => {
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <h3 className="mb-2 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-700 line-clamp-1">
+                  {/* Content — title allowed to wrap to 2 lines (Armenian titles
+                      are longer than English) with a fixed min-height so cards
+                      in the grid stay vertically aligned. */}
+                  <h3 className="mb-2 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-700 line-clamp-2 min-h-[3.5rem]">
                     {t(`services.${service.id}.title`)}
                   </h3>
-                  <p className="mb-4 text-sm text-gray-600 leading-relaxed line-clamp-2">
+                  <p className="mb-4 text-sm text-gray-600 leading-relaxed line-clamp-2 min-h-[2.5rem]">
                     {t(`services.${service.id}.shortDescription`)}
                   </p>
 

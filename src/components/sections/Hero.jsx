@@ -57,7 +57,7 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="mb-8">
               <span className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-full bg-primary-100 text-primary-800">
                 <span className="w-2 h-2 mr-2 rounded-full bg-primary-500 animate-pulse" />
-                Trusted by 500+ businesses in Armenia
+                {t('hero.badge')}
               </span>
             </motion.div>
 
@@ -160,7 +160,7 @@ const Hero = () => {
         transition={{ duration: 2, repeat: Infinity }}
       >
         <div className="flex flex-col items-center text-gray-400">
-          <span className="mb-2 text-xs font-medium uppercase tracking-wider">Scroll</span>
+          <span className="mb-2 text-xs font-medium uppercase tracking-wider">{t('hero.scroll')}</span>
           <div className="w-6 h-10 border-2 border-gray-300 rounded-full">
             <motion.div
               className="w-1.5 h-1.5 mx-auto mt-2 bg-primary-500 rounded-full"
