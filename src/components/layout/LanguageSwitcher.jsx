@@ -2,11 +2,14 @@ import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiChevronDown, HiCheck } from 'react-icons/hi';
+import { FLAGS } from '../ui/Flags';
+
+const FLAG_CLASS = 'w-6 h-4 rounded-sm shadow-sm ring-1 ring-black/5';
 
 const languages = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'hy', name: 'Armenian', flag: '🇦🇲' },
-  { code: 'ru', name: 'Russian', flag: '🇷🇺' },
+  { code: 'en', name: 'English' },
+  { code: 'hy', name: 'Armenian' },
+  { code: 'ru', name: 'Russian' },
 ];
 
 const LanguageSwitcher = ({ isMobile = false }) => {
@@ -35,23 +38,28 @@ const LanguageSwitcher = ({ isMobile = false }) => {
   if (isMobile) {
     return (
       <div className="flex space-x-2">
-        {languages.map((lang) => (
-          <button
-            key={lang.code}
-            onClick={() => handleLanguageChange(lang.code)}
-            className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-              i18n.language === lang.code
-                ? 'bg-primary-100 text-primary-700'
-                : 'text-gray-600 hover:bg-gray-100'
-            }`}
-          >
-            <span className="mr-2 text-lg">{lang.flag}</span>
-            {lang.code.toUpperCase()}
-          </button>
-        ))}
+        {languages.map((lang) => {
+          const Flag = FLAGS[lang.code];
+          return (
+            <button
+              key={lang.code}
+              onClick={() => handleLanguageChange(lang.code)}
+              className={`flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                i18n.language === lang.code
+                  ? 'bg-primary-100 text-primary-700'
+                  : 'text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              <Flag className={FLAG_CLASS} />
+              {lang.code.toUpperCase()}
+            </button>
+          );
+        })}
       </div>
     );
   }
+
+  const CurrentFlag = FLAGS[currentLanguage.code];
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -59,7 +67,7 @@ const LanguageSwitcher = ({ isMobile = false }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center px-3 py-2 space-x-2 text-sm font-medium text-gray-700 transition-colors rounded-lg hover:bg-gray-100"
       >
-        <span className="text-lg">{currentLanguage.flag}</span>
+        <CurrentFlag className={FLAG_CLASS} />
         <span>{currentLanguage.code.toUpperCase()}</span>
         <HiChevronDown
           className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -75,25 +83,28 @@ const LanguageSwitcher = ({ isMobile = false }) => {
             className="absolute right-0 z-50 w-48 mt-2 bg-white border border-gray-100 shadow-xl rounded-xl"
           >
             <div className="py-2">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => handleLanguageChange(lang.code)}
-                  className={`flex items-center justify-between w-full px-4 py-2.5 text-sm transition-colors ${
-                    i18n.language === lang.code
-                      ? 'bg-primary-50 text-primary-700'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3 text-lg">{lang.flag}</span>
-                    <span className="font-medium">{lang.name}</span>
-                  </div>
-                  {i18n.language === lang.code && (
-                    <HiCheck className="w-4 h-4 text-primary-600" />
-                  )}
-                </button>
-              ))}
+              {languages.map((lang) => {
+                const Flag = FLAGS[lang.code];
+                return (
+                  <button
+                    key={lang.code}
+                    onClick={() => handleLanguageChange(lang.code)}
+                    className={`flex items-center justify-between w-full px-4 py-2.5 text-sm transition-colors ${
+                      i18n.language === lang.code
+                        ? 'bg-primary-50 text-primary-700'
+                        : 'text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Flag className={FLAG_CLASS} />
+                      <span className="font-medium">{lang.name}</span>
+                    </div>
+                    {i18n.language === lang.code && (
+                      <HiCheck className="w-4 h-4 text-primary-600" />
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </motion.div>
         )}
