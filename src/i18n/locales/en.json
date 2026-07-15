@@ -28,8 +28,8 @@
   "servicesPage": {
     "badge": "Our Services",
     "title": "Professional",
-    "titleHighlight": "Financial Services",
-    "subtitle": "Comprehensive accounting and tax solutions tailored to help your business thrive in Armenia's dynamic market."
+    "titleHighlight": "Accounting Services",
+    "subtitle": "Professional support in accounting, tax, and HR matters."
   },
   "contactPage": {
     "badge": "Get in Touch",
@@ -39,54 +39,55 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive financial solutions tailored to your business needs",
+    "subtitle": "Professional solutions for the effective organization of accounting and tax processes.",
     "viewAll": "View All Services",
     "learnMore": "Learn More",
     "backToServices": "Back to Services",
     "relatedServices": "Related Services",
     "whatWeOffer": "What We Offer",
-    "whyImportant": "Why It's Important",
+    "whyImportant": "What You Get by Working with INEA",
     "whoIsItFor": "Who Is It For",
     "ourAdvantages": "Our Advantages",
     "featuresInclude": "Our Services Include",
     "getStarted": "Get Started",
     "freeConsultation": "Free Consultation",
+    "freeConsultationDesc": "Get professional consultation for your business.",
     "accounting": {
       "title": "Accounting Services",
       "shortDescription": "Comprehensive accounting services ensuring accuracy, transparency, and full compliance with Armenian legislation.",
       "description": "We provide comprehensive accounting services, ensuring accuracy, transparency, and full compliance of your business's financial records with the legislation of the Republic of Armenia.\n\nOur team manages all stages of accounting, from the preparation of primary documentation to the compilation and submission of tax, statistical, and financial reports. We work with both small and large organizations, offering tailored and effective solutions that meet each client's specific needs.\n\nWith us, your business accounting is maintained in a secure, transparent, and fully controlled environment.",
       "features": [
-        "Ongoing bookkeeping and accounting maintenance",
-        "Tax calculations and preparation of tax reports",
-        "Preparation and submission of statistical reports",
-        "Payroll calculation and HR documentation management",
-        "Preparation and analysis of financial statements",
-        "Identification and prevention of accounting risks"
+        "Complete accounting and bookkeeping service",
+        "Reduction and control of tax risks",
+        "Timely preparation and submission of reports",
+        "Preparation and maintenance of HR documentation",
+        "Ensuring regulatory compliance",
+        "Professional consulting and support"
       ],
       "whyImportant": [
-        "Prevent tax penalties and fines",
-        "Ensure accuracy of financial reports",
-        "Improve financial control",
-        "Be prepared for tax and external audits",
-        "Maintain accounting discipline"
+        "Full organization of accounting and tax processes",
+        "Reduction and control of tax risks",
+        "Operations compliant with the requirements of Armenian legislation",
+        "Savings of time and resources",
+        "Reliable professional support at every stage of your business"
       ],
       "targetAudience": [
         "Small and medium-sized businesses",
-        "Large organizations",
-        "Start-up companies",
-        "Organizations seeking to outsource accounting"
+        "Individual entrepreneurs",
+        "Start-up and operating organizations",
+        "Everyone looking for a reliable accounting partner"
       ],
       "advantages": [
-        "Experienced accounting professionals",
+        "A team of qualified and experienced professionals",
         "Individual approach to each client",
-        "Full compliance with Armenian legislation",
-        "Accurate and systematic work",
-        "Data confidentiality guaranteed"
+        "Full compliance with the requirements of Armenian legislation",
+        "Prompt support and constant communication",
+        "Ensuring data confidentiality and security"
       ]
     },
     "tax": {
       "title": "Tax Advisory",
-      "shortDescription": "Comprehensive tax advisory services for accurate planning and lawful optimization of your tax burden.",
+      "shortDescription": "Professional tax advisory to help you make well-grounded decisions and ensure your business's financial stability.",
       "description": "We provide comprehensive tax advisory services aimed at the accurate planning of your business's tax obligations and the lawful optimization of the tax burden.\n\nOur specialists work with both small and large businesses, helping to establish a stable, transparent, and predictable tax framework in full compliance with the legislation of the Republic of Armenia.\n\nIf you wish to maintain a controlled tax environment and be confident in the future of your business, contact us and receive a free initial consultation.",
       "features": [
         "Analysis and planning of tax obligations",
@@ -151,8 +152,8 @@
       ]
     },
     "payroll": {
-      "title": "Payroll Management",
-      "shortDescription": "Complete payroll accounting services ensuring precise calculations, legal compliance, and full reporting.",
+      "title": "Payroll Calculation",
+      "shortDescription": "Complete payroll calculation services ensuring accurate calculations, compliance with legal requirements, and timely execution.",
       "description": "Accurate and timely payroll management is one of the most critical responsibilities of any organization. We offer comprehensive payroll accounting services, ensuring precise calculations, legal compliance, and complete reporting.\n\nOur goal is to relieve you from complex calculations and provide a clear and transparent payroll process for your employees.\n\nBy entrusting payroll management to us, you save time, reduce risks, and ensure the financial stability of your business.",
       "features": [
         "Payroll calculation based on employment contracts",
@@ -187,7 +188,7 @@
     },
     "financial": {
       "title": "Financial Advisory",
-      "shortDescription": "Strategic financial advice to help your business reduce risks, optimize costs, and make well-grounded decisions.",
+      "shortDescription": "We help you assess financial indicators, identify growth opportunities, and make effective business decisions.",
       "description": "Financial advisory is the cornerstone of your business's stable and efficient development. Through professional financial management, you can reduce risks, optimize costs, and make well-grounded business decisions.\n\nWe offer financial advisory services tailored to the specific characteristics of your organization and fully aligned with the legislative requirements of the Republic of Armenia.\n\nThrough financial advisory, we help you gain a comprehensive view of your business's financial position and choose the most effective paths for sustainable growth.",
       "features": [
         "Analysis of financial statements",
@@ -222,7 +223,7 @@
     },
     "audit": {
       "title": "Internal Audit",
-      "shortDescription": "Professional internal audit services providing objective assessments and practical recommendations.",
+      "shortDescription": "We assess your organization's internal control system, identify risks, and offer effective solutions for the sustainable development of your business.",
       "description": "Internal audit is a key tool for controlling an organization's financial and operational processes. It helps identify risks, prevent errors and misconduct, and enhance business efficiency and financial discipline.\n\nWe offer professional internal audit services, providing objective assessments and practical recommendations to support your organization's sustainable development.\n\nThrough internal audit, you gain a clear understanding of your business's financial position and effective tools to reduce risks and ensure sustainable growth.",
       "features": [
         "Review of the accounting system",
@@ -257,7 +258,7 @@
     },
     "review": {
       "title": "Accounting Review and Correction",
-      "shortDescription": "Professional accounting review ensuring financial accuracy, legal compliance, and safe business development.",
+      "shortDescription": "We review accounting data, correct identified discrepancies, and restore the accuracy of your bookkeeping.",
       "description": "Accounting review and correction is a crucial step in ensuring financial accuracy, legal compliance, and the safe development of a business. Errors or omissions may lead to tax risks, penalties, and financial losses.\n\nWe provide professional accounting review and correction services, ensuring full restoration and proper organization of your accounting system.\n\nBy entrusting this process to us, you receive clear, accurate, and well-organized accounting without unnecessary risks or concerns.",
       "features": [
         "Review of accounting documentation",
@@ -293,7 +294,7 @@
     },
     "reporting": {
       "title": "Financial Reporting Preparation",
-      "shortDescription": "Professional financial reporting services ensuring accuracy, transparency, and regulatory compliance.",
+      "shortDescription": "We prepare reliable and complete financial statements for management and decision-making.",
       "description": "Accurate and timely preparation of financial statements is the foundation of transparency and reliability of an organization's financial position. Precise financial reports are essential both for effective management decision-making and for proper cooperation with regulatory authorities and business partners.\n\nWe provide professional financial reporting preparation services in full compliance with the requirements of the legislation of the Republic of Armenia and applicable accounting standards.\n\nProfessionally prepared financial statements help you accurately assess your business's financial position and make well-informed decisions.",
       "features": [
         "Structuring and summarizing accounting data",
@@ -438,9 +439,11 @@
     "reset": "Reset"
   },
   "blog": {
-    "title": "Latest Updates",
-    "subtitle": "Stay informed about tax laws, regulations, and financial news",
+    "badge": "Blog",
+    "title": "News & Useful Information",
+    "subtitle": "The most important news, professional insights, and practical advice in one place",
     "readMore": "Read More",
+    "viewAll": "View All Articles",
     "categories": {
       "all": "All",
       "tax": "Tax Laws",
@@ -472,41 +475,41 @@
   "about": {
     "badge": "About Us",
     "title": "Why Choose INEA",
-    "subtitle": "Your trusted partner for all financial matters in Armenia",
-    "imageTitle": "Your success is our priority",
-    "imageSubtitle": "Dedicated professionals working for you",
-    "whyTitle": "Why businesses choose us",
+    "subtitle": "Accurate calculations, regulatory compliance, and an individual approach to every client",
+    "imageTitle": "Trust built through results",
+    "imageSubtitle": "Quality service and professional support for your business",
+    "whyTitle": "INEA's Advantages",
     "reasons": [
-      "Licensed & certified professionals",
-      "Deep knowledge of Armenian tax law",
-      "Personalized service approach",
-      "Multilingual support (EN/HY/RU)",
-      "Competitive pricing",
-      "Secure data handling"
+      "Accurate and responsible accounting service",
+      "Reduced tax risks and ensured regulatory compliance",
+      "Prompt response and constant communication with clients",
+      "A team of qualified and experienced professionals",
+      "Full confidentiality and security of your data",
+      "Individual solutions tailored to your business's specifics"
     ],
     "features": {
       "expertise": {
-        "title": "Expert Team",
-        "description": "Certified accountants with deep knowledge of Armenian tax law and international standards."
+        "title": "Experienced Team",
+        "description": "Thanks to years of accumulated experience in accounting, we deliver quality, accurate, and reliable service."
       },
       "technology": {
-        "title": "Modern Technology",
-        "description": "We use the latest accounting software and secure cloud solutions for efficiency."
+        "title": "Innovative Approach",
+        "description": "By applying digital tools, we ensure secure data management and optimization of work processes."
       },
       "support": {
-        "title": "24/7 Support",
-        "description": "Questions don't wait for business hours. Reach us anytime you need assistance."
+        "title": "Constant Client Communication",
+        "description": "We stay in constant contact with our clients, ensuring fast communication, prompt solutions, and professional support."
       },
       "pricing": {
         "title": "Transparent Pricing",
-        "description": "No hidden fees. Clear, upfront pricing so you always know what to expect."
+        "description": "We offer a fair and well-grounded pricing policy tailored to the scope of services and your business needs."
       }
     },
     "stats": {
-      "clients": "Clients Served",
-      "years": "Years Experience",
-      "saved": "Million AMD Saved",
-      "satisfaction": "Satisfaction Rate"
+      "clients": "Successful Collaborations",
+      "years": "Years in the Field",
+      "saved": "Successfully Completed Projects",
+      "satisfaction": "Long-Term Cooperation"
     }
   },
   "aboutPage": {
@@ -607,8 +610,8 @@
     "inArmenia": "in Armenia"
   },
   "cta": {
-    "title": "Ready to Optimize Your Finances?",
-    "subtitle": "Get a free consultation and discover how we can help your business grow.",
+    "title": "Your Business's Success Starts with Proper Accounting",
+    "subtitle": "We ensure accurate accounting, regulatory compliance, and professional support at every stage.",
     "button": "Schedule Free Consultation",
     "trust": [
       "Free Initial Consultation",
@@ -620,9 +623,9 @@
     "badge": "Industries We Serve",
     "title": "Industries",
     "titleHighlight": "We Serve",
-    "subtitle": "Specialized accounting and financial services tailored to the unique needs of your industry",
+    "subtitle": "Experience and a professional approach for organizations operating across various sectors of the economy.",
     "sectionTitle": "Industries We Serve",
-    "sectionSubtitle": "We provide specialized accounting services for various business sectors in Armenia",
+    "sectionSubtitle": "Experience and a professional approach for organizations operating across various sectors of the economy.",
     "showServices": "Show services",
     "hideServices": "Hide services",
     "ourServices": "Our services for this industry:",
@@ -632,27 +635,26 @@
     "viewAll": "View All Industries",
     "manufacturing": {
       "title": "Manufacturing",
-      "description": "We help manufacturing enterprises maintain accurate production cost accounting, manage inventory properly, and ensure compliance with industry-specific regulations.",
+      "description": "Reliable accounting support for the effective management of production processes and cost control.",
       "features": [
-        "Production cost calculation and analysis",
-        "Inventory and warehouse accounting",
-        "Fixed asset and depreciation accounting",
-        "Tax planning for manufacturing operations",
-        "Financial reporting for production enterprises"
+        "Effective management of production costs",
+        "Accounting of inventory movement",
+        "Accurate cost-price calculation",
+        "Ensuring tax compliance",
+        "Analysis of financial indicators"
       ],
-      "result": "Transparent financial management and optimized production costs."
+      "result": "Controlled costs, accurate cost-price, and well-grounded management decisions."
     },
     "trade": {
       "title": "Trade & Retail",
-      "description": "Comprehensive accounting solutions for wholesale and retail businesses, from inventory management to multi-location financial tracking.",
+      "description": "Accounting solutions for the effective organization of wholesale and retail trade.",
       "features": [
-        "Inventory and stock management accounting",
-        "Sales and revenue tracking",
-        "VAT and customs documentation",
-        "Multi-branch financial consolidation",
-        "Supplier and accounts payable management"
+        "Accounting and control of goods turnover",
+        "Management of inventory and warehouse balances",
+        "Profitability assessment and analysis",
+        "Preparation of financial data for management decisions"
       ],
-      "result": "Streamlined operations and accurate profit tracking across all locations."
+      "result": "Controlled turnover, accurate accounting, and profitable operations."
     },
     "it": {
       "title": "IT & Technology",

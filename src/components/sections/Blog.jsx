@@ -76,7 +76,7 @@ const Blog = ({ limit = 3 }) => {
           className="max-w-3xl mx-auto mb-12 text-center"
         >
           <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-            Latest News
+            {t('blog.badge')}
           </span>
           <h2 className="section-title">{t('blog.title')}</h2>
           <p className="section-subtitle">{t('blog.subtitle')}</p>
@@ -178,7 +178,7 @@ const Blog = ({ limit = 3 }) => {
               to="/blog"
               className="inline-flex items-center px-8 py-4 text-sm font-semibold transition-all duration-300 rounded-xl text-primary-700 bg-primary-50 hover:bg-primary-100 group"
             >
-              View All Articles
+              {t('blog.viewAll')}
               <HiArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
             </Link>
           </motion.div>

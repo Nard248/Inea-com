@@ -10,7 +10,7 @@ import {
   HiArrowRight,
   HiPhone,
 } from 'react-icons/hi';
-import { getServiceById, getRelatedServices } from '../data/services';
+import { getServiceById } from '../data/services';
 import { primaryPhone } from '../data/contact';
 import CTA from '../components/sections/CTA';
 
@@ -19,7 +19,6 @@ const ServiceDetailPage = () => {
   const { t } = useTranslation();
 
   const service = getServiceById(serviceId);
-  const relatedServices = getRelatedServices(serviceId, 3);
 
   // If service not found, redirect to services page
   if (!service) {
@@ -156,9 +155,9 @@ const ServiceDetailPage = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white overflow-hidden">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
             {/* Left Column - Description */}
             <div className="lg:col-span-2">
               {/* Full Description */}
@@ -191,7 +190,7 @@ const ServiceDetailPage = () => {
                 <h2 className="mb-6 text-2xl font-bold text-gray-900 md:text-3xl">
                   {t('services.featuresInclude')}
                 </h2>
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {Array.isArray(features) && features.map((feature, index) => (
                     <motion.div
                       key={index}
@@ -298,7 +297,7 @@ const ServiceDetailPage = () => {
                   {t('services.freeConsultation')}
                 </h3>
                 <p className="mb-4 text-sm text-gray-600">
-                  {t('cta.subtitle')}
+                  {t('services.freeConsultationDesc')}
                 </p>
                 <Link
                   to="/contact"
@@ -310,56 +309,6 @@ const ServiceDetailPage = () => {
               </motion.div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="py-20 bg-gray-50">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12 text-center"
-          >
-            <h2 className="mb-4 text-3xl font-bold text-gray-900">
-              {t('services.relatedServices')}
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid gap-6 md:grid-cols-3"
-          >
-            {relatedServices.map((relatedService) => {
-              const RelatedIcon = relatedService.icon;
-              return (
-                <motion.div key={relatedService.id} variants={itemVariants}>
-                  <Link
-                    to={`/services/${relatedService.id}`}
-                    className="block h-full p-6 transition-all duration-300 bg-white border border-gray-100 rounded-2xl hover:shadow-xl hover:border-primary-100 hover:-translate-y-1 group"
-                  >
-                    <div className={`inline-flex items-center justify-center w-12 h-12 mb-4 rounded-xl ${relatedService.bgColor}`}>
-                      <RelatedIcon className={`w-6 h-6 ${relatedService.iconColor}`} />
-                    </div>
-                    <h3 className="mb-2 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-700">
-                      {t(`services.${relatedService.id}.title`)}
-                    </h3>
-                    <p className="mb-4 text-sm text-gray-600 line-clamp-2">
-                      {t(`services.${relatedService.id}.shortDescription`)}
-                    </p>
-                    <span className="inline-flex items-center text-sm font-semibold text-primary-600 group-hover:text-primary-700">
-                      {t('services.learnMore')}
-                      <HiArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </Link>
-                </motion.div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
 

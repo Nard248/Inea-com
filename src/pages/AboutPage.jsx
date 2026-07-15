@@ -135,7 +135,7 @@ const AboutPage = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 overflow-hidden">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div
@@ -235,7 +235,7 @@ const AboutPage = () => {
       </section>
 
       {/* Approach Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 overflow-hidden">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div

@@ -7,9 +7,6 @@ import { primaryPhone } from '../../data/contact';
 const CTA = () => {
   const { t } = useTranslation();
 
-  const trust = t('cta.trust', { returnObjects: true });
-  const trustItems = Array.isArray(trust) ? trust : [];
-
   return (
     <section className="relative py-20 overflow-hidden lg:py-24">
       {/* Background */}
@@ -72,24 +69,6 @@ const CTA = () => {
             </a>
           </motion.div>
         </div>
-
-        {/* Trust Indicators */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-6 pt-12 mt-12 border-t border-white/20 lg:justify-start"
-        >
-          {trustItems.map((item, index) => (
-            <div key={index} className="flex items-center text-sm text-primary-100">
-              <svg className="flex-shrink-0 w-5 h-5 mr-2 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              {item}
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
