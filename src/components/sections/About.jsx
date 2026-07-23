@@ -83,9 +83,8 @@ const About = () => {
                 transition={{ delay: index * 0.1 }}
                 className="flex gap-5 p-6 transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-2xl hover:shadow-lg hover:border-primary-100"
               >
-                <div className={`flex-shrink-0 w-14 h-14 rounded-xl ${feature.bgColor} flex items-center justify-center`}>
-                  <feature.icon className={`w-7 h-7 text-transparent bg-clip-text bg-gradient-to-r ${feature.color}`} style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} />
-                  <feature.icon className={`w-7 h-7 bg-gradient-to-r ${feature.color} rounded-lg p-1 text-white`} />
+                <div className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-sm`}>
+                  <feature.icon className="text-white w-7 h-7" />
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-bold text-gray-900">
@@ -110,8 +109,8 @@ const About = () => {
               {/* Image/Visual Element */}
               <div className="relative mb-8 overflow-hidden aspect-video rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=800&auto=format&fit=crop"
-                  alt="Professional team"
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&auto=format&fit=crop"
+                  alt="Professional business handshake"
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 to-transparent" />
