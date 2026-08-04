@@ -11,7 +11,7 @@ const Hero = () => {
   const stats = [
     { value: 500, suffix: '+', label: t('hero.stats.clients') },
     { value: 10, suffix: '+', label: t('hero.stats.experience') },
-    { value: 2, prefix: '֏', suffix: 'B+', label: t('hero.stats.saved') },
+    { value: 98, suffix: '%+', label: t('hero.stats.saved') },
   ];
 
   const containerVariants = {

@@ -15,7 +15,7 @@ const PHONE_SECONDARY_DIGITS = '37443008787';
 export const contactInfo = {
   phones: [
     { display: '+374 91 02-55-55', href: `tel:+${PHONE_PRIMARY_DIGITS}` },
-    { display: '+374 43 008787', href: `tel:+${PHONE_SECONDARY_DIGITS}` },
+    { display: '+374 43 00-87-87', href: `tel:+${PHONE_SECONDARY_DIGITS}` },
   ],
   email: 'info@inea.am',
   emailHref: 'mailto:info@inea.am',

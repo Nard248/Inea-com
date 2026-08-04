@@ -14,7 +14,7 @@
   "hero": {
     "badge": "Trusted by 500+ businesses in Armenia",
     "title": "Your Trusted Partner",
-    "titleHighlight": "in Accounting & Tax",
+    "titleHighlight": "in Accounting",
     "subtitle": "We provide reliable and professional accounting services, helping your business operate correctly, transparently, and in full compliance with tax legislation.",
     "cta": "Start Free Consultation",
     "secondaryCta": "Explore Services",
@@ -22,7 +22,7 @@
     "stats": {
       "clients": "Happy Clients",
       "experience": "Years Experience",
-      "saved": "Tax Saved"
+      "saved": "Long-Term Cooperation"
     }
   },
   "servicesPage": {
@@ -330,9 +330,9 @@
   },
   "calculators": {
     "badge": "Financial Tools",
-    "title": "Tax",
-    "titleHighlight": "Calculators",
-    "subtitle": "Quick and accurate calculations for your financial planning based on Armenian tax legislation",
+    "title": "Calculators",
+    "titleHighlight": "",
+    "subtitle": "Use our practical calculators to quickly estimate taxes, salaries, vacation pay, and other financial indicators.",
     "selectCalculator": "Select Calculator",
     "soon": "Soon",
     "comingSoon": "Coming Soon",
@@ -343,18 +343,18 @@
     "disclaimerTitle": "Important Notice",
     "disclaimerText": "These calculators provide estimates based on current Armenian tax legislation. Results are for informational purposes only and should not be considered as professional tax advice. For accurate calculations specific to your situation, please consult with our tax professionals.",
     "types": {
-      "salary": "Salary Tax",
-      "salaryDesc": "Calculate net salary from gross with all Armenian tax deductions",
+      "salary": "Salary Calculator",
+      "salaryDesc": "Calculate salary, taxes, and the net amount payable.",
       "vat": "VAT Calculator",
-      "vatDesc": "Calculate VAT for your business transactions",
+      "vatDesc": "Calculate VAT and determine amounts with or without VAT.",
       "profit": "Profit Tax",
       "profitDesc": "Calculate corporate profit tax obligations",
-      "dividend": "Dividend Tax",
-      "dividendDesc": "Calculate dividend distribution taxes",
+      "dividend": "Dividend Calculator",
+      "dividendDesc": "Calculate dividend distribution and payable amounts.",
       "pension": "Pension Calculator",
       "pensionDesc": "Calculate pension contributions and benefits",
-      "currency": "Currency Converter",
-      "currencyDesc": "Convert between currencies at live exchange rates"
+      "currency": "Currency Exchange Calculator",
+      "currencyDesc": "Convert amounts between currencies quickly and conveniently."
     },
     "salary": {
       "title": "Salary Tax Calculator",
@@ -470,7 +470,10 @@
         "category": "Tax Laws",
         "date": "November 15, 2025"
       }
-    }
+    },
+    "source": "Official news from the State Revenue Committee",
+    "viewOnSource": "View on src.am",
+    "close": "Close"
   },
   "about": {
     "badge": "About Us",
@@ -514,14 +517,14 @@
   },
   "aboutPage": {
     "badge": "About INEA",
-    "heroTitle": "Your Trusted",
+    "heroTitle": "Your Business's Trusted",
     "heroTitleHighlight": "Financial Partner",
-    "heroSubtitle": "INEA LLC is an accounting services company established to provide organizations and individual entrepreneurs with high-quality, accurate, and fully Armenian-legislation-compliant professional support.",
+    "heroSubtitle": "INEA LLC is a professional accounting and financial services company whose mission is to ensure the financial stability, legal compliance, and effective management of your business.",
     "getStarted": "Get Started",
     "exploreServices": "Explore Services",
     "companyTitle": "Who We Are",
-    "companyDescription": "At the core of our activities lies the belief that proper and well-structured accounting is not merely a mandatory process, but also a vital tool for sustainable business development, financial control, and effective management.",
-    "companyBelief": "We collaborate with companies operating across various industries, offering an individualized approach and tailored solutions that align with the specific characteristics of each client's business.",
+    "companyDescription": "We believe accounting is more than just numbers and reports. It is the foundation of every business — enabling sound decisions, managed risks, and confident movement toward growth.",
+    "companyBelief": "Our team combines professional experience, responsibility, and modern approaches to offer solutions tailored to the specifics of each client's business. We work with organizations across many industries — becoming not just a service provider, but a reliable long-term partner.\n\nAt INEA LLC, every client matters, every challenge has a solution, and every collaboration is an opportunity to create lasting value.",
     "missionBadge": "Our Purpose",
     "missionTitle": "Our Mission",
     "missionDescription": "Our mission is to support businesses by creating reliable, transparent, and controllable accounting systems that contribute to financial stability, reduction of tax risks, and well-informed managerial decision-making.",
@@ -533,44 +536,44 @@
     "values": {
       "professionalism": {
         "title": "Professionalism",
-        "description": "We operate according to high professional standards, grounded in expertise, experience, and responsibility."
+        "description": "We follow high professional standards, combining experience, knowledge, and modern approaches to offer every client the best solutions."
       },
       "accuracy": {
         "title": "Accuracy & Transparency",
-        "description": "Every accounting process is carried out meticulously and in a fully traceable manner, eliminating uncertainty and minimizing risks."
+        "description": "We provide accurate and reliable financial information by organizing accounting processes around clear, orderly, and understandable principles."
       },
       "responsibility": {
         "title": "Responsibility",
-        "description": "We take full responsibility for the work we perform, strictly adhering to deadlines and agreed terms."
+        "description": "We take responsibility for the results of our work, delivering services that meet high professional standards and building long-term partnerships."
       },
       "reliability": {
         "title": "Reliability",
-        "description": "Our work is built on mutual trust and ethical principles."
+        "description": "We build long-term partnerships based on mutual trust, professional ethics, and an individual approach to every client."
       }
     },
     "approachBadge": "How We Work",
     "approachTitle": "Our Approach",
-    "approachDescription": "INEA LLC works with each client using an individualized approach, carefully analyzing the industry, scale, and specific characteristics of their business. We design accounting policies and accounting systems that best meet the needs of each particular business.",
-    "approachModern": "Our specialists continuously monitor legislative changes and apply modern accounting practices to ensure up-to-date and reliable accounting services.",
+    "approachDescription": "At INEA LLC, we believe successful cooperation is built on trust, professional responsibility, and an individual approach to every client.",
+    "approachModern": "We strive to be more than an accounting services provider — a trusted partner that supports your business at every stage with accurate bookkeeping, effective financial management, and timely professional advice. Our work is grounded in long-term cooperation, mutual trust, and dedication to our clients' success. We build partnerships based on professionalism, integrity, and high-quality service.\n\nYour success is the best result of our work, and we are ready to be your trusted financial partner at every stage of your business's growth.",
     "whyChooseBadge": "Why INEA",
     "whyChooseTitle": "Why Choose INEA LLC",
     "whyChoose": {
-      "r1": "Multidisciplinary experience and deep professional expertise",
-      "r2": "Individualized approach for every client",
-      "r3": "Comprehensive accounting services within a single platform",
-      "r4": "A team that constantly tracks legislative changes",
-      "r5": "Reduced tax and accounting risks",
-      "r6": "Clear, transparent, and controllable accounting systems"
+      "r1": "Deep professional expertise and industry experience",
+      "r2": "An individual, business-oriented approach",
+      "r3": "Efficient and well-organized accounting management",
+      "r4": "Fast response to legislative changes",
+      "r5": "Effective management of tax and financial risks",
+      "r6": "A reliable, orderly, and controllable accounting system"
     },
     "goalBadge": "Our Vision",
-    "goalTitle": "Our Goal and Outcome",
-    "goalDescription": "Our goal is to create an accounting environment where businesses operate with confidence, predictability, and full financial control.",
+    "goalTitle": "Our Goal",
+    "goalDescription": "We aim to become the trusted financial partner for business — providing professional, modern, and effective accounting solutions that support the sustainable growth and success of organizations.",
     "resultTitle": "The Result",
-    "resultDescription": "A stable accounting system, predictable tax burden, financial discipline, and effective management decisions."
+    "resultDescription": "An orderly and efficient accounting system, controlled financial processes, and reliable information — for sustainable business growth and well-founded decisions."
   },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "Ready to take control of your finances? Let's talk.",
+    "subtitle": "We are ready to become your trusted financial partner. Get in touch, and together we'll find the best solutions for your business.",
     "contactUs": "Contact Us",
     "infoTitle": "Contact Information",
     "quickTitle": "Quick Contact",
@@ -612,7 +615,7 @@
   "cta": {
     "title": "Your Business's Success Starts with Proper Accounting",
     "subtitle": "We ensure accurate accounting, regulatory compliance, and professional support at every stage.",
-    "button": "Schedule Free Consultation",
+    "button": "Free Consultation",
     "trust": [
       "Free Initial Consultation",
       "No Hidden Fees",
@@ -658,7 +661,7 @@
     },
     "it": {
       "title": "IT & Technology",
-      "description": "Specialized financial services for tech companies, startups, and digital businesses with focus on R&D accounting and international transactions.",
+      "description": "Accounting and financial services for IT companies, startups, and digital businesses — taking into account the specifics of the industry, international collaboration, and a fast-evolving business environment.",
       "features": [
         "R&D expenditure accounting and tax benefits",
         "Software licensing and intellectual property accounting",
@@ -670,63 +673,73 @@
     },
     "construction": {
       "title": "Construction",
-      "description": "Project-based accounting for construction companies, including contract accounting, progress billing, and equipment management.",
+      "description": "Specialized accounting services for construction companies — covering project financial management, contract accounting, and tax compliance for construction activities.",
       "features": [
-        "Project-based cost accounting",
-        "Contract and progress billing management",
-        "Equipment and asset tracking",
-        "Subcontractor payment management",
-        "Construction-specific tax compliance"
+        "Accounting of construction project income and expenses",
+        "Accounting of contracts, acceptance acts, and stage-based payments",
+        "Accounting of materials, equipment, and fixed assets",
+        "Management of subcontractor settlements and payments",
+        "Preparation of tax calculations and reports for construction companies",
+        "Monitoring of project profitability and cash flows",
+        "Tax risk assessment and legal compliance"
       ],
-      "result": "Clear project profitability and controlled construction costs."
+      "result": "Transparent financial management, clear control over each project's profitability, and effective cost management — enabling construction companies to make well-founded business decisions and reduce financial and tax risks."
     },
     "logistics": {
       "title": "Logistics & Transport",
-      "description": "Financial management for logistics companies, including fleet accounting, fuel cost tracking, and customs documentation.",
+      "description": "Specialized accounting services for logistics and transport companies — focused on the effective financial management of vehicles, costs, and international transactions.",
       "features": [
         "Fleet and vehicle accounting",
-        "Fuel and maintenance cost tracking",
-        "Customs and cross-border transaction documentation",
-        "Driver payroll and expense management",
-        "Route profitability analysis"
+        "Accounting of fuel, repair, and maintenance costs",
+        "Financial processing of customs and international shipping documents",
+        "Accounting of driver salaries, business trips, and related expenses",
+        "Monitoring of cash flows, receivables, and payables",
+        "Preparation of tax calculations and reports",
+        "Analysis of operating costs and route profitability"
       ],
-      "result": "Optimized operational costs and efficient fleet management."
+      "result": "Transparent financial management, controlled operating costs, and effective accounting support that help optimize logistics processes and sustain business growth."
     },
     "tourism": {
       "title": "Tourism & Hospitality",
-      "description": "Accounting services for hotels, restaurants, travel agencies, and tourism operators with seasonal business considerations.",
+      "description": "Specialized accounting services for hotels, restaurants, travel agencies, and tour operators — taking into account the industry's seasonality, multi-currency transactions, and operational specifics.",
       "features": [
-        "Revenue management and booking accounting",
-        "Seasonal cash flow planning",
-        "Multi-currency transaction handling",
-        "Tourism tax compliance",
-        "Staff scheduling and payroll for hospitality"
+        "Accounting of income, sales, and bookings",
+        "Seasonal cash flow planning and financial control",
+        "Accounting of multi-currency transactions and international settlements",
+        "Payroll, shift, and HR document management for staff",
+        "Analysis of operating costs and financial results",
+        "Monitoring of receivables and payables",
+        "Preparation of financial and management reports"
       ],
-      "result": "Year-round financial stability and optimized seasonal operations."
+      "result": "Accurate accounting, timely financial information, and the ability to make effective decisions."
     },
     "education": {
       "title": "Education",
-      "description": "Financial services for educational institutions, training centers, and EdTech companies with grant and tuition accounting.",
+      "description": "Specialized accounting services for educational institutions and training centers — taking into account tuition fees, grant programs, and the specifics of managing educational projects.",
       "features": [
-        "Tuition and fee management",
-        "Grant and scholarship accounting",
-        "Non-profit compliance (where applicable)",
-        "Faculty payroll and benefits administration",
-        "Program cost analysis"
+        "Accounting of tuition fees and payments",
+        "Accounting of grants, scholarships, and program funding",
+        "Payroll and HR document management for teachers and staff",
+        "Accounting of educational program income and expenses",
+        "Monitoring of receivables and payables",
+        "Preparation of financial and management reports",
+        "Analysis of the financial results of educational projects"
       ],
-      "result": "Transparent fund management and sustainable institutional growth."
+      "result": "Effective financial organization, controlled financial flows, and reliable accounting support that foster the sustainable development of educational programs and the institution's long-term growth."
     },
     "healthcare": {
       "title": "Healthcare",
-      "description": "Specialized accounting for clinics, hospitals, and medical practices with healthcare-specific regulatory compliance.",
+      "description": "Specialized accounting services for clinics, hospitals, medical centers, and private medical practices — taking into account the specifics of the industry and its financial management requirements.",
       "features": [
-        "Medical billing and revenue cycle management",
-        "Healthcare regulatory compliance",
-        "Medical equipment and supply accounting",
-        "Insurance and patient payment tracking",
-        "Staff credentialing and payroll"
+        "Accounting of medical service income and payments",
+        "Accounting of medical equipment, medicines, and inventory",
+        "Management of settlements with insurance companies and patients",
+        "Payroll and HR document management for medical and administrative staff",
+        "Monitoring of receivables and payables",
+        "Preparation of financial and management reports",
+        "Analysis of costs and financial results"
       ],
-      "result": "Compliant operations and optimized healthcare revenue management."
+      "result": "Effective financial organization, controlled income and expenses, and reliable accounting support — letting you focus on the quality of medical care and the institution's growth."
     },
     "whyChoose": {
       "title": "Why Choose INEA for Your Industry",
@@ -734,27 +747,27 @@
       "reasons": {
         "r1": {
           "title": "Industry Expertise",
-          "description": "Our specialists have hands-on experience in your specific industry sector."
+          "description": "Our specialists have years of experience providing accounting and financial services to organizations across many industries."
         },
         "r2": {
           "title": "Regulatory Compliance",
-          "description": "We stay current with industry-specific regulations and tax requirements."
+          "description": "We ensure full compliance with current tax and accounting legislation."
         },
         "r3": {
           "title": "Tailored Solutions",
-          "description": "No one-size-fits-all approaches—every solution is customized for your business."
+          "description": "We offer each client an individual approach and solutions tailored to the specifics of their business."
         },
         "r4": {
           "title": "Proactive Advisory",
-          "description": "We identify opportunities and risks before they impact your business."
+          "description": "We continuously provide professional advice and support effective business management."
         },
         "r5": {
           "title": "Technology Integration",
-          "description": "Modern tools and systems that integrate with your industry workflows."
+          "description": "We use modern technological tools to organize and automate accounting processes efficiently."
         },
         "r6": {
           "title": "Dedicated Support",
-          "description": "A dedicated team that understands your business and responds quickly."
+          "description": "Our team is always available to respond quickly, provide support, and stand by your business."
         }
       }
     }
@@ -844,7 +857,7 @@
     "cta": {
       "title": "Not sure which plan is right for you?",
       "subtitle": "Our team will help you choose the best solution for your business.",
-      "button": "Schedule a Free Consultation"
+      "button": "Free Consultation"
     }
   }
 }

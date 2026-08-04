@@ -127,7 +127,7 @@ const AboutPage = () => {
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
               {t('aboutPage.companyDescription')}
             </p>
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-4 text-lg text-gray-600 leading-relaxed whitespace-pre-line">
               {t('aboutPage.companyBelief')}
             </p>
           </motion.div>
@@ -266,7 +266,7 @@ const AboutPage = () => {
               <p className="text-lg text-gray-600 leading-relaxed">
                 {t('aboutPage.approachDescription')}
               </p>
-              <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+              <p className="mt-4 text-lg text-gray-600 leading-relaxed whitespace-pre-line">
                 {t('aboutPage.approachModern')}
               </p>
             </motion.div>

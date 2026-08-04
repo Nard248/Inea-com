@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
               <div className="inline-block p-2 bg-white rounded-lg">
-                <img src={`${import.meta.env.BASE_URL}Logo.jpg`} alt="INEA" className="w-auto h-10" />
+                <img src={`${import.meta.env.BASE_URL}Logo.png`} alt="INEA" className="w-auto h-10" />
               </div>
             </Link>
             <p className="mb-6 text-gray-400 leading-relaxed">
