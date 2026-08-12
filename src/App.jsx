@@ -143,7 +143,7 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <Router basename="/Inea-com">
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <AnimatedRoutes />

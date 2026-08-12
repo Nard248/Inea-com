@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-// With basename="/Inea-com", all hrefs include this prefix
-const BASE_PATH = '/Inea-com';
+// App is served from the domain root, so hrefs have no base-path prefix
+const BASE_PATH = '';
 
 test.describe('Services Page', () => {
   test('should display all 8 services on the services page', async ({ page }) => {
