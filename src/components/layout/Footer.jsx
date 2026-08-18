@@ -24,7 +24,8 @@ const Footer = () => {
   const quickLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/services', label: t('nav.services') },
-    { to: '/calculators', label: t('nav.calculators') },
+    // { to: '/calculators', label: t('nav.calculators') }, // hidden until calculators launch
+
     { to: '/pricing', label: t('nav.pricing') },
     { to: '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },

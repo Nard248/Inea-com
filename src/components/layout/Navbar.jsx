@@ -26,7 +26,8 @@ const Navbar = () => {
     { to: '/', label: t('nav.home') },
     { to: '/services', label: t('nav.services') },
     { to: '/industries', label: t('nav.industries') },
-    { to: '/calculators', label: t('nav.calculators') },
+    // { to: '/calculators', label: t('nav.calculators') }, // hidden until calculators launch
+
     { to: '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },
     { to: '/contact', label: t('nav.contact') },
