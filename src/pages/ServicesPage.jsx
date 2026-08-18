@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Seo from '../components/Seo';
 import { motion } from 'framer-motion';
 import Services from '../components/sections/Services';
 import CTA from '../components/sections/CTA';
@@ -8,6 +9,7 @@ const ServicesPage = () => {
 
   return (
     <>
+      <Seo title={t('seo.services.title')} description={t('seo.services.description')} />
       {/* Page Header */}
       <section className="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-gray-50">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl" />

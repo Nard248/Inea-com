@@ -8,7 +8,9 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:5173/',
+    // Dedicated port: 5173 is often occupied by an unrelated dev server, and
+    // reuseExistingServer would silently run the suite against the wrong app.
+    baseURL: 'http://localhost:5199/',
     trace: 'on-first-retry',
   },
   projects: [
@@ -21,8 +23,8 @@ export default defineConfig({
   // with `npm run dev` in a separate terminal before running tests.
   // Alternatively, use `npm run test:with-server` which handles this.
   webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:5173/',
+    command: 'npm run dev -- --port 5199 --strictPort',
+    url: 'http://localhost:5199/',
     reuseExistingServer: true,
     timeout: 30000,
   },

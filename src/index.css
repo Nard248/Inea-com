@@ -51,15 +51,9 @@
   }
 }
 
-/* Armenian font support */
-@font-face {
-  font-family: 'Noto Sans Armenian';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://fonts.gstatic.com/s/notosansarmenian/v42/ZgN0jOZKPa7CHqq0h37c7ReDUubm2SEdFXp7ig73qtTY5idb74R9UdM3y2nZLoo4.woff2') format('woff2');
-  unicode-range: U+0530-058F, U+FB13-FB17;
-}
-
+/* Armenian font support — Noto Sans Armenian is loaded via the Google Fonts
+   stylesheet in index.html (a pinned gstatic file URL here went 404 when
+   Google rotated versions; the CSS API always serves current ones). */
 html[lang="hy"] body {
   font-family: 'Noto Sans Armenian', 'Inter', system-ui, sans-serif;
 }

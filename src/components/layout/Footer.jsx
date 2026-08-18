@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import {
@@ -170,14 +170,9 @@ const Footer = () => {
             <p className="text-sm text-gray-500">
               &copy; {currentYear} {t('footer.brand')}. {t('footer.copyright')}
             </p>
-            <div className="flex items-center gap-6 text-sm text-gray-500">
-              <Link to="/privacy" className="transition-colors hover:text-primary-400">
-                {t('footer.privacy')}
-              </Link>
-              <Link to="/terms" className="transition-colors hover:text-primary-400">
-                {t('footer.terms')}
-              </Link>
-            </div>
+            {/* Privacy / Terms links removed until those pages exist —
+                they previously led to a blank screen. Restore alongside
+                real /privacy and /terms routes. */}
             <p className="flex items-center text-sm text-gray-500">
               {t('footer.madeWith')}{' '}
               <HiHeart className="w-4 h-4 mx-1 text-red-500" />{' '}

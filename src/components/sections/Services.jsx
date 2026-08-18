@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { HiArrowRight } from 'react-icons/hi';
 import { getAllServices } from '../../data/services';
 

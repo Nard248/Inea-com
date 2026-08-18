@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import Link, { delocalizePath } from '../LocalizedLink';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
@@ -33,7 +34,8 @@ const Navbar = () => {
     { to: '/contact', label: t('nav.contact') },
   ];
 
-  const isActive = (path) => location.pathname === path;
+  // Compare language-neutral paths so /en/services still lights up "Services"
+  const isActive = (path) => delocalizePath(location.pathname) === path;
 
   return (
     <motion.nav

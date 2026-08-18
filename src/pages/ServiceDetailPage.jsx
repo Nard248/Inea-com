@@ -1,5 +1,7 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Link, { localizePath } from '../components/LocalizedLink';
+import Seo from '../components/Seo';
 import { motion } from 'framer-motion';
 import {
   HiArrowLeft,
@@ -16,13 +18,13 @@ import CTA from '../components/sections/CTA';
 
 const ServiceDetailPage = () => {
   const { serviceId } = useParams();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const service = getServiceById(serviceId);
 
   // If service not found, redirect to services page
   if (!service) {
-    return <Navigate to="/services" replace />;
+    return <Navigate to={localizePath('/services', i18n.language)} replace />;
   }
 
   const Icon = service.icon;
@@ -51,6 +53,7 @@ const ServiceDetailPage = () => {
 
   return (
     <>
+      <Seo title={title} description={t(`services.${service.id}.shortDescription`)} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Background Image with Overlay */}

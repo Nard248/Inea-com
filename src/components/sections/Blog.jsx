@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiArrowRight, HiCalendar, HiExternalLink, HiNewspaper, HiX } from 'react-icons/hi';
 import useSrcNews from '../../hooks/useSrcNews';

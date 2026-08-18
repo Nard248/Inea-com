@@ -861,5 +861,39 @@
       "subtitle": "Our team will help you choose the best solution for your business.",
       "button": "Free Consultation"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Accounting & Tax Services in Armenia",
+      "description": "Professional accounting, tax planning, payroll and financial consulting for businesses in Armenia. Get a free consultation with INEA's experts in Yerevan."
+    },
+    "services": {
+      "title": "Accounting, Tax & Payroll Services",
+      "description": "Full range of accounting services: bookkeeping, tax filing, payroll, HR administration, audit support and financial reporting for companies in Armenia."
+    },
+    "industries": {
+      "title": "Industries We Serve",
+      "description": "Specialized accounting solutions for IT, construction, retail, HoReCa, manufacturing and more — tailored to how your industry works in Armenia."
+    },
+    "calculators": {
+      "title": "Financial Calculators",
+      "description": "Armenian salary tax calculator, currency converter and more free financial tools for businesses and employees. Coming soon."
+    },
+    "pricing": {
+      "title": "Pricing & Packages",
+      "description": "Transparent accounting service packages for startups, SMEs and enterprises in Armenia. Find the plan that fits your business."
+    },
+    "blog": {
+      "title": "News & Insights",
+      "description": "Tax law updates, accounting news and practical finance guidance for businesses operating in Armenia."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "INEA is an accounting firm in Yerevan combining experienced professionals and modern tools to keep your business compliant and growing."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Talk to INEA's accountants in Yerevan. Call +374 91 02-55-55, email info@inea.am or visit us at Adonts Street 2. Free consultation available."
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
+import Seo from '../components/Seo';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import {
   HiAcademicCap,
   HiEye,
@@ -60,6 +61,7 @@ const AboutPage = () => {
 
   return (
     <>
+      <Seo title={t('seo.about.title')} description={t('seo.about.description')} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-gray-50">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl" />

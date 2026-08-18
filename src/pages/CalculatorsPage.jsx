@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import {
@@ -13,6 +13,7 @@ import {
 } from 'react-icons/hi';
 import SalaryTaxCalculator from '../components/calculators/SalaryTaxCalculator';
 import CurrencyConverter from '../components/calculators/CurrencyConverter';
+import Seo from '../components/Seo';
 
 // Calculators are hidden behind a coming-soon screen until they are ready for
 // launch. Flip to true to restore the full page, and un-comment the
@@ -52,6 +53,7 @@ const CalculatorsPage = () => {
   if (!CALCULATORS_ENABLED) {
     return (
       <>
+        <Seo title={t('seo.calculators.title')} description={t('seo.calculators.description')} />
         {pageHeader}
         <section className="py-20 bg-white">
           <div className="max-w-3xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -156,6 +158,7 @@ const CalculatorsPage = () => {
 
   return (
     <>
+      <Seo title={t('seo.calculators.title')} description={t('seo.calculators.description')} />
       {pageHeader}
 
       {/* Calculator Selection */}

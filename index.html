@@ -1,25 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="hy">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/Logo.jpg" type="image/jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="INEA - Professional accounting and tax services in Armenia. Tax planning, bookkeeping, audit, payroll, business registration, and financial consulting." />
-    <meta name="keywords" content="accounting, tax services, Armenia, Yerevan, bookkeeping, audit, payroll, business registration, financial consulting, INEA" />
     <meta name="author" content="INEA" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph fallback for scrapers that don't run JS (social share bots).
+         Description + canonical are intentionally NOT set here: react-helmet-async
+         emits them per route, and a second static copy would leave Google seeing
+         duplicate/conflicting tags. -->
     <meta property="og:title" content="INEA - Professional Accounting Services in Armenia" />
     <meta property="og:description" content="Expert accounting and tax services for businesses in Armenia. Free consultation available." />
-    <meta property="og:image" content="/Logo.jpg" />
+    <meta property="og:image" content="https://inea.am/Logo.png" />
+    <meta property="og:url" content="https://inea.am/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="INEA" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Structured data: lets Google show INEA as a local business with
+         address and contact details in search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "INEA",
+      "url": "https://inea.am/",
+      "logo": "https://inea.am/Logo.png",
+      "image": "https://inea.am/Logo.png",
+      "description": "Professional accounting, tax, payroll and financial consulting services for businesses in Armenia.",
+      "telephone": "+37491025555",
+      "email": "info@inea.am",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Adonts Street 2",
+        "addressLocality": "Yerevan",
+        "addressCountry": "AM"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Armenia"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1Cz7c6e6qJ/?mibextid=wwXIfr",
+        "https://www.instagram.com/inea_accounting/",
+        "https://www.linkedin.com/company/108498438/"
+      ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Armenian:wght@300..900&display=swap" rel="stylesheet">
 
     <title>INEA | Professional Accounting & Tax Services in Armenia</title>
   </head>

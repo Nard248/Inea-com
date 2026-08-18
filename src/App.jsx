@@ -1,6 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Suspense, lazy, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { LANGS, DEFAULT_LANG, localizePath } from './components/LocalizedLink';
 
 // Layout
 import Layout from './components/layout/Layout';
@@ -55,22 +58,60 @@ const PageWrapper = ({ children }) => {
   );
 };
 
+// Unknown paths inside a language tree go to that language's home page
+// instead of rendering a blank screen.
+const RedirectHome = () => {
+  const { i18n } = useTranslation();
+  return <Navigate to={localizePath('/', i18n.language)} replace />;
+};
+
+// Language wrapper: the URL prefix decides the language (/ = hy, /en, /ru).
+const LanguageLayout = ({ lang }) => {
+  const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  // Sync i18n when a client-side navigation crosses a language boundary.
+  // Deliberately a passive effect: on first mount the pages' useTranslation
+  // hooks subscribe in their own passive effects, which run before this one
+  // (child-first) — a layout effect here would fire languageChanged before
+  // anyone listens and the switch would be lost. Direct loads are already
+  // covered by the URL sniff in src/i18n/index.js.
+  useEffect(() => {
+    if (i18n.language !== lang) i18n.changeLanguage(lang);
+  }, [lang, i18n]);
+
+  // Returning visitors who explicitly picked EN/RU (stored by the language
+  // switcher) get moved from Armenian URLs to their language. Crawlers carry
+  // no localStorage, so they always see Armenian at the root URLs.
+  useEffect(() => {
+    if (lang !== DEFAULT_LANG) return;
+    const stored = localStorage.getItem('i18nextLng');
+    if (stored && stored !== DEFAULT_LANG && LANGS.includes(stored)) {
+      navigate(localizePath(pathname, stored), { replace: true });
+    }
+    // mount-only: reacting to later pathname changes would fight navigation
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return <Layout />;
+};
+
 // Animated Routes component
 const AnimatedRoutes = () => {
   const location = useLocation();
 
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Layout />}>
-          <Route
-            index
-            element={
-              <PageWrapper>
-                <HomePage />
-              </PageWrapper>
-            }
-          />
+  // One shared set of page routes, mounted under all three language trees.
+  const pageRoutes = (
+    <>
+      <Route
+        index
+        element={
+          <PageWrapper>
+            <HomePage />
+          </PageWrapper>
+        }
+      />
           <Route
             path="services"
             element={
@@ -135,6 +176,21 @@ const AnimatedRoutes = () => {
               </PageWrapper>
             }
           />
+      <Route path="*" element={<RedirectHome />} />
+    </>
+  );
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<LanguageLayout lang="hy" />}>
+          {pageRoutes}
+        </Route>
+        <Route path="/en" element={<LanguageLayout lang="en" />}>
+          {pageRoutes}
+        </Route>
+        <Route path="/ru" element={<LanguageLayout lang="ru" />}>
+          {pageRoutes}
         </Route>
       </Routes>
     </AnimatePresence>
@@ -143,12 +199,14 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
-      <ScrollToTop />
-      <Suspense fallback={<PageLoader />}>
-        <AnimatedRoutes />
-      </Suspense>
-    </Router>
+    <HelmetProvider>
+      <Router basename={import.meta.env.BASE_URL}>
+        <ScrollToTop />
+        <Suspense fallback={<PageLoader />}>
+          <AnimatedRoutes />
+        </Suspense>
+      </Router>
+    </HelmetProvider>
   );
 }
 

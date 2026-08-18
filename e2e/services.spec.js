@@ -1,11 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-// App is served from the domain root, so hrefs have no base-path prefix
-const BASE_PATH = '';
+// English lives under /en (Armenian owns the root, Russian /ru — see
+// src/components/LocalizedLink.jsx). This suite exercises the English tree so
+// its text assertions hold; the Language URLs block covers hy/ru and hreflang.
+const BASE_PATH = '/en';
 
 test.describe('Services Page', () => {
   test('should display all 8 services on the services page', async ({ page }) => {
-    await page.goto('services');
+    await page.goto(`${BASE_PATH}/services`);
 
     // Wait for page to load - look for the section title
     await expect(page.locator('h2.section-title').first()).toBeVisible({ timeout: 10000 });
@@ -17,7 +19,7 @@ test.describe('Services Page', () => {
   });
 
   test('should navigate to individual service pages', async ({ page }) => {
-    await page.goto('services');
+    await page.goto(`${BASE_PATH}/services`);
 
     // Wait for services to load
     await page.waitForSelector(`a[href^="${BASE_PATH}/services/accounting"]`, { timeout: 10000 });
@@ -34,7 +36,7 @@ test.describe('Services Page', () => {
   });
 
   test('should display back button on service detail page', async ({ page }) => {
-    await page.goto('services/accounting');
+    await page.goto(`${BASE_PATH}/services/accounting`);
 
     // Wait for page to load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
@@ -48,48 +50,8 @@ test.describe('Services Page', () => {
     await expect(page).toHaveURL(/\/services$/);
   });
 
-  test('should display related services on service detail page', async ({ page }) => {
-    await page.goto('services/accounting');
-
-    // Wait for page to load
-    await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
-
-    // Scroll to related services section
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-
-    // Wait for related services to be visible
-    const relatedServicesHeading = page.locator('h2').filter({ hasText: /related/i });
-    await expect(relatedServicesHeading).toBeVisible({ timeout: 10000 });
-
-    // Check that related service cards are present (3 related services)
-    const relatedSection = page.locator('section.bg-gray-50');
-    const relatedServiceCards = relatedSection.locator(`a[href^="${BASE_PATH}/services/"]`);
-    await expect(relatedServiceCards).toHaveCount(3);
-  });
-
-  test('should navigate between related services', async ({ page }) => {
-    await page.goto('services/accounting');
-
-    // Wait for page to load
-    await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
-
-    // Scroll to related services
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.waitForTimeout(500);
-
-    // Click on a related service
-    const relatedSection = page.locator('section.bg-gray-50');
-    const relatedServiceLink = relatedSection.locator(`a[href^="${BASE_PATH}/services/"]`).first();
-    await expect(relatedServiceLink).toBeVisible({ timeout: 10000 });
-    await relatedServiceLink.click();
-
-    // Verify URL changed to a different service
-    await expect(page).not.toHaveURL(/\/services\/accounting$/);
-    await expect(page).toHaveURL(/\/services\/[\w-]+/);
-  });
-
   test('should redirect to services page for invalid service ID', async ({ page }) => {
-    await page.goto('services/invalid-service-id');
+    await page.goto(`${BASE_PATH}/services/invalid-service-id`);
 
     // Should redirect to services page (React Navigate component)
     await expect(page).toHaveURL(/\/services$/, { timeout: 10000 });
@@ -98,7 +60,7 @@ test.describe('Services Page', () => {
 
 test.describe('Featured Services Carousel (Homepage)', () => {
   test('should display featured services carousel on homepage', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Check for services section with carousel
     const servicesSection = page.locator('section').filter({ hasText: /services/i }).first();
@@ -106,7 +68,7 @@ test.describe('Featured Services Carousel (Homepage)', () => {
   });
 
   test('should display navigation dots in carousel', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Wait for carousel to load
     await page.waitForTimeout(1000);
@@ -117,7 +79,7 @@ test.describe('Featured Services Carousel (Homepage)', () => {
   });
 
   test('should navigate carousel with arrows', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Wait for page to fully load
     await page.waitForTimeout(1000);
@@ -144,7 +106,7 @@ test.describe('Featured Services Carousel (Homepage)', () => {
   });
 
   test('should navigate to service detail from carousel', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Wait for carousel to load
     await page.waitForTimeout(500);
@@ -159,7 +121,7 @@ test.describe('Featured Services Carousel (Homepage)', () => {
   });
 
   test('should have View All Services link', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Scroll to find View All link
     await page.evaluate(() => window.scrollTo(0, 1500));
@@ -175,8 +137,8 @@ test.describe('Featured Services Carousel (Homepage)', () => {
 });
 
 test.describe('Services Internationalization', () => {
-  test('should display services in English by default', async ({ page }) => {
-    await page.goto('services');
+  test('should display services in English under /en', async ({ page }) => {
+    await page.goto(`${BASE_PATH}/services`);
 
     // Wait for page to load
     await page.waitForTimeout(1000);
@@ -186,7 +148,7 @@ test.describe('Services Internationalization', () => {
   });
 
   test('should display service detail page content', async ({ page }) => {
-    await page.goto('services/accounting');
+    await page.goto(`${BASE_PATH}/services/accounting`);
 
     // Wait for page to load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
@@ -202,7 +164,7 @@ test.describe('Services Internationalization', () => {
 
 test.describe('Services Accessibility', () => {
   test('should have proper heading structure', async ({ page }) => {
-    await page.goto('services/accounting');
+    await page.goto(`${BASE_PATH}/services/accounting`);
 
     // Wait for page to fully load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
@@ -218,7 +180,7 @@ test.describe('Services Accessibility', () => {
   });
 
   test('should have accessible navigation buttons', async ({ page }) => {
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Wait for page to load
     await page.waitForTimeout(1000);
@@ -236,7 +198,7 @@ test.describe('Services Accessibility', () => {
   });
 
   test('should have accessible images with alt text', async ({ page }) => {
-    await page.goto('services/accounting');
+    await page.goto(`${BASE_PATH}/services/accounting`);
 
     // Wait for page to load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
@@ -257,7 +219,7 @@ test.describe('Services Accessibility', () => {
 test.describe('Services Navigation Flow', () => {
   test('should complete full navigation flow', async ({ page }) => {
     // Start at homepage
-    await page.goto('');
+    await page.goto(BASE_PATH);
 
     // Wait for page to load
     await page.waitForTimeout(1000);
@@ -283,23 +245,33 @@ test.describe('Services Navigation Flow', () => {
     // Wait for detail page to load
     await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
 
-    // Navigate to related service
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.waitForTimeout(500);
-
-    const relatedSection = page.locator('section.bg-gray-50');
-    const relatedLink = relatedSection.locator(`a[href^="${BASE_PATH}/services/"]`).first();
-    await expect(relatedLink).toBeVisible({ timeout: 10000 });
-    await relatedLink.click();
-
-    // Should be on a different service detail page
-    await expect(page).toHaveURL(/\/services\/[\w-]+/);
-    await expect(page.locator('h1')).toBeVisible({ timeout: 10000 });
-
     // Use back button to return to services list
     const backButton = page.getByRole('link', { name: /back to services/i });
     await expect(backButton).toBeVisible();
     await backButton.click();
     await expect(page).toHaveURL(/\/services$/);
+  });
+});
+
+test.describe('Language URLs', () => {
+  test('root serves Armenian', async ({ page }) => {
+    await page.goto('/');
+    await expect(page).toHaveTitle(/Հաշվապահական/);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'hy');
+  });
+
+  test('/ru serves Russian with prefixed nav links', async ({ page }) => {
+    await page.goto('/ru');
+    await expect(page).toHaveTitle(/Бухгалтерские/);
+    await expect(page.locator('nav a[href="/ru/services"]').first()).toBeVisible();
+  });
+
+  test('language versions carry reciprocal hreflang links', async ({ page }) => {
+    await page.goto(`${BASE_PATH}/services`);
+    const alt = (l) => page.locator(`link[rel="alternate"][hreflang="${l}"]`);
+    await expect(alt('hy')).toHaveAttribute('href', 'https://inea.am/services');
+    await expect(alt('en')).toHaveAttribute('href', 'https://inea.am/en/services');
+    await expect(alt('ru')).toHaveAttribute('href', 'https://inea.am/ru/services');
+    await expect(alt('x-default')).toHaveAttribute('href', 'https://inea.am/en/services');
   });
 });

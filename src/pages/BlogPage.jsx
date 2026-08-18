@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Seo from '../components/Seo';
 import { motion } from 'framer-motion';
 import Blog from '../components/sections/Blog';
 
@@ -7,6 +8,7 @@ const BlogPage = () => {
 
   return (
     <>
+      <Seo title={t('seo.blog.title')} description={t('seo.blog.description')} />
       {/* Page Header */}
       <section className="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-gray-50">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl" />

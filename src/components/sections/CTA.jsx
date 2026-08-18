@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { motion } from 'framer-motion';
 import { HiArrowRight, HiPhone } from 'react-icons/hi';
 import { primaryPhone } from '../../data/contact';

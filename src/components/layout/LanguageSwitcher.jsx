@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiChevronDown, HiCheck } from 'react-icons/hi';
 import { FLAGS } from '../ui/Flags';
+import { localizePath, delocalizePath } from '../LocalizedLink';
 
 const FLAG_CLASS = 'w-6 h-4 rounded-sm shadow-sm ring-1 ring-black/5';
 
@@ -14,6 +16,8 @@ const languages = [
 
 const LanguageSwitcher = ({ isMobile = false }) => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -29,9 +33,12 @@ const LanguageSwitcher = ({ isMobile = false }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Language is part of the URL: switching navigates to the same page in the
+  // target language. The stored preference lets returning visitors land on
+  // their language when they open a root (Armenian) URL.
   const handleLanguageChange = (langCode) => {
-    i18n.changeLanguage(langCode);
-    document.documentElement.lang = langCode;
+    localStorage.setItem('i18nextLng', langCode);
+    navigate(localizePath(delocalizePath(pathname), langCode));
     setIsOpen(false);
   };
 
