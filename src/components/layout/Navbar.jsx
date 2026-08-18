@@ -49,24 +49,28 @@ const Navbar = () => {
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <motion.img
-              src={`${import.meta.env.BASE_URL}Logo.png`}
-              alt="INEA"
-              className="w-auto h-12"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            />
-          </Link>
+          {/* Logo — equal xl:flex-1 side columns center the nav links exactly;
+              below xl (where long Armenian labels leave no slack) the bar
+              falls back to evenly-spread justify-between */}
+          <div className="flex items-center shrink-0 xl:flex-1">
+            <Link to="/" className="flex items-center space-x-3">
+              <motion.img
+                src={`${import.meta.env.BASE_URL}Logo.png`}
+                alt="INEA"
+                className="w-auto h-12"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="items-center hidden space-x-1 md:flex">
+          <div className="items-center hidden space-x-1 lg:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg ${
+                className={`relative px-2 xl:px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors duration-200 rounded-lg ${
                   isActive(link.to)
                     ? 'text-primary-700'
                     : 'text-gray-700 hover:text-primary-600'
@@ -86,9 +90,9 @@ const Navbar = () => {
           </div>
 
           {/* Right side - Language & CTA */}
-          <div className="items-center hidden space-x-4 md:flex">
+          <div className="items-center justify-end hidden space-x-2 xl:space-x-4 lg:flex xl:flex-1">
             <LanguageSwitcher />
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact" className="btn-primary whitespace-nowrap">
               {t('nav.getConsultation')}
             </Link>
           </div>
@@ -96,7 +100,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 rounded-lg md:hidden hover:bg-gray-100"
+            className="p-2 rounded-lg lg:hidden hover:bg-gray-100"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -115,7 +119,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden bg-white border-t border-gray-100 shadow-lg md:hidden"
+            className="overflow-hidden bg-white border-t border-gray-100 shadow-lg lg:hidden"
           >
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (
