@@ -1,14 +1,10 @@
 import { useState, useEffect } from 'react';
 import bakedNews from '../data/src-news.json';
 
-const SRC_API = 'https://www.src.am/am/getNews1?lang=am&page=1';
-
-// src.am sends no CORS headers, so live refresh goes through public proxies.
-// If they all fail we silently keep the news baked in at build time.
-const PROXIES = [
-  (url) => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
-  (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-];
+// src.am sends no CORS headers, so live news comes through our own same-origin
+// proxy (functions/index.js in prod, vite.config.js proxy in dev).
+// If it fails we keep the news baked in at build time.
+const LIVE_NEWS_API = '/api/src-news';
 
 const stripHtml = (html) => {
   const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -37,29 +33,27 @@ const useSrcNews = () => {
     let cancelled = false;
 
     (async () => {
-      for (const proxy of PROXIES) {
-        try {
-          const res = await fetch(proxy(SRC_API), {
-            signal: AbortSignal.timeout(8000),
-          });
-          if (!res.ok) continue;
-          const data = await res.json();
-          if (!Array.isArray(data?.data) || data.data.length === 0) continue;
+      try {
+        const res = await fetch(LIVE_NEWS_API, {
+          signal: AbortSignal.timeout(12000),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!Array.isArray(data?.data) || data.data.length === 0) return;
 
-          const live = data.data.filter((i) => i.title_am).map(normalize);
-          if (cancelled) return;
+        const live = data.data.filter((i) => i.title_am).map(normalize);
+        if (cancelled) return;
 
-          // Merge live items over the baked ones, newest first
-          setPosts((baked) => {
-            const liveIds = new Set(live.map((p) => p.id));
-            return [...live, ...baked.filter((p) => !liveIds.has(p.id))].sort(
-              (a, b) => b.date.localeCompare(a.date) || b.id - a.id
-            );
-          });
-          return;
-        } catch {
-          // proxy down or timed out — try the next one
-        }
+        // Merge live items over the baked ones, newest first
+        setPosts((baked) => {
+          const liveIds = new Set(live.map((p) => p.id));
+          return [...live, ...baked.filter((p) => !liveIds.has(p.id))].sort(
+            (a, b) => b.date.localeCompare(a.date) || b.id - a.id
+          );
+        });
+      } catch (err) {
+        // Keep the baked news, but leave a trace — the old proxies died silently for weeks
+        console.warn('[useSrcNews] live news unavailable, showing build-time news:', err.message);
       }
     })();
 
