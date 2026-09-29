@@ -22,6 +22,14 @@ export const contactInfo = {
   // Street address is kept here for the maps link; the localized label lives in
   // i18n under contact.info.addressValue.
   mapsQuery: 'Adonts Street 2, Yerevan, Armenia',
+  // Machine-readable copy of the address and hours for search engines
+  // (StructuredData.jsx). Keep in sync with contact.info.* in the locale files.
+  address: { street: '2 Adonts Street', city: 'Yerevan', country: 'AM' },
+  openingHours: {
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '18:00',
+  },
   social: {
     facebook: 'https://www.facebook.com/share/1Cz7c6e6qJ/?mibextid=wwXIfr',
     instagram: 'https://www.instagram.com/inea_accounting/',

@@ -1,7 +1,7 @@
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Link, { localizePath } from '../components/LocalizedLink';
-import Seo from '../components/Seo';
+import Seo, { SITE_URL } from '../components/Seo';
 import { motion } from 'framer-motion';
 import {
   HiArrowLeft,
@@ -15,6 +15,7 @@ import {
 import { getServiceById } from '../data/services';
 import { primaryPhone } from '../data/contact';
 import CTA from '../components/sections/CTA';
+import NotFoundPage from './NotFoundPage';
 
 const ServiceDetailPage = () => {
   const { serviceId } = useParams();
@@ -22,9 +23,9 @@ const ServiceDetailPage = () => {
 
   const service = getServiceById(serviceId);
 
-  // If service not found, redirect to services page
+  // Unknown service id: same 404 page as any other unknown URL
   if (!service) {
-    return <Navigate to={localizePath('/services', i18n.language)} replace />;
+    return <NotFoundPage />;
   }
 
   const Icon = service.icon;
@@ -53,7 +54,24 @@ const ServiceDetailPage = () => {
 
   return (
     <>
-      <Seo title={title} description={t(`services.${service.id}.shortDescription`)} />
+      <Seo
+        title={t('seo.serviceTitle', { service: title })}
+        description={t(`services.${service.id}.shortDescription`)}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            [t('nav.home'), '/'],
+            [t('nav.services'), '/services'],
+            [title, `/services/${service.id}`],
+          ].map(([name, path], i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name,
+            item: `${SITE_URL}${localizePath(path, i18n.language)}`,
+          })),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Background Image with Overlay */}

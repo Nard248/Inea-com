@@ -21,15 +21,14 @@ const BlogPage = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold rounded-full text-primary-700 bg-primary-100">
-              Latest Updates
+              {t('blogPage.badge')}
             </span>
             <h1 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
-              News &{' '}
-              <span className="gradient-text">Insights</span>
+              {t('blogPage.titleStart')}{' '}
+              <span className="gradient-text">{t('blogPage.titleHighlight')}</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 md:text-xl">
-              Stay informed about the latest tax laws, regulations, and financial
-              news affecting businesses in Armenia.
+              {t('blogPage.subtitle')}
             </p>
           </motion.div>
         </div>

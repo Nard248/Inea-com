@@ -53,7 +53,13 @@ const CalculatorsPage = () => {
   if (!CALCULATORS_ENABLED) {
     return (
       <>
-        <Seo title={t('seo.calculators.title')} description={t('seo.calculators.description')} />
+        {/* Placeholder page — kept out of search until the calculators launch
+            (also excluded from the sitemap in scripts/routes.mjs) */}
+        <Seo
+          title={t('seo.calculators.title')}
+          description={t('seo.calculators.description')}
+          noindex
+        />
         {pageHeader}
         <section className="py-20 bg-white">
           <div className="max-w-3xl px-4 mx-auto sm:px-6 lg:px-8">

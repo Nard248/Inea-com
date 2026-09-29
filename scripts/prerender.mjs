@@ -65,8 +65,17 @@ try {
     writeFileSync(join(outDir, 'index.html'), html);
   }
 
+  // 404 page: any unknown URL renders NotFoundPage. Firebase Hosting serves
+  // dist/404.html with a 404 status for paths that match no file.
+  await page.goto(`${ORIGIN}/__not-found__`, { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => document.title.includes('| INEA'), null, { timeout: 15000 });
+  writeFileSync(
+    join(distDir, '404.html'),
+    `<!doctype html>\n${await page.evaluate(() => document.documentElement.outerHTML)}`,
+  );
+
   await browser.close();
-  console.log(`✓ prerendered ${allPaths.length} pages into dist/`);
+  console.log(`✓ prerendered ${allPaths.length} pages + 404.html into dist/`);
 } finally {
   stop();
 }

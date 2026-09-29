@@ -11,9 +11,10 @@ const OG_LOCALES = { en: 'en_US', hy: 'hy_AM', ru: 'ru_RU' };
  * Per-route SEO meta. Renders title, description, canonical URL, hreflang
  * alternates and social (Open Graph / Twitter) tags for the current path.
  * `title` is the page part only — the INEA brand suffix is appended here so
- * it never drifts.
+ * it never drifts. `noindex` keeps placeholder pages out of search results;
+ * `jsonLd` adds page-specific structured data (e.g. breadcrumbs).
  */
-const Seo = ({ title, description, image = `${SITE_URL}/Logo.png` }) => {
+const Seo = ({ title, description, image = `${SITE_URL}/Logo.png`, noindex = false, jsonLd }) => {
   const { i18n } = useTranslation();
   const { pathname } = useLocation();
 
@@ -30,6 +31,7 @@ const Seo = ({ title, description, image = `${SITE_URL}/Logo.png` }) => {
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
       <link rel="canonical" href={canonical} />
       {LANGS.map((lang) => (
         <link key={lang} rel="alternate" hreflang={lang} href={alternateUrl(lang)} />
@@ -49,6 +51,8 @@ const Seo = ({ title, description, image = `${SITE_URL}/Logo.png` }) => {
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+
+      {jsonLd && <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>}
     </Helmet>
   );
 };

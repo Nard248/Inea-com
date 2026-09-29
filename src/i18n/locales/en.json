@@ -894,6 +894,23 @@
     "contact": {
       "title": "Contact Us",
       "description": "Talk to INEA's accountants in Yerevan. Call +374 91 02-55-55, email info@inea.am or visit us at Adonts Street 2. Free consultation available."
+    },
+    "serviceTitle": "{{service}} in Yerevan",
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you're looking for doesn't exist or has been moved."
     }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home",
+    "viewServices": "View services"
+  },
+  "blogPage": {
+    "badge": "Latest Updates",
+    "titleStart": "News &",
+    "titleHighlight": "Insights",
+    "subtitle": "Stay informed about the latest tax laws, regulations, and financial news affecting businesses in Armenia."
   }
 }

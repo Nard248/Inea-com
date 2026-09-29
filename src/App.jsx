@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Suspense, lazy, useEffect } from 'react';
@@ -18,6 +18,7 @@ const IndustriesPage = lazy(() => import('./pages/IndustriesPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading component
 const PageLoader = () => (
@@ -56,13 +57,6 @@ const PageWrapper = ({ children }) => {
       {children}
     </motion.div>
   );
-};
-
-// Unknown paths inside a language tree go to that language's home page
-// instead of rendering a blank screen.
-const RedirectHome = () => {
-  const { i18n } = useTranslation();
-  return <Navigate to={localizePath('/', i18n.language)} replace />;
 };
 
 // Language wrapper: the URL prefix decides the language (/ = hy, /en, /ru).
@@ -176,7 +170,14 @@ const AnimatedRoutes = () => {
               </PageWrapper>
             }
           />
-      <Route path="*" element={<RedirectHome />} />
+      <Route
+        path="*"
+        element={
+          <PageWrapper>
+            <NotFoundPage />
+          </PageWrapper>
+        }
+      />
     </>
   );
 

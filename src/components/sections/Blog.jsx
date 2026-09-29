@@ -9,12 +9,28 @@ import sanitizeHtml from '../../utils/sanitizeHtml';
 const SRC_NEWS_URL = 'https://www.src.am/am/showNewsPage/30';
 const DATE_LOCALES = { en: 'en-GB', hy: 'hy-AM', ru: 'ru-RU' };
 
-const formatDate = (isoDate, language) =>
-  new Date(isoDate).toLocaleDateString(DATE_LOCALES[language] ?? 'hy-AM', {
+// Armenian is spelled out by hand: the headless Chromium that prerenders the
+// site ships without Armenian locale data and would bake "September 25, 2026"
+// into the static HTML crawlers read. Matches Intl's hy-AM output.
+const HY_MONTHS = [
+  'հունվարի', 'փետրվարի', 'մարտի', 'ապրիլի', 'մայիսի', 'հունիսի',
+  'հուլիսի', 'օգոստոսի', 'սեպտեմբերի', 'հոկտեմբերի', 'նոյեմբերի', 'դեկտեմբերի',
+];
+
+const formatDate = (isoDate, language) => {
+  const date = new Date(isoDate);
+  if ((DATE_LOCALES[language] ?? 'hy-AM') === 'hy-AM') {
+    return `${date.getUTCDate()} ${HY_MONTHS[date.getUTCMonth()]}, ${date.getUTCFullYear()} թ.`;
+  }
+  // Dates are day-only ISO strings (parsed as UTC midnight) — format in UTC so
+  // visitors west of Greenwich don't see the previous day
+  return date.toLocaleDateString(DATE_LOCALES[language], {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   });
+};
 
 const NewsModal = ({ post, language, onClose }) => {
   const { t } = useTranslation();

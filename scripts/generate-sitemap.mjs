@@ -5,9 +5,10 @@
  */
 import { writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { root, routes, LANG_PREFIXES, localizedUrl } from './routes.mjs';
+import { root, routes, NOINDEX_ROUTES, LANG_PREFIXES, localizedUrl } from './routes.mjs';
 
-const today = new Date().toISOString().slice(0, 10);
+// No <lastmod>: stamping every URL with the build date on each deploy teaches
+// Google the value is meaningless, so it would ignore it anyway.
 
 const urlEntry = (lang, route) => {
   const alternates = Object.keys(LANG_PREFIXES)
@@ -18,13 +19,14 @@ const urlEntry = (lang, route) => {
     .join('\n');
   return `  <url>
     <loc>${localizedUrl(lang, route)}</loc>
-    <lastmod>${today}</lastmod>
 ${alternates}
     <xhtml:link rel="alternate" hreflang="x-default" href="${localizedUrl('en', route)}"/>
   </url>`;
 };
 
-const entries = routes.flatMap((route) =>
+const indexable = routes.filter((route) => !NOINDEX_ROUTES.includes(route));
+
+const entries = indexable.flatMap((route) =>
   Object.keys(LANG_PREFIXES).map((lang) => urlEntry(lang, route)),
 );
 
@@ -41,4 +43,4 @@ if (!existsSync(distDir)) {
   process.exit(1);
 }
 writeFileSync(join(distDir, 'sitemap.xml'), xml);
-console.log(`✓ sitemap.xml written with ${entries.length} URLs (${routes.length} pages × 3 languages)`);
+console.log(`✓ sitemap.xml written with ${entries.length} URLs (${indexable.length} pages × 3 languages)`);

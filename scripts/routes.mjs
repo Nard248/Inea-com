@@ -30,6 +30,10 @@ const serviceIds = [...servicesSource.matchAll(/id:\s*'([a-z-]+)'/g)].map((m) =>
 
 export const routes = [...STATIC_ROUTES, ...serviceIds.map((id) => `/services/${id}`)];
 
+// Prerendered but kept out of the sitemap: placeholder pages that carry
+// noindex. Remove '/calculators' when CALCULATORS_ENABLED flips to true.
+export const NOINDEX_ROUTES = ['/calculators'];
+
 /** '/services' in 'en' → '/en/services'; '/' in 'en' → '/en' */
 export const localizedPath = (lang, route) => {
   const prefix = LANG_PREFIXES[lang];
